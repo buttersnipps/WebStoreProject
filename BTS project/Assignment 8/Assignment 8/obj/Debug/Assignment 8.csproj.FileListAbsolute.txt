@@ -1,0 +1,725 @@
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Assignment 8.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\AutoMapper.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\EntityFramework.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Owin.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\WebGrease.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\AutoMapper.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\EntityFramework.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+c:\users\sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+C:\Users\Sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBChange1.resources
+C:\Users\Sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBFix1.resources
+C:\Users\Sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBChange2.resources
+C:\Users\Sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBChange3.resources
+C:\Users\Sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBFix2.resources
+C:\Users\Sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBFix3.resources
+C:\Users\Sajjad\documents\visual studio 2015\Projects\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBFix4.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Assignment 8.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\AutoMapper.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\EntityFramework.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Owin.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\WebGrease.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\AutoMapper.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\EntityFramework.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBChange1.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBFix1.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBChange2.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBChange3.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBFix2.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBFix3.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.DBFix4.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.ChangeDBToStore.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.ChangedAccountProperties.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.AddingNamesToUserAccount.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.removedMiddleName.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.AddedCategoryToDatabase.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.AddCategory.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.AddCategory2.resources
+C:\Users\Sajjad\SkyDrive\Seneca\Winter 2016\BTI420\Labs\Lab8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.ChangedDatabase1.resources
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Owin.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\WebGrease.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.first_one.resources
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Owin.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\WebGrease.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.first_one.resources
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+C:\Users\Sajjad\Desktop\BTS FILES\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Owin.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\WebGrease.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.first_one.resources
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.second_one.resources
+D:\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.thirdone.resources
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Owin.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\WebGrease.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.first_one.resources
+C:\Users\Soutrik\Documents\Visual Studio 2015\Projects\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Owin.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\WebGrease.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\AutoMapper.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+C:\Users\Sajjad\Desktop\Assignment 8\Assignment 8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\AutoMapper.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Owin.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\WebGrease.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\AutoMapper.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.second.resources
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Soutrik Barua\Documents\Visual Studio 2015\Projects\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.third.resources

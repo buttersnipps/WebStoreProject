@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Assignment_8.Controllers.Product_vm>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.productName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productWeight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productLenght)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productBreath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.productHeight)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.productName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productDescription)
+        </td>
+        <td>
+           <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.productImage)" style="height:200px;width:200px"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productWeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productLenght)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productBreath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productHeight)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.productId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.productId })
+        </td>
+    </tr>
+}
+
+</table>
