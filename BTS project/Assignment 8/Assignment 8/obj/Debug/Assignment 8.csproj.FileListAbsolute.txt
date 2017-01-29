@@ -807,9 +807,6 @@ D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Ow
 D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
-D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.second.resources
-D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.third.resources
-D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.third1.resources
 D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
 D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
 D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
@@ -900,3 +897,4 @@ C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignme
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.change1.resources
