@@ -6,6 +6,8 @@ using System.Web;
 using AutoMapper;
 using Assignment_8.Models;
 using System.Security.Claims;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.AspNet.Identity;
 
 namespace Assignment_8.Controllers
 {
@@ -22,6 +24,20 @@ namespace Assignment_8.Controllers
         // var userAccount = new ConditionalMenu.Controllers.UserAccount(User as System.Security.Claims.ClaimsPrincipal);
         // Then, you can use "userAccount" anywhere in the view to render content
         public UserAccount UserAccount { get; private set; }
+        private ApplicationUserManager _userManager;
+        public ApplicationUserManager UserManager
+        {
+            get
+            {
+                // Null coalescing operator
+                
+                return _userManager ?? HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            }
+            private set
+            {
+                _userManager = value;
+            }
+        }
 
         public Manager()
         {
@@ -613,6 +629,91 @@ namespace Assignment_8.Controllers
                 return false;
             }
         }
+
+
+        // Account Related functions
+
+        // Get All Users
+        public IEnumerable<ApplicationUserBase> UsersGetAll()
+        {
+            // Fetch all users        
+            var allUsers = UserManager.Users;
+
+            if (allUsers == null)
+            {
+                return null;
+            }
+
+            var userList = new List<ApplicationUserBase>();
+            foreach (var user in allUsers)
+            {
+                // Map the values all users to view model
+                var appUser = Mapper.Map<ApplicationUserBase>(user);
+                var userClaims = user.Claims.Where
+                     (c => c.ClaimType == ClaimTypes.Role).Select(roles => roles.ClaimValue).ToArray();
+
+                // Add Role Claims
+                appUser.Roles = userClaims;
+                userList.Add(appUser);
+            }
+            return userList;
+        }
+
+        // Get User by Id
+        public ApplicationUserDetail GetUserById(string id)
+        {
+            // Fetch the User by Id
+            var user = UserManager.FindById(id);
+
+            if (user == null)
+            {
+                return null;
+            }
+
+            // Initialize UserAccount
+            var userIdentity = UserManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie) as ClaimsIdentity;
+            var claimsPrincipal = new ClaimsPrincipal(userIdentity);
+
+            var userAccount = new UserAccount(claimsPrincipal);
+
+            // Map user details
+            var details = Mapper.Map<ApplicationUserDetail>(userAccount);
+            details.UserName = user.UserName;
+            details.Email = user.UserName;
+            details.Roles = userAccount.RoleClaims;
+
+            return details;
+        }
+
+        // Delete User
+        public void DeleteUser(string id)
+        {
+            var user = UserManager.FindById(id);
+
+            // Initialize UserAccount
+            var userIdentity = UserManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie) as ClaimsIdentity;
+            var claimsPrincipal = new ClaimsPrincipal(userIdentity);
+
+            var userAccount = new UserAccount(claimsPrincipal);
+
+            // Get all claims
+            var claims = claimsPrincipal.Claims;
+            // Set a flag for successful remove
+            var check = true;
+            // Remove all claims from user
+            foreach (var claim in claims)
+            {
+                var r = UserManager.RemoveClaimAsync(user.Id, new Claim(claim.Type, claim.Value)).Result;
+                if (!r.Succeeded) { check = false; }
+            }
+
+            // Finally remove the user
+            if (check)
+            {
+                var result = UserManager.DeleteAsync(user).Result;
+            }
+        }
+
 
     }
 

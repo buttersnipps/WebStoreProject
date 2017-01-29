@@ -36,10 +36,6 @@ namespace Assignment_8.Models
         }
 
         // Add DbSet<TEntity> properties here
-        /*public DbSet<Genre> Genres { get; set; }
-        public DbSet<Artist> Artists { get; set; }
-        public DbSet<Album> Albums { get; set; }
-        public DbSet<Track> Tracks { get; set; }*/
         public DbSet<RoleClaim> Role { get; set; }
         public DbSet<Category>Categories { get; set; }
 
@@ -73,5 +69,7 @@ namespace Assignment_8.Models
         public System.Data.Entity.DbSet<Assignment_8.Controllers.Category_vm> Category_vm { get; set; }
 
         public System.Data.Entity.DbSet<Assignment_8.Controllers.Product_vm> Product_vm { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.ApplicationUserBase> ApplicationUserBases { get; set; }
     }
 }

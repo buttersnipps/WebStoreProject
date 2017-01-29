@@ -174,6 +174,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AccountManagerController.cs" />
+    <Compile Include="Controllers\Account_vm.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\CustomAuthorizeAttributes.cs" />
     <Compile Include="Controllers\ErrorsController.cs" />
@@ -193,6 +195,10 @@
     <Compile Include="Migrations\201701281857198_third.cs" />
     <Compile Include="Migrations\201701281857198_third.Designer.cs">
       <DependentUpon>201701281857198_third.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701290606139_third1.cs" />
+    <Compile Include="Migrations\201701290606139_third1.Designer.cs">
+      <DependentUpon>201701290606139_third1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -299,6 +305,9 @@
     <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\Product\Delete.cshtml" />
     <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\AccountManager\Index.cshtml" />
+    <Content Include="Views\AccountManager\Details.cshtml" />
+    <Content Include="Views\AccountManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -314,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701281857198_third.resx">
       <DependentUpon>201701281857198_third.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701290606139_third1.resx">
+      <DependentUpon>201701290606139_third1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -37,7 +37,10 @@ namespace Assignment_8
 
             // Add more below...
 
-
+            Mapper.CreateMap<Models.ApplicationUser, Controllers.ApplicationUserBase>();
+            Mapper.CreateMap<Controllers.UserAccount, Controllers.ApplicationUserDetail>();
+            Mapper.CreateMap<Controllers.ApplicationUserDetail, Controllers.ApplicationUserEditForm>();
+            Mapper.CreateMap<Controllers.ApplicationUserEdit, Controllers.ApplicationUserDetail>();
 
 
 
