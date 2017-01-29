@@ -65,7 +65,6 @@ namespace Assignment_8.Controllers
                 }
             }
             var addedItem = manage.ProductAdd(newItem);
-
             if (addedItem == null)
             {
                 return View(newItem);
@@ -76,25 +75,26 @@ namespace Assignment_8.Controllers
             }
         }
 
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            var o = manage.ProductGetById(id.GetValueOrDefault());
+            var editForm = manage.ProductGetById(id);
 
-            if(o == null)
+            if(editForm == null)
             {
                 return HttpNotFound();
             }
             else
             {
-                var editForm = AutoMapper.Mapper.Map<Product_vm>(o);
-                return View(editForm);
+                return View(manage.ProductGetById(id));
             }
         }
 
-        [HttpPost]
-        public ActionResult Edit(int? id, Product_vm newItem,HttpPostedFileBase file)
+         [HttpPost]
+        public ActionResult Edit(int id, Product_vm newItem, HttpPostedFileBase file)
         {
             var path = "";
+            var product = manage.ProductGetById(newItem.productId);
+            string fullPath = "";
             if (file != null)
             {
                 if (file.ContentLength > 0)
@@ -105,6 +105,11 @@ namespace Assignment_8.Controllers
                         Path.GetExtension(file.FileName).ToLower() == ".gif" ||
                         Path.GetExtension(file.FileName).ToLower() == ".jpeg")
                     {
+                        fullPath = Request.MapPath("~/Content/Image/" + product.productImage);
+                        if (System.IO.File.Exists(fullPath))
+                        {
+                            System.IO.File.Delete(fullPath);
+                        }
                         path = Path.Combine(Server.MapPath("~/Content/Image"), file.FileName);
                         file.SaveAs(path);
                         newItem.productImage = file.FileName;
@@ -118,7 +123,7 @@ namespace Assignment_8.Controllers
                 return RedirectToAction("edit", new { id = newItem.productId });
             }
 
-            if (id.GetValueOrDefault() != newItem.productId)
+            if (id != newItem.productId)
             {
            
                 return RedirectToAction("index");

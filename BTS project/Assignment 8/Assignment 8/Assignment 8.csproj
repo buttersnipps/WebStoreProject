@@ -188,17 +188,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201701281854386_second.cs" />
-    <Compile Include="Migrations\201701281854386_second.Designer.cs">
-      <DependentUpon>201701281854386_second.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201701281857198_third.cs" />
-    <Compile Include="Migrations\201701281857198_third.Designer.cs">
-      <DependentUpon>201701281857198_third.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201701290606139_third1.cs" />
-    <Compile Include="Migrations\201701290606139_third1.Designer.cs">
-      <DependentUpon>201701290606139_third1.cs</DependentUpon>
+    <Compile Include="Migrations\201701291743347_change1.cs" />
+    <Compile Include="Migrations\201701291743347_change1.Designer.cs">
+      <DependentUpon>201701291743347_change1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -301,13 +293,13 @@
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Details.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Edit.cshtml" />
     <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\Product\Delete.cshtml" />
     <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\AccountManager\Index.cshtml" />
     <Content Include="Views\AccountManager\Details.cshtml" />
     <Content Include="Views\AccountManager\Delete.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -318,14 +310,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701281854386_second.resx">
-      <DependentUpon>201701281854386_second.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701281857198_third.resx">
-      <DependentUpon>201701281857198_third.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701290606139_third1.resx">
-      <DependentUpon>201701290606139_third1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701291743347_change1.resx">
+      <DependentUpon>201701291743347_change1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

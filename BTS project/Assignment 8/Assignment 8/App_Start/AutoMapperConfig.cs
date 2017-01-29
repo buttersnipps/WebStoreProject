@@ -32,11 +32,7 @@ namespace Assignment_8
             Mapper.CreateMap<Controllers.Promotion_vm, Models.Promotion>();
             Mapper.CreateMap<Models.Promotion, Controllers.Promotion_vm>();
 
-            //Genre
-
-
-            // Add more below...
-
+            //Account Mappers
             Mapper.CreateMap<Models.ApplicationUser, Controllers.ApplicationUserBase>();
             Mapper.CreateMap<Controllers.UserAccount, Controllers.ApplicationUserDetail>();
             Mapper.CreateMap<Controllers.ApplicationUserDetail, Controllers.ApplicationUserEditForm>();
