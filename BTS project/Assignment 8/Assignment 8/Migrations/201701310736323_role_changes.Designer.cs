@@ -7,13 +7,13 @@ namespace Assignment_8.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class roles_changes : IMigrationMetadata
+    public sealed partial class role_changes : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(roles_changes));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(role_changes));
         
         string IMigrationMetadata.Id
         {
-            get { return "201701302118295_roles_changes"; }
+            get { return "201701310736323_role_changes"; }
         }
         
         string IMigrationMetadata.Source
