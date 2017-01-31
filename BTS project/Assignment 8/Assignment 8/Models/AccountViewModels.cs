@@ -98,7 +98,7 @@ namespace Assignment_8.Models
         public DateTime Birthday { get; set; }
 
         [Required(ErrorMessage = "Street name is required!")]
-        [Display(Name = "Steet Name")]
+        [Display(Name = "Street Name")]
         [StringLength(120)]
         public string StreetName { get; set; }
 
