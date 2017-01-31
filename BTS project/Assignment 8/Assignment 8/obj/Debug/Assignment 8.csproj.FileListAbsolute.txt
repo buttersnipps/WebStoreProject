@@ -898,3 +898,91 @@ C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignme
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
 D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.change1.resources
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\AutoMapper.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Owin.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\WebGrease.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\AutoMapper.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.roles_changes.resources
+D:\Github\Branches\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
