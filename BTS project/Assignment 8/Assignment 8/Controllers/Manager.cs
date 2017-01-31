@@ -308,6 +308,11 @@ namespace Assignment_8.Controllers
         {
             if (ds.Role.Count() == 0)
             {
+
+                ds.Role.Add(new RoleClaim
+                {
+                    Name = "Executive"
+                });
                 ds.Role.Add(new RoleClaim
                 {
                     Name = "Manager"

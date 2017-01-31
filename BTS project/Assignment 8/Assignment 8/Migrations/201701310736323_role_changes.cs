@@ -3,7 +3,7 @@ namespace Assignment_8.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class roles_changes : DbMigration
+    public partial class role_changes : DbMigration
     {
         public override void Up()
         {
