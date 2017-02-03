@@ -22,8 +22,11 @@ namespace Assignment_8
             Mapper.CreateMap<Models.RegisterViewModel, Models.RegisterViewModelForm>();
 
             //Category Mappers
+            
             Mapper.CreateMap<Models.Category, Controllers.Category_vm>();
-            Mapper.CreateMap<Controllers.Category_vm, Models.Category>();
+            Mapper.CreateMap<Controllers.Category_vm, Models.Category>(); 
+
+            Mapper.CreateMap<Models.Product, Controllers.ProductWithCategory>();
 
             //Product Mappers
             Mapper.CreateMap<Models.Product, Controllers.Product_vm>();

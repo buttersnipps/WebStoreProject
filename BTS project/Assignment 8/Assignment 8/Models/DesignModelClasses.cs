@@ -93,13 +93,23 @@ namespace Assignment_8.Models
         public double productBreath { get; set; }
         [Display(Name = "Product Height")]
         public double productHeight { get; set; }
+
+        [Required]
+        public Category Category { get; set; }
     }
 
     public class Category
     {
+        public Category()
+        {
+            Products = new List<Product>();
+        }
         [Key]
+        [Display(Name = "Id")]
         public int Id { get; set; }
-
+        [Display(Name = "Phone Type")]
         public string Name { get; set; }
+
+        ICollection<Product> Products { get; set; }
     }
 }

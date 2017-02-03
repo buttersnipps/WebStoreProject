@@ -188,9 +188,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201701310736323_role_changes.cs" />
-    <Compile Include="Migrations\201701310736323_role_changes.Designer.cs">
-      <DependentUpon>201701310736323_role_changes.cs</DependentUpon>
+    <Compile Include="Migrations\201702030610217_CategoryN.cs" />
+    <Compile Include="Migrations\201702030610217_CategoryN.Designer.cs">
+      <DependentUpon>201702030610217_CategoryN.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -284,6 +284,7 @@
     <Content Include="Views\AccountManager\Details.cshtml" />
     <Content Include="Views\AccountManager\Delete.cshtml" />
     <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\LoadData\LoadCategories.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -294,8 +295,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701310736323_role_changes.resx">
-      <DependentUpon>201701310736323_role_changes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702030610217_CategoryN.resx">
+      <DependentUpon>201702030610217_CategoryN.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

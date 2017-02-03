@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+/*
 namespace Assignment_8.Controllers
 {
     public class CategoryController : Controller
@@ -27,6 +28,7 @@ namespace Assignment_8.Controllers
             return View(new Category_vm());
         }
 
+        
         // POST: Category/Create
         [HttpPost]
         public ActionResult Create(Category_vm collection)
@@ -43,7 +45,7 @@ namespace Assignment_8.Controllers
                 return View();
             }
         }
-
+        
         // GET: Category/Edit/5
         public ActionResult Edit(int id)
         {
@@ -89,3 +91,5 @@ namespace Assignment_8.Controllers
         }
     }
 }
+
+    */
