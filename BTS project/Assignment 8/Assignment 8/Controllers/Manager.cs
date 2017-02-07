@@ -59,14 +59,12 @@ namespace Assignment_8.Controllers
             var r = ds.Categories;
             return Mapper.Map<IEnumerable<Category_vm>>(r);
         }
-        
-        public Category_vm CategoryAdd(Category newItem)
+        public Category_vm CategoryAdd(Category_vm newItem)
         {
             var c = ds.Categories.Add(Mapper.Map<Category>(newItem));
             ds.SaveChanges();
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
-        
         public Category_vm CategoryUpdate(int Id, Category_vm updateItem)
         {
             var c = ds.Categories.Find(Id);
@@ -151,18 +149,11 @@ namespace Assignment_8.Controllers
 
         }
 
-        public IEnumerable<ProductWithCategory> GetProductWithCategory()
-        {
-            var c = ds.Product.Include("Category").OrderBy(p => p.productId);
-
-            return Mapper.Map<IEnumerable<ProductWithCategory>>(c);
-        }
-
         public bool LoadCategory()
         {
             ds.Categories.Add(new Models.Category
             {
-                Name =  "I.P Phone"
+                Name = "I.P Phone"
             });
             ds.Categories.Add(new Models.Category
             {

@@ -188,9 +188,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702030610217_CategoryN.cs" />
-    <Compile Include="Migrations\201702030610217_CategoryN.Designer.cs">
-      <DependentUpon>201702030610217_CategoryN.cs</DependentUpon>
+    <Compile Include="Migrations\201702071810559_temp.cs" />
+    <Compile Include="Migrations\201702071810559_temp.Designer.cs">
+      <DependentUpon>201702071810559_temp.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -284,7 +284,12 @@
     <Content Include="Views\AccountManager\Details.cshtml" />
     <Content Include="Views\AccountManager\Delete.cshtml" />
     <Content Include="Views\Product\Edit.cshtml" />
-    <Content Include="Views\LoadData\LoadCategories.cshtml" />
+    <Content Include="Views\LoadData\LoadCategory.cshtml" />
+    <Content Include="Views\Category\Create.cshtml" />
+    <Content Include="Views\Category\Delete.cshtml" />
+    <Content Include="Views\Category\Details.cshtml" />
+    <Content Include="Views\Category\Edit.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -295,8 +300,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702030610217_CategoryN.resx">
-      <DependentUpon>201702030610217_CategoryN.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702071810559_temp.resx">
+      <DependentUpon>201702071810559_temp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

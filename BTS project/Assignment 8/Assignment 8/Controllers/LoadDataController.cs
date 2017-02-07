@@ -51,7 +51,7 @@ namespace Assignment_8.Controllers
                 return Content("could not remove database");
             }
         }
-        public ActionResult LoadCategories()
+        public ActionResult LoadCategory()
         {
             if(m.LoadCategory())
             {
@@ -59,7 +59,7 @@ namespace Assignment_8.Controllers
             }
             else
             {
-                return Content("coult not load Category Data");
+                return Content("Count not add categories to database");
             }
         }
 
