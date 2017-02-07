@@ -2,11 +2,10 @@
   
 	Software Development Information
 	
-	What Systems We did
+	What systems need to get done
 	-Manage Product
 	-Manage Account
 	-Manage Category
-	What Systems we need to do
 	-Manage Promotion
 	-Purchase Product
 	-Manage Cart
@@ -21,3 +20,8 @@
 	-Secure BackEnd From Being Accessed But Un-Authorized Personal
 	-Update Domain Model
 	-Fix Up BackEnd Systems Already Done (Make Them Look Professional)
+
+	First Iteration:
+		-Manage Product
+		-Manage Account
+		-Manage Category
