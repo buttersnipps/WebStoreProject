@@ -1,6 +1,11 @@
-# WebStoreProject  
+# BuyNortelPhones
+
+## Synopsis
+	BuyNortelPhones is an online store that sells business telecommunication phones
+	as well as personal phones to consumers. This online store serves Canada and the
+	US.
   
-	Software Development Information
+## Systems Development Information
 	
 	What systems need to get done
 	-Manage Product
@@ -13,15 +18,12 @@
 	-Manage Inventory
 	-Create Sales Report
 
-	
-	Other Things That Need To Be Done
-	-Get Project To Work On Azure
-	-Build Front End
-	-Secure BackEnd From Being Accessed But Un-Authorized Personal
-	-Update Domain Model
-	-Fix Up BackEnd Systems Already Done (Make Them Look Professional)
-
-	First Iteration:
+### First Iteration:
 		-Manage Product
 		-Manage Account
 		-Manage Category
+
+## Contributors
+	-Sajjad Patel
+	-Soutrick Barua
+	-Michael Voung
