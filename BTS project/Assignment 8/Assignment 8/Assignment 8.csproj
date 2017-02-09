@@ -202,7 +202,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Audio\Sean+Paul+-+We+Be+Burnin%28music.naij.com%29.mp3" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -287,6 +286,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Audio\" />
     <Folder Include="Content\Image\" />
   </ItemGroup>
   <ItemGroup>

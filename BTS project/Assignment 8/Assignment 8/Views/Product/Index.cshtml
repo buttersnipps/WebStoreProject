@@ -1,18 +1,12 @@
 ﻿@model IEnumerable<Assignment_8.Controllers.Product_vm>
 
-<p>
+<br />
     @Html.ActionLink("Create New", "Create")
-</p>
+<hr/>
 <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.productName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productDescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productImage)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.productPrice)
@@ -21,16 +15,7 @@
             @Html.DisplayNameFor(model => model.quantity)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.productWeight)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productLength)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productBreath)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productHeight)
+            @Html.DisplayNameFor(model => model.productImage)
         </th>
         <th></th>
     </tr>
@@ -41,28 +26,20 @@
             @Html.DisplayFor(modelItem => item.productName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.productDescription)
-        </td>
-        <td>
-           <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.productImage)" style="height:100px;width:200px"/>
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.productPrice)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.quantity)
+            @if (item.quantity < 9)
+            {
+                <p style="color:red">@Html.DisplayFor(modelItem => item.quantity)</p>
+            }
+            else
+            {
+                <p style="color:green">@Html.DisplayFor(modelItem => item.quantity)</p>
+            }
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.productWeight)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productLength)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productBreath)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productHeight)
+            <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.productImage)" style="height:100px;width:200px" />
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |
