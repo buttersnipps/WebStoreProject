@@ -20,8 +20,6 @@ namespace Assignment_8.Controllers
         public int promotionId { get; set; }
 
         public float promotionPrice { get; set; }
-        public DateTime BeginDate { get; set; }
-        public DateTime EndDate { get; set; }
 
     }
 
@@ -29,36 +27,23 @@ namespace Assignment_8.Controllers
     {
         [Key]
         public int productId { get; set; }
-
-        [Display(Name = "Name")]
+        [Display(Name = "Product Name")]
         public string productName { get; set; }
-
-        [Display(Name = "Price")]
+        [Display(Name = "Product Price")]
         public double productPrice { get; set; }
-
-        [DataType(DataType.MultilineText)]
-        [Display(Name = "Description")]
+        [Display(Name = "Product Description")]
         public string productDescription { get; set; }
-
         [Display(Name = "Sale")]
         public Promotion_vm productPromo { get; set; }
-
-        [Display(Name = "Quantity")]
-        public int quantity { get; set; }
-
-        [Display(Name = "Image")]
+     
         public string productImage { get; set; }
-
-        [Display(Name = "Weight (lb)")]
+        [Display(Name = "Product Weight")]
         public double productWeight { get; set; }
-
-        [Display(Name = "L")]
-        public double productLength { get; set; }
-
-        [Display(Name = "W")]
+        [Display(Name = "Product Length")]
+        public double productLenght { get; set; }
+        [Display(Name = "Product Breath")]
         public double productBreath { get; set; }
-
-        [Display(Name = "H")]
+        [Display(Name = "Product Height")]
         public double productHeight { get; set; }
     }
 }

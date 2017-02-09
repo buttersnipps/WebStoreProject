@@ -893,6 +893,8 @@ C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignme
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.change1.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
 D:\Github\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.change1.resources
@@ -1072,6 +1074,142 @@ D:\Github\LogIn\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\
 D:\Github\LogIn\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
 D:\Github\LogIn\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.role_changes.resources
 D:\Github\LogIn\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\AutoMapper.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Owin.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\WebGrease.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\AutoMapper.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.role_changes.resources
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Data.Edm.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Data.OData.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Data.Services.Client.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.WindowsAzure.Storage.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Spatial.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Data.Edm.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Data.OData.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Data.Services.Client.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.WindowsAzure.Storage.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\System.Spatial.xml
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\de\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\es\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\it\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\de\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\es\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\fr\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\it\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ja\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ko\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ru\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\de\System.Spatial.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\es\System.Spatial.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\fr\System.Spatial.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\it\System.Spatial.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ja\System.Spatial.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ko\System.Spatial.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\ru\System.Spatial.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\zh-Hans\System.Spatial.resources.dll
+D:\test\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\zh-Hant\System.Spatial.resources.dll

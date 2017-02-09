@@ -116,12 +116,12 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #265a88;
+  background-color: #599532;
   background-position: 0 -15px;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #265a88;
+  background-color: #599532;
   border-color: #245580;
 }
 .btn-primary.disabled,
