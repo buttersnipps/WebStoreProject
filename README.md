@@ -23,6 +23,11 @@
 		-Manage Account
 		-Manage Category
 
+### Second Iteration
+		-Manage Promotion
+		-Manage Cart
+		-Products Front End
+
 ## Contributors
 	-Sajjad Patel
 	-Soutrick Barua
