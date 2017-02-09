@@ -1,74 +1,67 @@
 ﻿@model Assignment_8.Controllers.Product_vm
 
-<div>
-    <h4>Product_vm</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.productName)
-        </dt>
+    <img src="~/Content/Image/@Html.DisplayFor(model => model.productImage)" style="height:300px;width:500px" />
+<div class="row">
+    <div class="col-lg-12">
+        <h4>Product Details</h4>
+        <hr />
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.productName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.productPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.productDescription)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.productLength)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.productWeight)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.productBreath)
+                </th>
 
-        <dd>
-            @Html.DisplayFor(model => model.productName)
-        </dd>
+                <th>
+                    @Html.DisplayNameFor(model => model.productHeight)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.productName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.productPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.productDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.productLength)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.productWeight)
 
-        <dt>
-            @Html.DisplayNameFor(model => model.productPrice)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.productPrice)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.productDescription)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.productDescription)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.productImage)
-        </dt>
-
-        <dd>
-            <img src="~/Content/Image/@Html.DisplayFor(model => model.productImage)" style="height:200px;width:200px" />
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.productWeight)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.productWeight)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.productLenght)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.productLenght)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.productBreath)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.productBreath)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.productHeight)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.productHeight)
-        </dd>
-
-    </dl>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.productBreath)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.productHeight)
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.productId }) |

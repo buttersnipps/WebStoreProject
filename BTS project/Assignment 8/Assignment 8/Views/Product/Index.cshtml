@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<Assignment_8.Controllers.Product_vm>
 
-<p>
+<br />
     @Html.ActionLink("Create New", "Create")
-</p>
+<hr/>
 <table class="table">
     <tr>
         <th>
@@ -12,22 +12,10 @@
             @Html.DisplayNameFor(model => model.productPrice)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.productDescription)
+            @Html.DisplayNameFor(model => model.quantity)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.productImage)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productWeight)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productLenght)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productBreath)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.productHeight)
         </th>
         <th></th>
     </tr>
@@ -41,22 +29,17 @@
             @Html.DisplayFor(modelItem => item.productPrice)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.productDescription)
+            @if (item.quantity < 9)
+            {
+                <p style="color:red">@Html.DisplayFor(modelItem => item.quantity)</p>
+            }
+            else
+            {
+                <p style="color:green">@Html.DisplayFor(modelItem => item.quantity)</p>
+            }
         </td>
         <td>
-           <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.productImage)" style="height:200px;width:200px"/>
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productWeight)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productLenght)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productBreath)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.productHeight)
+            <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.productImage)" style="height:100px;width:200px" />
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |
