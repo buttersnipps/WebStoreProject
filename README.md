@@ -30,5 +30,5 @@
 
 ## Contributors
 	-Sajjad Patel
-	-Soutrick Barua
+	-Soutrik Barua
 	-Michael Voung
