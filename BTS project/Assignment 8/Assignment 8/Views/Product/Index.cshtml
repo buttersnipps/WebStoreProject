@@ -9,19 +9,22 @@
             @Html.DisplayNameFor(model => model.productName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.productPrice)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.productDescription)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.productImage)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.productPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantity)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.productWeight)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.productLenght)
+            @Html.DisplayNameFor(model => model.productLength)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.productBreath)
@@ -38,19 +41,22 @@
             @Html.DisplayFor(modelItem => item.productName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.productPrice)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.productDescription)
         </td>
         <td>
-           <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.productImage)" style="height:200px;width:200px"/>
+           <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.productImage)" style="height:100px;width:200px"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.productPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantity)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.productWeight)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.productLenght)
+            @Html.DisplayFor(modelItem => item.productLength)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.productBreath)
