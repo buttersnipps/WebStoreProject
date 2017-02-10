@@ -68,10 +68,10 @@
             @Html.ValidationMessageFor(model => model.productLength, "", new { @class = "text-danger" })
         </div>
         
-        @Html.LabelFor(model => model.productBreath, htmlAttributes: new { @class = "control-label col-lg-1" })
+        @Html.LabelFor(model => model.productWidth, htmlAttributes: new { @class = "control-label col-lg-1" })
         <div class="col-lg-1">
-            @Html.EditorFor(model => model.productBreath, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.productBreath, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.productWidth, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.productWidth, "", new { @class = "text-danger" })
         </div>
 
         @Html.LabelFor(model => model.productHeight, htmlAttributes: new { @class = "control-label col-lg-1" })

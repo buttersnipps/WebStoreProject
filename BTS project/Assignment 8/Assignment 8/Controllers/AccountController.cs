@@ -284,7 +284,8 @@ namespace Assignment_8.Controllers
 
                 var country = new Country
                 {
-                    city = cit,
+                    ///FIX THISS
+                    //city = cit,
                     CountryName = model.CountryName
                 };
 

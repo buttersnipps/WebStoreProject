@@ -43,7 +43,7 @@ namespace Assignment_8.Models
         public int CountryId { get; set; }
 
         public string CountryName { get; set; }
-        public City city { get; set; } //Need To make ICollection
+        public IEnumerable<City> city { get; set; }
     }
 
     public class City
@@ -66,9 +66,20 @@ namespace Assignment_8.Models
         [Key]
         public int promotionId { get; set; }
 
-        public float promotionPrice { get; set; }
-        public DateTime EndDate { get; set; }
+        [Display(Name ="Promotion Name")]
+        public string promotionName { get; set; }
+
+        [Display(Name ="Promotion Percentage Off")]
+        public double percentageOff { get; set; }
+
+        [Display(Name = "Promotion Begin Date")]
         public DateTime BeginDate { get; set; }
+
+        [Display(Name ="Promotion End Date")]
+        public DateTime EndDate { get; set; }
+
+        [Display(Name ="Promotion Products")]
+        public IEnumerable<Product> products { get; set; }
 
     }
 
@@ -80,6 +91,15 @@ namespace Assignment_8.Models
         [Display(Name = "Product Name")]
         public string productName { get; set; }
 
+        [Display(Name = "Product Manufacturer")]
+        public string manufacturer { get; set; }
+
+        [Display(Name ="Product Model")]
+        public string model { get; set; }
+
+        [Display(Name ="Product Part#")]
+        public string partNumber { get; set; }
+
         [Display(Name = "Product Price")]
         public double productPrice { get; set; }
 
@@ -89,19 +109,23 @@ namespace Assignment_8.Models
         [Display(Name = "Product Discount")]
         public Promotion productPromo { get; set; }
 
-       public string productImage { get; set; }
-        //public string FilePath { get; set; }
+        [Display(Name ="Product Image")]
+        public string productImage { get; set; }
 
+        [Display(Name ="Product Quantity")]
         public int quantity { get; set; }
-        
+
+        [Display(Name = "Automatic Quantity Reload")]
+        public int reloadValue { get; set; }
+
         [Display(Name = "Product Weight")]
         public double productWeight { get; set; }
 
         [Display(Name = "Product Length")]
         public double productLength { get; set; }
 
-        [Display(Name = "Product Breath")]
-        public double productBreath { get; set; }
+        [Display(Name = "Product Width")]
+        public double productWidth { get; set; }
 
         [Display(Name = "Product Height")]
         public double productHeight { get; set; }

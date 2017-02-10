@@ -54,8 +54,9 @@ namespace Assignment_8.Controllers
             // We want to retain control over fetching related objects
             ds.Configuration.LazyLoadingEnabled = false;
         }
+        /***************************************************************************************************/
         //Manage Category
-       public IEnumerable<Category_vm> CategoryGetAll(){
+        public IEnumerable<Category_vm> CategoryGetAll(){
             var r = ds.Categories;
             return Mapper.Map<IEnumerable<Category_vm>>(r);
         }
@@ -90,6 +91,7 @@ namespace Assignment_8.Controllers
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
 
+        /***************************************************************************************************/
         //Manage Product
         public IEnumerable<Product_vm> ProductGetAll()
         {
@@ -148,6 +150,21 @@ namespace Assignment_8.Controllers
             }
 
         }
+        /***************************************************************************************************/
+        //Manage Promotions
+        public IEnumerable<Promotion_vm> PromotionGetAll()
+        {
+            var all = ds.Promotion;
+
+            return (all == null) ? null : Mapper.Map<IEnumerable<Promotion_vm>>(all);
+        }
+
+        /*public IEnumerable<Product_vm> ProductsWithPromotion()
+        {
+            var allPromo = ds.Product.Where(p => p.productPromo != null);
+
+            return (allPromo == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(allPromo);
+        }*/
         //Track
         /* public IEnumerable<TrackBase> TrackGetAll()
         {

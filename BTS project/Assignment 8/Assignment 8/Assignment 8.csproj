@@ -185,9 +185,15 @@
     <Compile Include="Controllers\Manager.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\Product_vm.cs" />
+    <Compile Include="Controllers\PromotionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702100415242_initial.cs" />
+    <Compile Include="Migrations\201702100415242_initial.Designer.cs">
+      <DependentUpon>201702100415242_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DesignModelClasses.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -278,6 +284,8 @@
     <Content Include="Views\AccountManager\Details.cshtml" />
     <Content Include="Views\AccountManager\Delete.cshtml" />
     <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Promotion\Index.cshtml" />
+    <Content Include="Views\Promotion\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,6 +295,11 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702100415242_initial.resx">
+      <DependentUpon>201702100415242_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
