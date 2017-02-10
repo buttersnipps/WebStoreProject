@@ -1,6 +1,8 @@
 namespace Assignment_8.Migrations
 {
+    using Models;
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -13,7 +15,9 @@ namespace Assignment_8.Migrations
         }
 
         protected override void Seed(Assignment_8.Models.ApplicationDbContext context)
-        {
+        { 
+   
+
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

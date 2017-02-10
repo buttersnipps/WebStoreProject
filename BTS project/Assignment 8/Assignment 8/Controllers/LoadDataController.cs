@@ -51,17 +51,7 @@ namespace Assignment_8.Controllers
                 return Content("could not remove database");
             }
         }
-        public ActionResult LoadCategories()
-        {
-            if(m.LoadCategory())
-            {
-                return RedirectToAction("../Home");
-            }
-            else
-            {
-                return Content("coult not load Category Data");
-            }
-        }
+       
 
     }
 }

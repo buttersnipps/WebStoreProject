@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 // new...
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Assignment_8.Models
 {
@@ -78,11 +79,11 @@ namespace Assignment_8.Models
         [Display(Name = "Product Price")]
         public double productPrice { get; set; }
         [Display(Name = "Product Description")]
-        public string productDescription{ get; set; }
+        public string productDescription { get; set; }
         [Display(Name = "Product Discount")]
         public Promotion productPromo { get; set; }
 
-       public string productImage { get; set; }
+        public string productImage { get; set; }
         //public string FilePath { get; set; }
 
         [Display(Name = "Product Weight")]
@@ -95,21 +96,22 @@ namespace Assignment_8.Models
         public double productHeight { get; set; }
 
         [Required]
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
+
     }
 
     public class Category
     {
+
         public Category()
         {
             Products = new List<Product>();
         }
         [Key]
-        [Display(Name = "Id")]
         public int Id { get; set; }
-        [Display(Name = "Phone Type")]
+
         public string Name { get; set; }
 
-        ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

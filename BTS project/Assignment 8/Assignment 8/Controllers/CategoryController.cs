@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-/*
 namespace Assignment_8.Controllers
 {
     public class CategoryController : Controller
@@ -28,7 +27,48 @@ namespace Assignment_8.Controllers
             return View(new Category_vm());
         }
 
-        
+        [Route("category/{id}/product")]
+        public ActionResult AddProduct(int? id)
+        {
+            var a = manage.CategoryGetById(id.GetValueOrDefault());
+
+            if (a == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                var o = new Product_vm();
+                o.CategoryId = a.Id;
+                o.CategoryName = a.Name;
+
+                return View(o);
+            }
+        }
+
+        [Route("category/{id}/product")]
+        [HttpPost]
+        public ActionResult AddProduct(Product_vm newItem)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(newItem);
+            }
+
+            var addedItem = manage.ProductAdd(newItem);
+
+            if(addedItem == null)
+            {
+                return View(newItem);
+            }
+            else
+            {
+                return RedirectToAction("details", "products", new { id = addedItem.productId });
+            }
+        }
+
+         
+
         // POST: Category/Create
         [HttpPost]
         public ActionResult Create(Category_vm collection)
@@ -45,7 +85,7 @@ namespace Assignment_8.Controllers
                 return View();
             }
         }
-        
+
         // GET: Category/Edit/5
         public ActionResult Edit(int id)
         {
@@ -91,5 +131,3 @@ namespace Assignment_8.Controllers
         }
     }
 }
-
-    */

@@ -1,0 +1,106 @@
+﻿@model Assignment_8.Controllers.Product_vm
+
+@{
+    ViewBag.Title = "Desc";
+}
+
+<h2>Desc</h2>
+
+<div>
+    <h4>Product_vm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.productName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productLenght)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productLenght)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productBreath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productBreath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryList)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryList)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.productId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

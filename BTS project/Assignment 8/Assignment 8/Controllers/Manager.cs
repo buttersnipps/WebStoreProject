@@ -59,14 +59,12 @@ namespace Assignment_8.Controllers
             var r = ds.Categories;
             return Mapper.Map<IEnumerable<Category_vm>>(r);
         }
-        
-        public Category_vm CategoryAdd(Category newItem)
+        public Category_vm CategoryAdd(Category_vm newItem)
         {
             var c = ds.Categories.Add(Mapper.Map<Category>(newItem));
             ds.SaveChanges();
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
-        
         public Category_vm CategoryUpdate(int Id, Category_vm updateItem)
         {
             var c = ds.Categories.Find(Id);
@@ -77,7 +75,8 @@ namespace Assignment_8.Controllers
         }
         public Category_vm CategoryGetById(int Id)
         {
-            var c = ds.Categories.Find(Id);
+
+            var c = ds.Categories.Include("Products").SingleOrDefault(m => m.Id == Id);
 
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
@@ -95,6 +94,7 @@ namespace Assignment_8.Controllers
         //Manage Product
         public IEnumerable<Product_vm> ProductGetAll()
         {
+            ds.Product.Include("Category");
             return Mapper.Map<IEnumerable<Product_vm>>(ds.Product);
         }
 
@@ -106,18 +106,39 @@ namespace Assignment_8.Controllers
             return (o == null) ? null : Mapper.Map<Product_vm>(o);
         }
 
+        public Product_vm ProductGetByIdWithDetail(int id)
+        {
+            var o = ds.Product.Include("Category").SingleOrDefault(m => m.productId == id);
+            return Mapper.Map<Product_vm>(o);
+        }
+       
         public Product_vm ProductAdd(Product_vm newItem)
         {
-            var addedItem = ds.Product.Add(Mapper.Map<Product>(newItem));
-            ds.SaveChanges();
+            var a = ds.Categories.Find(newItem.CategoryId);
+            a = ds.Categories.Find(newItem.CategoryName);
 
-            // If successful, return the added item, mapped to a view model object
-            return (addedItem == null) ? null : Mapper.Map<Product_vm>(addedItem);
+            if(a == null)
+            {
+                return null;
+            }
+            else
+            {
+                var addedItem = ds.Product.Add(Mapper.Map<Product>(newItem));
+                addedItem.Category = a;
+                ds.SaveChanges();
+
+                // If successful, return the added item, mapped to a view model object
+                return (addedItem == null) ? null : Mapper.Map<Product_vm>(addedItem);
+            }
+
         }
 
         public Product_vm ProductEdit(Product_vm newItem )
         {
-            var o = ds.Product.Find(newItem.productId);
+            var o = ds.Product.Include("Category").SingleOrDefault
+                (v => v.productId == newItem.productId);
+
+          //  var o = ds.Product.Find(newItem.productId);
 
             if(o == null)
             {
@@ -151,62 +172,9 @@ namespace Assignment_8.Controllers
 
         }
 
-        public IEnumerable<ProductWithCategory> GetProductWithCategory()
-        {
-            var c = ds.Product.Include("Category").OrderBy(p => p.productId);
+        
 
-            return Mapper.Map<IEnumerable<ProductWithCategory>>(c);
-        }
-
-        public bool LoadCategory()
-        {
-            ds.Categories.Add(new Models.Category
-            {
-                Name =  "I.P Phone"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "Multiline Phone"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "Single Line Phone"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "Powertouch or Vista"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "AT&T"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "Meridian"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "T-7000 Series"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "Communications Unit"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "Polycom"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "Network Communications"
-            });
-            ds.Categories.Add(new Models.Category
-            {
-                Name = "Other"
-            });
-
-            return true;
-        }
+        
         //Track
         /* public IEnumerable<TrackBase> TrackGetAll()
         {

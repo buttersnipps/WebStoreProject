@@ -10,15 +10,15 @@ namespace Assignment_8.Controllers
     {
         private Manager manage = new Manager();
         // GET: Product
-        public ActionResult Index()
+        public ActionResult Al()
         {
             return View(manage.ProductGetAll());
         }
 
-        public ActionResult Details(int? id)
+        public ActionResult Desc(int? id)
         {
             // Attempt to get the matching object
-            var o = manage.ProductGetById(id.GetValueOrDefault());
+            var o = manage.ProductGetByIdWithDetail(id.GetValueOrDefault());
 
             if (o == null)
             {
@@ -31,16 +31,18 @@ namespace Assignment_8.Controllers
             }
         }
         // GET: Product/Create
-        public ActionResult Create()
+        public ActionResult AddProduct()
         {
+            var form = new Product_vm();
+            form.CategoryList = new SelectList(manage.CategoryGetAll(), "Id", "Name");
             // At your option, create and send an object to the view
-            return View();
+            return View(form);
         }
 
         // POST : Product Create 
 
          [HttpPost]
-        public ActionResult Create(Product_vm newItem, HttpPostedFileBase file)
+        public ActionResult AddProduct(Product_vm newItem, HttpPostedFileBase file)
         {
             if (!ModelState.IsValid)
             {

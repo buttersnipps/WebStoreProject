@@ -4,26 +4,25 @@ using System.Linq;
 using System.Web;
 
 using System.ComponentModel.DataAnnotations;
-using Assignment_8.Models;
+using System.Web.Mvc;
 
 namespace Assignment_8.Controllers
 {
-    
     public class Category_vm
     {
         public Category_vm()
         {
-            Products = new List<Product>();
+            Products = new List<Product_vm>();
         }
+
         [Key]
-        [Display(Name = "Id")]
         public int Id { get; set; }
-        [Display(Name = "Phone Type")]
+
         public string Name { get; set; }
 
-        ICollection<Product> Products { get; set; }
+       
+        public IEnumerable<Product_vm> Products { get; set; }
     }
-    
     public class Promotion_vm
     {
         [Key]
@@ -55,20 +54,12 @@ namespace Assignment_8.Controllers
         public double productBreath { get; set; }
         [Display(Name = "Product Height")]
         public double productHeight { get; set; }
-    }
-    public class ProductWithCategory : Product_vm
-    {
-        [Display(Name = "Product Type")]
-        public string ProductCategory { get; set; }
+
+        public int CategoryId{ get; set; }
+        [Display(Name = "Category Name")]
+        public SelectList CategoryList { get; set; }
+        public string CategoryName { get; set; }
     }
 
-    public class CategoryWithPhones : Category
-    {
-        public CategoryWithPhones()
-        {
-            Products = new List<Product>();
-        }
-        public IEnumerable<Product> Products { get; set; }
-    }
 
 }

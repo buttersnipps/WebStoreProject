@@ -66,10 +66,14 @@ namespace Assignment_8.Models
             return new ApplicationDbContext();
         }
 
-       // public System.Data.Entity.DbSet<Assignment_8.Controllers.Category_vm> Category_vm { get; set; }
+        //public System.Data.Entity.DbSet<Assignment_8.Controllers.Category_vm> Category_vm { get; set; }
+
+        //public System.Data.Entity.DbSet<Assignment_8.Controllers.Product_vm> Product_vm { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.ApplicationUserBase> ApplicationUserBases { get; set; }
 
         public System.Data.Entity.DbSet<Assignment_8.Controllers.Product_vm> Product_vm { get; set; }
 
-        public System.Data.Entity.DbSet<Assignment_8.Controllers.ApplicationUserBase> ApplicationUserBases { get; set; }
+        //public System.Data.Entity.DbSet<Assignment_8.Controllers.Product_vm> Product_vm { get; set; }
     }
 }
