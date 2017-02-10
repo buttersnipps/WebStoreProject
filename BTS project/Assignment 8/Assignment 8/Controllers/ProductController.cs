@@ -39,7 +39,7 @@ namespace Assignment_8.Controllers
 
         // POST : Product Create 
 
-         [HttpPost]
+         [HttpPost ValidateInput(false)]
         public ActionResult Create(Product_vm newItem, HttpPostedFileBase file)
         {
             if (!ModelState.IsValid)
@@ -89,7 +89,7 @@ namespace Assignment_8.Controllers
             }
         }
 
-         [HttpPost]
+         [HttpPost ValidateInput(false)]
         public ActionResult Edit(int id, Product_vm newItem, HttpPostedFileBase file)
         {
             var path = "";
