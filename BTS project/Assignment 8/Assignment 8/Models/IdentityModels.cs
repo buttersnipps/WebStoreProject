@@ -37,11 +37,11 @@ namespace Assignment_8.Models
 
         // Add DbSet<TEntity> properties here
         public DbSet<RoleClaim> Role { get; set; }
-        public DbSet<Category>Categories { get; set; }
+        public DbSet<Category>Categorys { get; set; }
 
-        public DbSet<Product> Product { get; set; }
+        public DbSet<Product> Products { get; set; }
 
-        public DbSet<Promotion> Promotion { get; set; }
+        public DbSet<Promotion> Promotions { get; set; }
 
 
 
@@ -73,5 +73,7 @@ namespace Assignment_8.Models
         public System.Data.Entity.DbSet<Assignment_8.Controllers.ApplicationUserBase> ApplicationUserBases { get; set; }
 
         public System.Data.Entity.DbSet<Assignment_8.Controllers.Promotion_vm> Promotion_vm { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionAddForm> PromotionAdds { get; set; }
     }
 }

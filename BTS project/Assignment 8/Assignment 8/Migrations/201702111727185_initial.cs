@@ -21,94 +21,122 @@ namespace Assignment_8.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "dbo.Categories",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                    })
-                .PrimaryKey(t => t.Id);
-            
-            CreateTable(
                 "dbo.Category_vm",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        CategoryId = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.CategoryId);
+            
+            CreateTable(
+                "dbo.Categories",
+                c => new
+                    {
+                        CategoryId = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                    })
+                .PrimaryKey(t => t.CategoryId);
             
             CreateTable(
                 "dbo.Products",
                 c => new
                     {
-                        productId = c.Int(nullable: false, identity: true),
-                        productName = c.String(),
-                        manufacturer = c.String(),
-                        model = c.String(),
-                        partNumber = c.String(),
-                        productPrice = c.Double(nullable: false),
-                        productDescription = c.String(),
-                        productImage = c.String(),
-                        quantity = c.Int(nullable: false),
-                        reloadValue = c.Int(nullable: false),
-                        productWeight = c.Double(nullable: false),
-                        productLength = c.Double(nullable: false),
-                        productWidth = c.Double(nullable: false),
-                        productHeight = c.Double(nullable: false),
-                        productPromo_promotionId = c.Int(),
+                        ProductId = c.Int(nullable: false, identity: true),
+                        ProductName = c.String(),
+                        ProductPrice = c.Double(nullable: false),
+                        ProductDescription = c.String(),
+                        ProductImage = c.String(),
+                        Quantity = c.Int(nullable: false),
+                        ReloadValue = c.Int(nullable: false),
+                        ProductWeight = c.Double(nullable: false),
+                        ProductLength = c.Double(nullable: false),
+                        ProductWidth = c.Double(nullable: false),
+                        ProductHeight = c.Double(nullable: false),
+                        Condition_ConditionId = c.Int(),
+                        Manufacture_ManufactureId = c.Int(),
+                        Promotion_PromotionId = c.Int(),
                     })
-                .PrimaryKey(t => t.productId)
-                .ForeignKey("dbo.Promotions", t => t.productPromo_promotionId)
-                .Index(t => t.productPromo_promotionId);
+                .PrimaryKey(t => t.ProductId)
+                .ForeignKey("dbo.Conditions", t => t.Condition_ConditionId)
+                .ForeignKey("dbo.Manufactures", t => t.Manufacture_ManufactureId)
+                .ForeignKey("dbo.Promotions", t => t.Promotion_PromotionId)
+                .Index(t => t.Condition_ConditionId)
+                .Index(t => t.Manufacture_ManufactureId)
+                .Index(t => t.Promotion_PromotionId);
             
             CreateTable(
-                "dbo.Promotions",
+                "dbo.Conditions",
                 c => new
                     {
-                        promotionId = c.Int(nullable: false, identity: true),
-                        promotionName = c.String(),
-                        percentageOff = c.Double(nullable: false),
-                        BeginDate = c.DateTime(nullable: false),
-                        EndDate = c.DateTime(nullable: false),
+                        ConditionId = c.Int(nullable: false, identity: true),
+                        Quality = c.String(),
                     })
-                .PrimaryKey(t => t.promotionId);
+                .PrimaryKey(t => t.ConditionId);
+            
+            CreateTable(
+                "dbo.Manufactures",
+                c => new
+                    {
+                        ManufactureId = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                    })
+                .PrimaryKey(t => t.ManufactureId);
+            
+            CreateTable(
+                "dbo.Models",
+                c => new
+                    {
+                        ModelId = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                        PartNumber = c.String(),
+                        Manufacture_ManufactureId = c.Int(),
+                    })
+                .PrimaryKey(t => t.ModelId)
+                .ForeignKey("dbo.Manufactures", t => t.Manufacture_ManufactureId)
+                .Index(t => t.Manufacture_ManufactureId);
             
             CreateTable(
                 "dbo.Product_vm",
                 c => new
                     {
-                        productId = c.Int(nullable: false, identity: true),
-                        manufacturer = c.String(),
-                        model = c.String(),
-                        productName = c.String(),
-                        partNumber = c.String(),
-                        productPrice = c.Double(nullable: false),
-                        productDescription = c.String(),
-                        quantity = c.Int(nullable: false),
-                        reloadValue = c.Int(nullable: false),
-                        productImage = c.String(),
-                        productWeight = c.Double(nullable: false),
-                        productLength = c.Double(nullable: false),
-                        productWidth = c.Double(nullable: false),
-                        productHeight = c.Double(nullable: false),
-                        productPromo_promotionId = c.Int(),
+                        ProductId = c.Int(nullable: false, identity: true),
+                        ProductName = c.String(),
+                        ProductPrice = c.Double(nullable: false),
+                        ProductDescription = c.String(),
+                        Quantity = c.Int(nullable: false),
+                        ReloadValue = c.Int(nullable: false),
+                        ProductImage = c.String(),
+                        ProductWeight = c.Double(nullable: false),
+                        ProductLength = c.Double(nullable: false),
+                        ProductWidth = c.Double(nullable: false),
+                        ProductHeight = c.Double(nullable: false),
                     })
-                .PrimaryKey(t => t.productId)
-                .ForeignKey("dbo.Promotion_vm", t => t.productPromo_promotionId)
-                .Index(t => t.productPromo_promotionId);
+                .PrimaryKey(t => t.ProductId);
             
             CreateTable(
                 "dbo.Promotion_vm",
                 c => new
                     {
-                        promotionId = c.Int(nullable: false, identity: true),
-                        percentageOff = c.Double(nullable: false),
-                        promotionName = c.String(),
+                        PromotionId = c.Int(nullable: false, identity: true),
+                        PercentageOff = c.Double(nullable: false),
+                        PromotionName = c.String(),
                         BeginDate = c.DateTime(nullable: false),
                         EndDate = c.DateTime(nullable: false),
                     })
-                .PrimaryKey(t => t.promotionId);
+                .PrimaryKey(t => t.PromotionId);
+            
+            CreateTable(
+                "dbo.Promotions",
+                c => new
+                    {
+                        PromotionId = c.Int(nullable: false, identity: true),
+                        PromotionName = c.String(),
+                        PercentageOff = c.Double(nullable: false),
+                        BeginDate = c.DateTime(nullable: false),
+                        EndDate = c.DateTime(nullable: false),
+                    })
+                .PrimaryKey(t => t.PromotionId);
             
             CreateTable(
                 "dbo.RoleClaims",
@@ -162,14 +190,14 @@ namespace Assignment_8.Migrations
                         AccessFailedCount = c.Int(nullable: false),
                         UserName = c.String(nullable: false, maxLength: 256),
                         address_AddressId = c.Int(),
-                        gender_Id = c.Int(),
+                        gender_GenderId = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Addresses", t => t.address_AddressId)
-                .ForeignKey("dbo.Genders", t => t.gender_Id)
+                .ForeignKey("dbo.Genders", t => t.gender_GenderId)
                 .Index(t => t.UserName, unique: true, name: "UserNameIndex")
                 .Index(t => t.address_AddressId)
-                .Index(t => t.gender_Id);
+                .Index(t => t.gender_GenderId);
             
             CreateTable(
                 "dbo.Addresses",
@@ -192,16 +220,19 @@ namespace Assignment_8.Migrations
                 c => new
                     {
                         CityId = c.Int(nullable: false, identity: true),
-                        CityName = c.String(),
+                        Name = c.String(),
+                        Country_CountryId = c.Int(),
                     })
-                .PrimaryKey(t => t.CityId);
+                .PrimaryKey(t => t.CityId)
+                .ForeignKey("dbo.Countries", t => t.Country_CountryId)
+                .Index(t => t.Country_CountryId);
             
             CreateTable(
                 "dbo.Countries",
                 c => new
                     {
                         CountryId = c.Int(nullable: false, identity: true),
-                        CountryName = c.String(),
+                        Name = c.String(),
                     })
                 .PrimaryKey(t => t.CountryId);
             
@@ -222,10 +253,10 @@ namespace Assignment_8.Migrations
                 "dbo.Genders",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(nullable: false, maxLength: 100),
+                        GenderId = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.GenderId);
             
             CreateTable(
                 "dbo.AspNetUserLogins",
@@ -239,32 +270,56 @@ namespace Assignment_8.Migrations
                 .ForeignKey("dbo.AspNetUsers", t => t.UserId)
                 .Index(t => t.UserId);
             
+            CreateTable(
+                "dbo.ProductCategories",
+                c => new
+                    {
+                        Product_ProductId = c.Int(nullable: false),
+                        Category_CategoryId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => new { t.Product_ProductId, t.Category_CategoryId })
+                .ForeignKey("dbo.Products", t => t.Product_ProductId, cascadeDelete: true)
+                .ForeignKey("dbo.Categories", t => t.Category_CategoryId, cascadeDelete: true)
+                .Index(t => t.Product_ProductId)
+                .Index(t => t.Category_CategoryId);
+            
         }
         
         public override void Down()
         {
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
-            DropForeignKey("dbo.AspNetUsers", "gender_Id", "dbo.Genders");
+            DropForeignKey("dbo.AspNetUsers", "gender_GenderId", "dbo.Genders");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUsers", "address_AddressId", "dbo.Addresses");
             DropForeignKey("dbo.Addresses", "Country_CountryId", "dbo.Countries");
             DropForeignKey("dbo.Addresses", "City_CityId", "dbo.Cities");
+            DropForeignKey("dbo.Cities", "Country_CountryId", "dbo.Countries");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
-            DropForeignKey("dbo.Product_vm", "productPromo_promotionId", "dbo.Promotion_vm");
-            DropForeignKey("dbo.Products", "productPromo_promotionId", "dbo.Promotions");
+            DropForeignKey("dbo.Products", "Promotion_PromotionId", "dbo.Promotions");
+            DropForeignKey("dbo.Products", "Manufacture_ManufactureId", "dbo.Manufactures");
+            DropForeignKey("dbo.Models", "Manufacture_ManufactureId", "dbo.Manufactures");
+            DropForeignKey("dbo.Products", "Condition_ConditionId", "dbo.Conditions");
+            DropForeignKey("dbo.ProductCategories", "Category_CategoryId", "dbo.Categories");
+            DropForeignKey("dbo.ProductCategories", "Product_ProductId", "dbo.Products");
+            DropIndex("dbo.ProductCategories", new[] { "Category_CategoryId" });
+            DropIndex("dbo.ProductCategories", new[] { "Product_ProductId" });
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
+            DropIndex("dbo.Cities", new[] { "Country_CountryId" });
             DropIndex("dbo.Addresses", new[] { "Country_CountryId" });
             DropIndex("dbo.Addresses", new[] { "City_CityId" });
-            DropIndex("dbo.AspNetUsers", new[] { "gender_Id" });
+            DropIndex("dbo.AspNetUsers", new[] { "gender_GenderId" });
             DropIndex("dbo.AspNetUsers", new[] { "address_AddressId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
-            DropIndex("dbo.Product_vm", new[] { "productPromo_promotionId" });
-            DropIndex("dbo.Products", new[] { "productPromo_promotionId" });
+            DropIndex("dbo.Models", new[] { "Manufacture_ManufactureId" });
+            DropIndex("dbo.Products", new[] { "Promotion_PromotionId" });
+            DropIndex("dbo.Products", new[] { "Manufacture_ManufactureId" });
+            DropIndex("dbo.Products", new[] { "Condition_ConditionId" });
+            DropTable("dbo.ProductCategories");
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.Genders");
             DropTable("dbo.AspNetUserClaims");
@@ -275,12 +330,15 @@ namespace Assignment_8.Migrations
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.RoleClaims");
+            DropTable("dbo.Promotions");
             DropTable("dbo.Promotion_vm");
             DropTable("dbo.Product_vm");
-            DropTable("dbo.Promotions");
+            DropTable("dbo.Models");
+            DropTable("dbo.Manufactures");
+            DropTable("dbo.Conditions");
             DropTable("dbo.Products");
-            DropTable("dbo.Category_vm");
             DropTable("dbo.Categories");
+            DropTable("dbo.Category_vm");
             DropTable("dbo.ApplicationUserBases");
         }
     }

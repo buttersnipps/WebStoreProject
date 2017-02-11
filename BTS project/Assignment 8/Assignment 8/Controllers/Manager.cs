@@ -57,18 +57,18 @@ namespace Assignment_8.Controllers
         /***************************************************************************************************/
         //Manage Category
         public IEnumerable<Category_vm> CategoryGetAll(){
-            var r = ds.Categories;
+            var r = ds.Categorys;
             return Mapper.Map<IEnumerable<Category_vm>>(r);
         }
         public Category_vm CategoryAdd(Category_vm newItem)
         {
-            var c = ds.Categories.Add(Mapper.Map<Category>(newItem));
+            var c = ds.Categorys.Add(Mapper.Map<Category>(newItem));
             ds.SaveChanges();
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
         public Category_vm CategoryUpdate(int Id, Category_vm updateItem)
         {
-            var c = ds.Categories.Find(Id);
+            var c = ds.Categorys.Find(Id);
             c.Name = updateItem.Name;
             ds.SaveChanges();
 
@@ -76,16 +76,16 @@ namespace Assignment_8.Controllers
         }
         public Category_vm CategoryGetById(int Id)
         {
-            var c = ds.Categories.Find(Id);
+            var c = ds.Categorys.Find(Id);
 
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
         public Category_vm CategoryDelete(int Id)
         {
-            var c = ds.Categories.Find(Id);
+            var c = ds.Categorys.Find(Id);
             if (c != null)
             {
-                ds.Categories.Remove(c);
+                ds.Categorys.Remove(c);
                 ds.SaveChanges();
             }
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
@@ -95,12 +95,12 @@ namespace Assignment_8.Controllers
         //Manage Product
         public IEnumerable<Product_vm> ProductGetAll()
         {
-            return Mapper.Map<IEnumerable<Product_vm>>(ds.Product);
+            return Mapper.Map<IEnumerable<Product_vm>>(ds.Products);
         }
 
         public Product_vm ProductGetById(int id)
         {
-            var o = ds.Product.Find(id);
+            var o = ds.Products.Find(id);
 
             // Return the result, or null if not found
             return (o == null) ? null : Mapper.Map<Product_vm>(o);
@@ -108,7 +108,7 @@ namespace Assignment_8.Controllers
 
         public Product_vm ProductAdd(Product_vm newItem)
         {
-            var addedItem = ds.Product.Add(Mapper.Map<Product>(newItem));
+            var addedItem = ds.Products.Add(Mapper.Map<Product>(newItem));
             ds.SaveChanges();
 
             // If successful, return the added item, mapped to a view model object
@@ -117,7 +117,7 @@ namespace Assignment_8.Controllers
 
         public Product_vm ProductEdit(Product_vm newItem )
         {
-            var o = ds.Product.Find(newItem.productId);
+            var o = ds.Products.Find(newItem.ProductId);
 
             if(o == null)
             {
@@ -134,7 +134,7 @@ namespace Assignment_8.Controllers
 
         public bool ProductDelete(int id)
         {
-            var itemToDelete = ds.Product.Find(id);
+            var itemToDelete = ds.Products.Find(id);
 
             if (itemToDelete == null)
             {
@@ -143,7 +143,7 @@ namespace Assignment_8.Controllers
             else
             {
                 // Remove the object
-                ds.Product.Remove(itemToDelete);
+                ds.Products.Remove(itemToDelete);
                 ds.SaveChanges();
 
                 return true;
@@ -154,7 +154,7 @@ namespace Assignment_8.Controllers
         //Manage Promotions
         public IEnumerable<Promotion_vm> PromotionGetAll()
         {
-            var all = ds.Promotion;
+            var all = ds.Promotions;
 
             return (all == null) ? null : Mapper.Map<IEnumerable<Promotion_vm>>(all);
         }

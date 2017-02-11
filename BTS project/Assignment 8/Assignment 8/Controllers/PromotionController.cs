@@ -24,7 +24,8 @@ namespace Assignment_8.Controllers
         // GET: Promotion/Create
         public ActionResult Create()
         {
-            var form = new Promotion_vm();
+            var form = new PromotionAddForm();
+            form.ProductList = new SelectList(manager.ProductGetAll(), "ProductId", "ProductName");
             return View(form);
         }
 

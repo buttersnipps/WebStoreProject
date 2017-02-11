@@ -6,10 +6,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.promotionName)
+            @Html.DisplayNameFor(model => model.PromotionName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.percentageOff)
+            @Html.DisplayNameFor(model => model.PercentageOff)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.BeginDate)
@@ -23,10 +23,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.promotionName)
+            @Html.DisplayFor(modelItem => item.PromotionName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.percentageOff)
+            @Html.DisplayFor(modelItem => item.PercentageOff)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.BeginDate)
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.EndDate)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.promotionId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.promotionId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.promotionId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.PromotionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PromotionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PromotionId })
         </td>
     </tr>
 }

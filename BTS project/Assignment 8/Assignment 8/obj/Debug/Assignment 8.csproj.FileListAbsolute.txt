@@ -1075,3 +1075,7 @@ D:\Github\LogIn\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.category_vmupdate.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.promotionAddupdate.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.promotion_vmupdate3.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.promotion_vmupdate4.resources

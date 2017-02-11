@@ -60,7 +60,7 @@ namespace Assignment_8.Controllers
                     {
                         path = Path.Combine(Server.MapPath("~/Content/Image"), file.FileName);
                         file.SaveAs(path);
-                        newItem.productImage = file.FileName;
+                        newItem.ProductImage = file.FileName;
                     }
                 }
             }
@@ -71,7 +71,7 @@ namespace Assignment_8.Controllers
             }
             else
             {
-                return RedirectToAction("details", new { id = addedItem.productId });
+                return RedirectToAction("details", new { id = addedItem.ProductId });
             }
         }
 
@@ -93,7 +93,7 @@ namespace Assignment_8.Controllers
         public ActionResult Edit(int id, Product_vm newItem, HttpPostedFileBase file)
         {
             var path = "";
-            var product = manage.ProductGetById(newItem.productId);
+            var product = manage.ProductGetById(newItem.ProductId);
             string fullPath = "";
             if (file != null)
             {
@@ -105,14 +105,14 @@ namespace Assignment_8.Controllers
                         Path.GetExtension(file.FileName).ToLower() == ".gif" ||
                         Path.GetExtension(file.FileName).ToLower() == ".jpeg")
                     {
-                        fullPath = Request.MapPath("~/Content/Image/" + product.productImage);
+                        fullPath = Request.MapPath("~/Content/Image/" + product.ProductImage);
                         if (System.IO.File.Exists(fullPath))
                         {
                             System.IO.File.Delete(fullPath);
                         }
                         path = Path.Combine(Server.MapPath("~/Content/Image"), file.FileName);
                         file.SaveAs(path);
-                        newItem.productImage = file.FileName;
+                        newItem.ProductImage = file.FileName;
                     }
                 }
             }
@@ -120,10 +120,10 @@ namespace Assignment_8.Controllers
             if (!ModelState.IsValid)
             {
                
-                return RedirectToAction("edit", new { id = newItem.productId });
+                return RedirectToAction("edit", new { id = newItem.ProductId });
             }
 
-            if (id != newItem.productId)
+            if (id != newItem.ProductId)
             {
            
                 return RedirectToAction("index");
@@ -135,12 +135,12 @@ namespace Assignment_8.Controllers
             if (editedItem == null)
             {
               
-                return RedirectToAction("edit", new { id = newItem.productId });
+                return RedirectToAction("edit", new { id = newItem.ProductId });
             }
             else
             {
                
-                return RedirectToAction("details", new { id = newItem.productId });
+                return RedirectToAction("details", new { id = newItem.ProductId });
             }
         }
 
