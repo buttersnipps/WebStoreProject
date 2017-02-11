@@ -1336,5 +1336,5 @@ E:\BTS\orig\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.
 E:\BTS\orig\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
 E:\BTS\orig\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
 E:\BTS\orig\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
-E:\BTS\orig\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.w.resources
+E:\BTS\orig\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.temp.resources
 E:\BTS\orig\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache

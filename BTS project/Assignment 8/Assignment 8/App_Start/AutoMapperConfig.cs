@@ -28,7 +28,7 @@ namespace Assignment_8
             //Product Mappers
             Mapper.CreateMap<Models.Product, Controllers.Product_vm>();
             Mapper.CreateMap<Controllers.Product_vm, Models.Product>();
-            
+           
 
             Mapper.CreateMap<Controllers.Promotion_vm, Models.Promotion>();
             Mapper.CreateMap<Models.Promotion, Controllers.Promotion_vm>();

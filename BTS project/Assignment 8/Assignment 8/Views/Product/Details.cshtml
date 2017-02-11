@@ -1,5 +1,11 @@
 ﻿@model Assignment_8.Controllers.Product_vm
 
+@{
+    ViewBag.Title = "Desc";
+}
+
+<h2>Desc</h2>
+
 <div>
     <h4>Product_vm</h4>
     <hr />
@@ -66,6 +72,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.productHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
         </dd>
 
     </dl>

@@ -115,7 +115,6 @@ namespace Assignment_8.Controllers
         public Product_vm ProductAdd(Product_vm newItem)
         {
             var a = ds.Categories.Find(newItem.CategoryId);
-            a = ds.Categories.Find(newItem.CategoryName);
 
             if(a == null)
             {
@@ -135,9 +134,8 @@ namespace Assignment_8.Controllers
 
         public Product_vm ProductEdit(Product_vm newItem )
         {
-            var o = ds.Product.Include("Category").SingleOrDefault
-                (v => v.productId == newItem.productId);
-
+            var o = ds.Product.Include("Category")
+                .SingleOrDefault(v => v.productId == newItem.productId);
           //  var o = ds.Product.Find(newItem.productId);
 
             if(o == null)

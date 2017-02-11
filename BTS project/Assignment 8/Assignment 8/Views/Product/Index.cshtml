@@ -29,6 +29,9 @@
         <th>
             @Html.DisplayNameFor(model => model.productHeight)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
        
         <th></th>
     </tr>
@@ -59,13 +62,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.productHeight)
         </td>
-        <dt>
-            @Html.DisplayNameFor(model => model.CategoryName)
-        </dt>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryName)
+        </td>
 
-        <dd>
-            @Html.DisplayFor(model => model.CategoryName)
-        </dd>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |
             @Html.ActionLink("Details", "Details", new { id=item.productId }) |

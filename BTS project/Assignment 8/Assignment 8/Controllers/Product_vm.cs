@@ -54,11 +54,13 @@ namespace Assignment_8.Controllers
         public double productBreath { get; set; }
         [Display(Name = "Product Height")]
         public double productHeight { get; set; }
+        public int CategoryId { get; set; }
 
-        public int CategoryId{ get; set; }
         [Display(Name = "Category Name")]
         public SelectList CategoryList { get; set; }
         public string CategoryName { get; set; }
+
+
     }
 
 

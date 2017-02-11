@@ -188,9 +188,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702100058542_w.cs" />
-    <Compile Include="Migrations\201702100058542_w.Designer.cs">
-      <DependentUpon>201702100058542_w.cs</DependentUpon>
+    <Compile Include="Migrations\201702110532490_temp.cs" />
+    <Compile Include="Migrations\201702110532490_temp.Designer.cs">
+      <DependentUpon>201702110532490_temp.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -277,9 +277,7 @@
     <Content Include="Views\LoadData\RemoveDatabase.cshtml" />
     <Content Include="Views\LoadData\Remove.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\Product\Delete.cshtml" />
-    <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\AccountManager\Index.cshtml" />
     <Content Include="Views\AccountManager\Details.cshtml" />
     <Content Include="Views\AccountManager\Delete.cshtml" />
@@ -290,9 +288,8 @@
     <Content Include="Views\Category\Details.cshtml" />
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
-    <Content Include="Views\Category\AddProduct.cshtml" />
-    <Content Include="Views\Product\AddProduct.cshtml" />
-    <Content Include="Views\Product\Desc.cshtml" />
+    <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -303,8 +300,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702100058542_w.resx">
-      <DependentUpon>201702100058542_w.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702110532490_temp.resx">
+      <DependentUpon>201702110532490_temp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
