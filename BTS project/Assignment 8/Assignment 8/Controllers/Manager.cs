@@ -52,7 +52,7 @@ namespace Assignment_8.Controllers
 
             // Also, turn off lazy loading...
             // We want to retain control over fetching related objects
-            ds.Configuration.LazyLoadingEnabled = false;
+            //ds.Configuration.LazyLoadingEnabled = false;
         }
         /***************************************************************************************************/
         //Manage Category
@@ -157,6 +157,22 @@ namespace Assignment_8.Controllers
             var all = ds.Promotions;
 
             return (all == null) ? null : Mapper.Map<IEnumerable<Promotion_vm>>(all);
+        }
+
+        public Promotion_vm PromotionAdd(Promotion_vm newItem, ICollection<string> productNames)
+        {
+            ds.Promotions.Add(Mapper.Map<Promotion>(newItem));
+            newItem.PercentageOff = newItem.PercentageOff / 100;
+            ds.SaveChanges();
+            var add = ds.Promotions.Find(newItem.PromotionName);
+            foreach (var item in productNames)
+            {
+               var product = ds.Products.Single(temp => temp.ProductName == item);
+               // product.Promotions.PromotionId = add.PromotionId;
+                //add.Products.Add(product);
+            }
+            ds.SaveChanges();
+            return (add == null) ? null : Mapper.Map<Promotion_vm>(add);
         }
 
         /*public IEnumerable<Product_vm> ProductsWithPromotion()

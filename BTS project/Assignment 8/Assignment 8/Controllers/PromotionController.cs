@@ -24,6 +24,7 @@ namespace Assignment_8.Controllers
         // GET: Promotion/Create
         public ActionResult Create()
         {
+            var temp = new Promotion_vm();
             var form = new PromotionAddForm();
             form.ProductList = new SelectList(manager.ProductGetAll(), "ProductId", "ProductName");
             return View(form);
@@ -31,17 +32,30 @@ namespace Assignment_8.Controllers
 
         // POST: Promotion/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Promotion_vm newItem, FormCollection collection)
         {
             try
             {
-                // TODO: Add insert logic here
+                collection.Remove("__RequestVerificationToken");
+                collection.Remove("PercentageOff");
+                collection.Remove("PromotionName");
+                collection.Remove("BeginDate");
+                collection.Remove("EndDate");
 
+                ICollection<string> productNames = new List<string>();
+                foreach(var key in collection.AllKeys)
+                {
+                    productNames.Add(collection[key]);
+                    collection.Remove(collection[key]);
+                }
+                var a = manager.PromotionAdd(newItem, productNames);
                 return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                var form = new PromotionAddForm();
+                form.ProductList = new SelectList(manager.ProductGetAll(), "ProductId", "ProductName");
+                return View(form);
             }
         }
 

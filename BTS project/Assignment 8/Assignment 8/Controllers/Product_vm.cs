@@ -23,6 +23,8 @@ namespace Assignment_8.Controllers
         [Display(Name = "Description")]
         public string ProductDescription { get; set; }
 
+        public Promotion_vm PromotionId { get; set; }
+
         [Display(Name = "Quantity")]
         public int Quantity { get; set; }
 

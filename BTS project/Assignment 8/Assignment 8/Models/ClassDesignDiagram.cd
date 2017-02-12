@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Assignment_8.Models.Promotion">
-    <Position X="17.5" Y="1.25" Width="1.5" />
+    <Position X="17.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAIAAAAAAAAgAAAAAAAAAAEAAQAAAAQ=</HashCode>
       <FileName>Models\Promotion.cs</FileName>
@@ -67,7 +67,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Assignment_8.Models.Category">
-    <Position X="13.5" Y="7" Width="1.5" />
+    <Position X="10.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAQAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Models\Category.cs</FileName>
@@ -77,15 +77,14 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Assignment_8.Models.Product">
-    <Position X="12" Y="1.5" Width="1.5" />
+    <Position X="12.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAgAAgEABACAAAAAABAAgAABAAAAAAAEAAAAgAAICQA=</HashCode>
+      <HashCode>EAAAAgEABAAAAAAAABAAgAABAAAAAAAEAAAAggAMCQA=</HashCode>
       <FileName>Models\Product.cs</FileName>
       <NewMemberFileName>Models\DesignModelClasses.cs</NewMemberFileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Manufacture" />
-      <Property Name="Condition" />
+      <Property Name="ConditionId" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Categorys" />

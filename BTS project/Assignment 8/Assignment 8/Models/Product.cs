@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,6 +9,7 @@ namespace Assignment_8.Models
 {
     public class Product
     {
+        [Key]
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public double ProductPrice { get; set; }
@@ -20,7 +22,9 @@ namespace Assignment_8.Models
         public double ProductWidth { get; set; }
         public double ProductHeight { get; set; }
         public ICollection<Category> Categorys { get; set; }
-        public Manufacture Manufacture { get; set; }
-        public Condition Condition { get; set; }
+        public Manufacture ManufactureId { get; set; }
+        public Condition ConditionId { get; set; }
+        //public virtual Promotion Promotions { get; set; }
+   
     }
 }

@@ -191,25 +191,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702111727185_initial.cs" />
-    <Compile Include="Migrations\201702111727185_initial.Designer.cs">
-      <DependentUpon>201702111727185_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201702120236260_initial.cs" />
+    <Compile Include="Migrations\201702120236260_initial.Designer.cs">
+      <DependentUpon>201702120236260_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702111731364_category_vm-update.cs" />
-    <Compile Include="Migrations\201702111731364_category_vm-update.Designer.cs">
-      <DependentUpon>201702111731364_category_vm-update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702111736383_promotionAdd-update.cs" />
-    <Compile Include="Migrations\201702111736383_promotionAdd-update.Designer.cs">
-      <DependentUpon>201702111736383_promotionAdd-update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702111808594_promotion_vm-update3.cs" />
-    <Compile Include="Migrations\201702111808594_promotion_vm-update3.Designer.cs">
-      <DependentUpon>201702111808594_promotion_vm-update3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702111826320_promotion_vm-update4.cs" />
-    <Compile Include="Migrations\201702111826320_promotion_vm-update4.Designer.cs">
-      <DependentUpon>201702111826320_promotion_vm-update4.cs</DependentUpon>
+    <Compile Include="Migrations\201702120241401_initial2.cs" />
+    <Compile Include="Migrations\201702120241401_initial2.Designer.cs">
+      <DependentUpon>201702120241401_initial2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -326,20 +314,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702111727185_initial.resx">
-      <DependentUpon>201702111727185_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702120236260_initial.resx">
+      <DependentUpon>201702120236260_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702111731364_category_vm-update.resx">
-      <DependentUpon>201702111731364_category_vm-update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702111736383_promotionAdd-update.resx">
-      <DependentUpon>201702111736383_promotionAdd-update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702111808594_promotion_vm-update3.resx">
-      <DependentUpon>201702111808594_promotion_vm-update3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702111826320_promotion_vm-update4.resx">
-      <DependentUpon>201702111826320_promotion_vm-update4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702120241401_initial2.resx">
+      <DependentUpon>201702120241401_initial2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

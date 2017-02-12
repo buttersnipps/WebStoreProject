@@ -11,9 +11,9 @@ namespace Assignment_8.Controllers
 {
     public class Promotion_vm
     {
-        Manager manager = new Manager();
         public Promotion_vm()
         {
+            Products = new List<Product_vm>();
         }
 
         [Key]
@@ -32,10 +32,28 @@ namespace Assignment_8.Controllers
         [Display(Name = "End Date")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime EndDate { get; set; }
+
+        public IEnumerable<Product_vm> Products { get; set; }
     }
 
-    public class PromotionAddForm : Promotion_vm
+    public class PromotionAddForm 
     {
+        [Key]
+        public int PromotionId { get; set; }
+
+        [Display(Name = "Percentage Off")]
+        public double PercentageOff { get; set; }
+
+        [Display(Name = "Sale")]
+        public string PromotionName { get; set; }
+
+        [Display(Name = "Start Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime BeginDate { get; set; }
+
+        [Display(Name = "End Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime EndDate { get; set; }
 
         public SelectList ProductList { get; set; }
     }
