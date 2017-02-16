@@ -1076,3 +1076,6 @@ C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignme
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial2.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.associationfix.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.idFix.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.product_vmupdate.resources

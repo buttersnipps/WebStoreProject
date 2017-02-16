@@ -1,0 +1,44 @@
+﻿@model Assignment_8.Controllers.Promotion_vm
+
+<div>
+    <h4>Promotion_vm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentageOff)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PercentageOff)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PromotionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PromotionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeginDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeginDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PromotionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

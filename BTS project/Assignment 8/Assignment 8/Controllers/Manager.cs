@@ -95,7 +95,8 @@ namespace Assignment_8.Controllers
         //Manage Product
         public IEnumerable<Product_vm> ProductGetAll()
         {
-            return Mapper.Map<IEnumerable<Product_vm>>(ds.Products);
+            ///HEREEE
+            return Mapper.Map<IEnumerable<Product_vm>>(ds.Products.Include("Promotion"));
         }
 
         public Product_vm ProductGetById(int id)
@@ -161,20 +162,32 @@ namespace Assignment_8.Controllers
 
         public Promotion_vm PromotionAdd(Promotion_vm newItem, ICollection<string> productNames)
         {
-            ds.Promotions.Add(Mapper.Map<Promotion>(newItem));
             newItem.PercentageOff = newItem.PercentageOff / 100;
-            ds.SaveChanges();
-            var add = ds.Promotions.Find(newItem.PromotionName);
             foreach (var item in productNames)
             {
                var product = ds.Products.Single(temp => temp.ProductName == item);
-               // product.Promotions.PromotionId = add.PromotionId;
-                //add.Products.Add(product);
+                product.PromotionId = newItem.PromotionId;
             }
+            ds.Promotions.Add(Mapper.Map<Promotion>(newItem));
             ds.SaveChanges();
-            return (add == null) ? null : Mapper.Map<Promotion_vm>(add);
+            return (newItem == null) ? null : Mapper.Map<Promotion_vm>(newItem);
         }
 
+
+        public Promotion_vm PromotionGetOne(int id)
+        {
+            var promo = ds.Promotions.Find(id);
+
+            return (promo == null) ? null : Mapper.Map<Promotion_vm>(promo);
+        }
+
+        public IEnumerable<Product_vm> ProductWithPromotion(int id)
+        {
+            var promo = ds.Promotions.Find(id);
+            var product = ds.Products.AsEnumerable().Where(tmp => tmp.Promotion == promo);
+
+            return (product == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(product);
+        }
         /*public IEnumerable<Product_vm> ProductsWithPromotion()
         {
             var allPromo = ds.Product.Where(p => p.productPromo != null);

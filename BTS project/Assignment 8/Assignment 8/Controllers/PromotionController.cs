@@ -18,7 +18,9 @@ namespace Assignment_8.Controllers
         // GET: Promotion/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var promo = manager.PromotionGetOne(id);
+            promo.Products = manager.ProductWithPromotion(id);
+            return View(promo);
         }
 
         // GET: Promotion/Create

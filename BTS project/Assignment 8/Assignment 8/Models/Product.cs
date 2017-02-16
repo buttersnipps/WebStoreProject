@@ -24,7 +24,9 @@ namespace Assignment_8.Models
         public ICollection<Category> Categorys { get; set; }
         public Manufacture ManufactureId { get; set; }
         public Condition ConditionId { get; set; }
-        //public virtual Promotion Promotions { get; set; }
+
+        public int PromotionId { get; set; }
+        public virtual Promotion Promotion { get; set; }
    
     }
 }
