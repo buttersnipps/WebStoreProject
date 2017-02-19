@@ -6,6 +6,7 @@
     <title>@ViewBag.Title Buy Nortel Phones</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
     @{
         var userAccount = new Assignment_8.Controllers.UserAccount(User as System.Security.Claims.ClaimsPrincipal);
     }
@@ -46,8 +47,6 @@
             <p>&copy; @DateTime.Now.Year - Buy Nortel Phones</p>
         </footer>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

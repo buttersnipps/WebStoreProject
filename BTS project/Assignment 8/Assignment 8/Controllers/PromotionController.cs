@@ -25,23 +25,26 @@ namespace Assignment_8.Controllers
         public ActionResult Create()
         {
             var form = new PromotionAddForm();
-            form.ProductList = new SelectList(manager.ProductGetAll(), "ProductId", "ProductName");
+            form.Products = manager.ProductsWithoutPromotions();
+            form.BeginDate = DateTime.Today;
+            form.EndDate = DateTime.Today;
             return View(form);
         }
 
         // POST: Promotion/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Promotion_vm newItem)
         {
             try
             {
-                // TODO: Add insert logic here
-
+                var a = manager.PromotionAdd(newItem);
                 return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                var form = new PromotionAddForm();
+                form.Products = manager.ProductsWithoutPromotions();
+                return View(form);
             }
         }
 

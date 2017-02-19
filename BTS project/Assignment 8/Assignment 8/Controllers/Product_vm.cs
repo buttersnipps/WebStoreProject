@@ -10,6 +10,10 @@ namespace Assignment_8.Controllers
 {
     public class Product_vm
     {
+        public Product_vm()
+        {
+            Promotions = new List<Promotion_vm>();
+        }
         [Key]
         public int ProductId { get; set; }
 
@@ -43,5 +47,10 @@ namespace Assignment_8.Controllers
 
         [Display(Name = "H")]
         public double ProductHeight { get; set; }
+
+        //Association
+        public int PromotionId { get; set; }
+        public Promotion_vm Promotion { get; set; }
+        public List<Promotion_vm> Promotions { get; set; }
     }
 }

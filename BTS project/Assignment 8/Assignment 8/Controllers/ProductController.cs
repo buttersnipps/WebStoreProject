@@ -12,7 +12,7 @@ namespace Assignment_8.Controllers
         // GET: Product
         public ActionResult Index()
         {
-            return View(manage.ProductGetAll());
+            return View(manage.ProductGetAllIEnumerable());
         }
 
         public ActionResult Details(int? id)
@@ -33,8 +33,9 @@ namespace Assignment_8.Controllers
         // GET: Product/Create
         public ActionResult Create()
         {
-            // At your option, create and send an object to the view
-            return View();
+            var productForm = new Product_vm();
+            productForm.Promotions = manage.PromotionGetAllList();
+            return View(productForm);
         }
 
         // POST : Product Create 
@@ -64,6 +65,7 @@ namespace Assignment_8.Controllers
                     }
                 }
             }
+
             var addedItem = manage.ProductAdd(newItem);
             if (addedItem == null)
             {

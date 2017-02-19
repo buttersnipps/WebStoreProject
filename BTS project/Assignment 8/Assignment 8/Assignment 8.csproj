@@ -191,25 +191,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702111727185_initial.cs" />
-    <Compile Include="Migrations\201702111727185_initial.Designer.cs">
-      <DependentUpon>201702111727185_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201702191832174_Product-Promotion-Association-Fix.cs" />
+    <Compile Include="Migrations\201702191832174_Product-Promotion-Association-Fix.Designer.cs">
+      <DependentUpon>201702191832174_Product-Promotion-Association-Fix.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702111731364_category_vm-update.cs" />
-    <Compile Include="Migrations\201702111731364_category_vm-update.Designer.cs">
-      <DependentUpon>201702111731364_category_vm-update.cs</DependentUpon>
+    <Compile Include="Migrations\201702191841087_Product_vm-Promotion_vm-Fix.cs" />
+    <Compile Include="Migrations\201702191841087_Product_vm-Promotion_vm-Fix.Designer.cs">
+      <DependentUpon>201702191841087_Product_vm-Promotion_vm-Fix.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702111736383_promotionAdd-update.cs" />
-    <Compile Include="Migrations\201702111736383_promotionAdd-update.Designer.cs">
-      <DependentUpon>201702111736383_promotionAdd-update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702111808594_promotion_vm-update3.cs" />
-    <Compile Include="Migrations\201702111808594_promotion_vm-update3.Designer.cs">
-      <DependentUpon>201702111808594_promotion_vm-update3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702111826320_promotion_vm-update4.cs" />
-    <Compile Include="Migrations\201702111826320_promotion_vm-update4.Designer.cs">
-      <DependentUpon>201702111826320_promotion_vm-update4.cs</DependentUpon>
+    <Compile Include="Migrations\201702191853152_Product_vm-CreatePage-update.cs" />
+    <Compile Include="Migrations\201702191853152_Product_vm-CreatePage-update.Designer.cs">
+      <DependentUpon>201702191853152_Product_vm-CreatePage-update.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -326,20 +318,14 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702111727185_initial.resx">
-      <DependentUpon>201702111727185_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702191832174_Product-Promotion-Association-Fix.resx">
+      <DependentUpon>201702191832174_Product-Promotion-Association-Fix.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702111731364_category_vm-update.resx">
-      <DependentUpon>201702111731364_category_vm-update.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702191841087_Product_vm-Promotion_vm-Fix.resx">
+      <DependentUpon>201702191841087_Product_vm-Promotion_vm-Fix.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702111736383_promotionAdd-update.resx">
-      <DependentUpon>201702111736383_promotionAdd-update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702111808594_promotion_vm-update3.resx">
-      <DependentUpon>201702111808594_promotion_vm-update3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702111826320_promotion_vm-update4.resx">
-      <DependentUpon>201702111826320_promotion_vm-update4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702191853152_Product_vm-CreatePage-update.resx">
+      <DependentUpon>201702191853152_Product_vm-CreatePage-update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -7,13 +7,13 @@ namespace Assignment_8.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class promotionAddupdate : IMigrationMetadata
+    public sealed partial class Product_vmPromotion_vmFix : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(promotionAddupdate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Product_vmPromotion_vmFix));
         
         string IMigrationMetadata.Id
         {
-            get { return "201702111736383_promotionAdd-update"; }
+            get { return "201702191841087_Product_vm-Promotion_vm-Fix"; }
         }
         
         string IMigrationMetadata.Source

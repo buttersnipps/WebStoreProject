@@ -19,6 +19,10 @@ namespace Assignment_8.Models
         public double ProductLength { get; set; }
         public double ProductWidth { get; set; }
         public double ProductHeight { get; set; }
+
+        //Associations
+        public int PromotionId { get; set; }
+        public Promotion Promotion { get; set; }
         public ICollection<Category> Categorys { get; set; }
         public Manufacture Manufacture { get; set; }
         public Condition Condition { get; set; }

@@ -3,7 +3,7 @@ namespace Assignment_8.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class ProductPromotionAssociationFix : DbMigration
     {
         public override void Up()
         {
@@ -53,17 +53,17 @@ namespace Assignment_8.Migrations
                         ProductLength = c.Double(nullable: false),
                         ProductWidth = c.Double(nullable: false),
                         ProductHeight = c.Double(nullable: false),
+                        PromotionId = c.Int(nullable: false),
                         Condition_ConditionId = c.Int(),
                         Manufacture_ManufactureId = c.Int(),
-                        Promotion_PromotionId = c.Int(),
                     })
                 .PrimaryKey(t => t.ProductId)
                 .ForeignKey("dbo.Conditions", t => t.Condition_ConditionId)
                 .ForeignKey("dbo.Manufactures", t => t.Manufacture_ManufactureId)
-                .ForeignKey("dbo.Promotions", t => t.Promotion_PromotionId)
+                .ForeignKey("dbo.Promotions", t => t.PromotionId)
+                .Index(t => t.PromotionId)
                 .Index(t => t.Condition_ConditionId)
-                .Index(t => t.Manufacture_ManufactureId)
-                .Index(t => t.Promotion_PromotionId);
+                .Index(t => t.Manufacture_ManufactureId);
             
             CreateTable(
                 "dbo.Conditions",
@@ -97,6 +97,18 @@ namespace Assignment_8.Migrations
                 .Index(t => t.Manufacture_ManufactureId);
             
             CreateTable(
+                "dbo.Promotions",
+                c => new
+                    {
+                        PromotionId = c.Int(nullable: false, identity: true),
+                        PromotionName = c.String(),
+                        PercentageOff = c.Double(nullable: false),
+                        BeginDate = c.DateTime(nullable: false),
+                        EndDate = c.DateTime(nullable: false),
+                    })
+                .PrimaryKey(t => t.PromotionId);
+            
+            CreateTable(
                 "dbo.Product_vm",
                 c => new
                     {
@@ -123,18 +135,10 @@ namespace Assignment_8.Migrations
                         PromotionName = c.String(),
                         BeginDate = c.DateTime(nullable: false),
                         EndDate = c.DateTime(nullable: false),
-                    })
-                .PrimaryKey(t => t.PromotionId);
-            
-            CreateTable(
-                "dbo.Promotions",
-                c => new
-                    {
-                        PromotionId = c.Int(nullable: false, identity: true),
-                        PromotionName = c.String(),
-                        PercentageOff = c.Double(nullable: false),
-                        BeginDate = c.DateTime(nullable: false),
-                        EndDate = c.DateTime(nullable: false),
+                        ProductList_DataGroupField = c.String(),
+                        ProductList_DataTextField = c.String(),
+                        ProductList_DataValueField = c.String(),
+                        Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.PromotionId);
             
@@ -296,7 +300,7 @@ namespace Assignment_8.Migrations
             DropForeignKey("dbo.Addresses", "City_CityId", "dbo.Cities");
             DropForeignKey("dbo.Cities", "Country_CountryId", "dbo.Countries");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
-            DropForeignKey("dbo.Products", "Promotion_PromotionId", "dbo.Promotions");
+            DropForeignKey("dbo.Products", "PromotionId", "dbo.Promotions");
             DropForeignKey("dbo.Products", "Manufacture_ManufactureId", "dbo.Manufactures");
             DropForeignKey("dbo.Models", "Manufacture_ManufactureId", "dbo.Manufactures");
             DropForeignKey("dbo.Products", "Condition_ConditionId", "dbo.Conditions");
@@ -316,9 +320,9 @@ namespace Assignment_8.Migrations
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
             DropIndex("dbo.Models", new[] { "Manufacture_ManufactureId" });
-            DropIndex("dbo.Products", new[] { "Promotion_PromotionId" });
             DropIndex("dbo.Products", new[] { "Manufacture_ManufactureId" });
             DropIndex("dbo.Products", new[] { "Condition_ConditionId" });
+            DropIndex("dbo.Products", new[] { "PromotionId" });
             DropTable("dbo.ProductCategories");
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.Genders");
@@ -330,9 +334,9 @@ namespace Assignment_8.Migrations
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.RoleClaims");
-            DropTable("dbo.Promotions");
             DropTable("dbo.Promotion_vm");
             DropTable("dbo.Product_vm");
+            DropTable("dbo.Promotions");
             DropTable("dbo.Models");
             DropTable("dbo.Manufactures");
             DropTable("dbo.Conditions");

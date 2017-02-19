@@ -93,9 +93,9 @@ namespace Assignment_8.Controllers
 
         /***************************************************************************************************/
         //Manage Product
-        public IEnumerable<Product_vm> ProductGetAll()
+        public IEnumerable<Product_vm> ProductGetAllIEnumerable()
         {
-            return Mapper.Map<IEnumerable<Product_vm>>(ds.Products);
+            return Mapper.Map<IEnumerable<Product_vm>>(ds.Products.Include("Promotion"));
         }
 
         public Product_vm ProductGetById(int id)
@@ -152,11 +152,53 @@ namespace Assignment_8.Controllers
         }
         /***************************************************************************************************/
         //Manage Promotions
+        public List<Promotion_vm> PromotionGetAllList()
+        {
+            var all = ds.Promotions;
+
+            return (all == null) ? null : Mapper.Map<List<Promotion_vm>>(all);
+        }
         public IEnumerable<Promotion_vm> PromotionGetAll()
         {
             var all = ds.Promotions;
 
             return (all == null) ? null : Mapper.Map<IEnumerable<Promotion_vm>>(all);
+        }
+
+        public Promotion_vm PromotionAdd(Promotion_vm newItem)
+        {
+            newItem.PercentageOff = newItem.PercentageOff / 100;
+            foreach (var item in newItem.ProductIds)
+            {
+                var product = ds.Products.Single(temp => temp.ProductId == item);
+                product.PromotionId = newItem.PromotionId;
+            }
+            ds.Promotions.Add(Mapper.Map<Promotion>(newItem));
+            ds.SaveChanges();
+            return (newItem == null) ? null : Mapper.Map<Promotion_vm>(newItem);
+        }
+
+
+        public Promotion_vm PromotionGetOne(int id)
+        {
+            var promo = ds.Promotions.Find(id);
+
+            return (promo == null) ? null : Mapper.Map<Promotion_vm>(promo);
+        }
+
+        public IEnumerable<Product_vm> ProductWithPromotion(int id)
+        {
+            var promo = ds.Promotions.Find(id);
+            var product = ds.Products.AsEnumerable().Where(tmp => tmp.Promotion == promo);
+
+            return (product == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(product);
+        }
+
+        public List<Product_vm> ProductsWithoutPromotions()
+        {
+            var products = ds.Products.Where(temp => temp.Promotion.PromotionName == "None");
+
+            return (products == null) ? null : Mapper.Map<List<Product_vm>>(products);
         }
 
         /*public IEnumerable<Product_vm> ProductsWithPromotion()

@@ -1,5 +1,10 @@
 ﻿@model Assignment_8.Controllers.Product_vm
+
+<!--CDN Connections-->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/chosen/1.1.0/chosen.css" />
+<script src="//cdn.jsdelivr.net/chosen/1.1.0/chosen.jquery.js"></script>
 <script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+
 @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype="multipart/form-data"}))
 {
     @Html.AntiForgeryToken()
@@ -21,6 +26,13 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.ProductPrice, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.ProductPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.Promotions, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PromotionId", Model.Promotions.Select(x => new SelectListItem { Text = x.PromotionName, Value = x.PromotionId.ToString()}), new { @class="form-control chosen-select"})
             </div>
         </div>
 
@@ -47,7 +59,7 @@
                     @Html.ValidationMessageFor(model => model.ProductDescription, "", new { @class = "text-danger" })
                 </div>
         </div>
-        <script>CKEDITOR.replace('productDescription');</script>
+        <script>CKEDITOR.replace('ProductDescription');</script>
 
         <h4><strong>Shipping Information</strong></h4>
         <hr />
@@ -88,6 +100,11 @@
     @Html.ActionLink("Back to List", "Index")
 </div>
 
+<script>
+            $('.chosen-select').chosen();
+</script>
+
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+
