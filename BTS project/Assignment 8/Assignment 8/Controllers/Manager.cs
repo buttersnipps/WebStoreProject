@@ -168,10 +168,13 @@ namespace Assignment_8.Controllers
         public Promotion_vm PromotionAdd(Promotion_vm newItem)
         {
             newItem.PercentageOff = newItem.PercentageOff / 100;
-            foreach (var item in newItem.ProductIds)
+            if (newItem.ProductIds != null)
             {
-                var product = ds.Products.Single(temp => temp.ProductId == item);
-                product.PromotionId = newItem.PromotionId;
+                foreach (var item in newItem.ProductIds)
+                {
+                    var product = ds.Products.Single(temp => temp.ProductId == item);
+                    product.PromotionId = newItem.PromotionId;
+                }
             }
             ds.Promotions.Add(Mapper.Map<Promotion>(newItem));
             ds.SaveChanges();

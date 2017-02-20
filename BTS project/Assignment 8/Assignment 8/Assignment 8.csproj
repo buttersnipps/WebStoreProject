@@ -199,17 +199,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702191832174_Product-Promotion-Association-Fix.cs" />
-    <Compile Include="Migrations\201702191832174_Product-Promotion-Association-Fix.Designer.cs">
-      <DependentUpon>201702191832174_Product-Promotion-Association-Fix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702191841087_Product_vm-Promotion_vm-Fix.cs" />
-    <Compile Include="Migrations\201702191841087_Product_vm-Promotion_vm-Fix.Designer.cs">
-      <DependentUpon>201702191841087_Product_vm-Promotion_vm-Fix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702191853152_Product_vm-CreatePage-update.cs" />
-    <Compile Include="Migrations\201702191853152_Product_vm-CreatePage-update.Designer.cs">
-      <DependentUpon>201702191853152_Product_vm-CreatePage-update.cs</DependentUpon>
+    <Compile Include="Migrations\201702202259393_initial.cs" />
+    <Compile Include="Migrations\201702202259393_initial.Designer.cs">
+      <DependentUpon>201702202259393_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -259,6 +251,7 @@
     <Content Include="Scripts\jquery-2.2.1.min.js" />
     <Content Include="Scripts\jquery-2.2.1.min.map" />
     <Content Include="Models\ClassDesignDiagram.cd" />
+    <None Include="Properties\PublishProfiles\bnphonesnew - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\sajjadwa2016a8.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -331,14 +324,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702191832174_Product-Promotion-Association-Fix.resx">
-      <DependentUpon>201702191832174_Product-Promotion-Association-Fix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702191841087_Product_vm-Promotion_vm-Fix.resx">
-      <DependentUpon>201702191841087_Product_vm-Promotion_vm-Fix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702191853152_Product_vm-CreatePage-update.resx">
-      <DependentUpon>201702191853152_Product_vm-CreatePage-update.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702202259393_initial.resx">
+      <DependentUpon>201702202259393_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

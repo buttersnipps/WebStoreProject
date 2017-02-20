@@ -3,7 +3,7 @@ namespace Assignment_8.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class ProductPromotionAssociationFix : DbMigration
+    public partial class initial : DbMigration
     {
         public override void Up()
         {
@@ -123,8 +123,14 @@ namespace Assignment_8.Migrations
                         ProductLength = c.Double(nullable: false),
                         ProductWidth = c.Double(nullable: false),
                         ProductHeight = c.Double(nullable: false),
+                        PromotionId = c.Int(nullable: false),
+                        Promotion_PromotionId = c.Int(),
                     })
-                .PrimaryKey(t => t.ProductId);
+                .PrimaryKey(t => t.ProductId)
+                .ForeignKey("dbo.Promotion_vm", t => t.Promotion_PromotionId)
+                .ForeignKey("dbo.PromotionAddForms", t => t.PromotionId)
+                .Index(t => t.PromotionId)
+                .Index(t => t.Promotion_PromotionId);
             
             CreateTable(
                 "dbo.Promotion_vm",
@@ -135,10 +141,21 @@ namespace Assignment_8.Migrations
                         PromotionName = c.String(),
                         BeginDate = c.DateTime(nullable: false),
                         EndDate = c.DateTime(nullable: false),
-                        ProductList_DataGroupField = c.String(),
-                        ProductList_DataTextField = c.String(),
-                        ProductList_DataValueField = c.String(),
-                        Discriminator = c.String(nullable: false, maxLength: 128),
+                        Product_vm_ProductId = c.Int(),
+                    })
+                .PrimaryKey(t => t.PromotionId)
+                .ForeignKey("dbo.Product_vm", t => t.Product_vm_ProductId)
+                .Index(t => t.Product_vm_ProductId);
+            
+            CreateTable(
+                "dbo.PromotionAddForms",
+                c => new
+                    {
+                        PromotionId = c.Int(nullable: false, identity: true),
+                        PercentageOff = c.Double(nullable: false),
+                        PromotionName = c.String(),
+                        BeginDate = c.DateTime(nullable: false),
+                        EndDate = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.PromotionId);
             
@@ -300,6 +317,9 @@ namespace Assignment_8.Migrations
             DropForeignKey("dbo.Addresses", "City_CityId", "dbo.Cities");
             DropForeignKey("dbo.Cities", "Country_CountryId", "dbo.Countries");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
+            DropForeignKey("dbo.Product_vm", "PromotionId", "dbo.PromotionAddForms");
+            DropForeignKey("dbo.Promotion_vm", "Product_vm_ProductId", "dbo.Product_vm");
+            DropForeignKey("dbo.Product_vm", "Promotion_PromotionId", "dbo.Promotion_vm");
             DropForeignKey("dbo.Products", "PromotionId", "dbo.Promotions");
             DropForeignKey("dbo.Products", "Manufacture_ManufactureId", "dbo.Manufactures");
             DropForeignKey("dbo.Models", "Manufacture_ManufactureId", "dbo.Manufactures");
@@ -319,6 +339,9 @@ namespace Assignment_8.Migrations
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
+            DropIndex("dbo.Promotion_vm", new[] { "Product_vm_ProductId" });
+            DropIndex("dbo.Product_vm", new[] { "Promotion_PromotionId" });
+            DropIndex("dbo.Product_vm", new[] { "PromotionId" });
             DropIndex("dbo.Models", new[] { "Manufacture_ManufactureId" });
             DropIndex("dbo.Products", new[] { "Manufacture_ManufactureId" });
             DropIndex("dbo.Products", new[] { "Condition_ConditionId" });
@@ -334,6 +357,7 @@ namespace Assignment_8.Migrations
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.RoleClaims");
+            DropTable("dbo.PromotionAddForms");
             DropTable("dbo.Promotion_vm");
             DropTable("dbo.Product_vm");
             DropTable("dbo.Promotions");

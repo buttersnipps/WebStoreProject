@@ -1165,10 +1165,6 @@ C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
-C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.ProductPromotionAssociationFix.resources
-C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
-C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.Product_vmPromotion_vmFix.resources
-C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.Product_vmCreatePageupdate.resources
 D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
 D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.ProductPromotionAssociationFix.resources
 D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.Product_vmPromotion_vmFix.resources
@@ -1263,3 +1259,9 @@ D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\As
 D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
 D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.dll
+C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.Mvc.dll
+C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.xml
+C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.Mvc.xml
+C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
+C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache

@@ -7,13 +7,13 @@ namespace Assignment_8.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Product_vmCreatePageupdate : IMigrationMetadata
+    public sealed partial class initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Product_vmCreatePageupdate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201702191853152_Product_vm-CreatePage-update"; }
+            get { return "201702202259393_initial"; }
         }
         
         string IMigrationMetadata.Source
