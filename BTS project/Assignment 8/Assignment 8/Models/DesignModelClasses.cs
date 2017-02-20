@@ -34,7 +34,6 @@ namespace Assignment_8.Models
         public string StreetName { get; set; }
         public int StreetNumber { get; set; }
         public Country Country { get; set; }
-        public City City { get; set; }
     }
 
     public class Country
@@ -67,8 +66,6 @@ namespace Assignment_8.Models
         public int promotionId { get; set; }
 
         public float promotionPrice { get; set; }
-        public DateTime EndDate { get; set; }
-        public DateTime BeginDate { get; set; }
 
     }
 
@@ -76,33 +73,24 @@ namespace Assignment_8.Models
     {
         [Key]
         public int productId { get; set; }
-
         [Display(Name = "Product Name")]
         public string productName { get; set; }
-
         [Display(Name = "Product Price")]
         public double productPrice { get; set; }
-
         [Display(Name = "Product Description")]
         public string productDescription{ get; set; }
-
         [Display(Name = "Product Discount")]
         public Promotion productPromo { get; set; }
 
        public string productImage { get; set; }
         //public string FilePath { get; set; }
 
-        public int quantity { get; set; }
-        
         [Display(Name = "Product Weight")]
         public double productWeight { get; set; }
-
         [Display(Name = "Product Length")]
-        public double productLength { get; set; }
-
+        public double productLenght { get; set; }
         [Display(Name = "Product Breath")]
         public double productBreath { get; set; }
-
         [Display(Name = "Product Height")]
         public double productHeight { get; set; }
     }

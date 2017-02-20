@@ -43,7 +43,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.AudioUpload, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input type="file" class="form-control" accept="AudioUpload/*"  />
+                <input type="file" class="form-control" accept="Audio/*" id="AudioUploadID" name="AudioUpload"  />
                 @Html.ValidationMessageFor(model => model.AudioUpload, "", new { @class = "text-danger" })
             </div>
         </div>

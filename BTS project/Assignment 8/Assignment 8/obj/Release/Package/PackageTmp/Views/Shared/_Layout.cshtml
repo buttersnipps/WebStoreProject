@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - WebAppProjectA8</title>
+    <title>@ViewBag.Title Buy Nortel Phones</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @{
@@ -19,14 +19,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Web app project A8", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Buy Nortel Phones", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Album", "Index", "Albums")</li>
-                    <li>@Html.ActionLink("Artist", "Index", "Artists")</li>
-                    <li>@Html.ActionLink("Track", "Index", "Tracks")</li>
+                    @if (userAccount.HasRoleClaim("Executive"))
+                    {
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">@Html.ActionLink("List of all products", "Index", "Product")</a></li>
+                            <li><a href="#">@Html.ActionLink("Add a new product", "Create", "Product")</a></li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Accounts", "Index", "AccountManager")</li>
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -36,7 +43,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - BTI420 and INT422 Faculty</p>
+            <p>&copy; @DateTime.Now.Year - Buy Nortel Phones</p>
         </footer>
     </div>
 

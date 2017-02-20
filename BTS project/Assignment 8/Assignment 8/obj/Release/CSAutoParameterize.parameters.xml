@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DBforTemplateA8.mdf;Initial Catalog=DBAssignment_8;Integrated Security=True" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Sajjad\\documents\\visual\ studio\ 2015\\Projects\\Assignment\ 8\\Assignment\ 8\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
-  </parameter>
-  <parameter name="DefaultConnection_DatabasePublish-Web.config Connection String" description="DefaultConnection_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="DefaultConnection_DatabasePublish.ConnetionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Sajjad\\documents\\visual\ studio\ 2015\\Projects\\Assignment\ 8\\Assignment\ 8\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection_DatabasePublish']/@connectionString" />
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=z9kbrr9uiq.database.windows.net,1433;Initial Catalog=bnphones_db;Persist Security Info=True;User ID=bnphones_db;Password=@Azuredatabase997" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\faizan\.amjad\.MOFTAK\\Downloads\\webstore\\test\\WebStoreProject\\BTS\ project\\Assignment\ 8\\Assignment\ 8\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
 </parameters>
