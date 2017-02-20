@@ -1169,3 +1169,97 @@ C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.Product_vmPromotion_vmFix.resources
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.Product_vmCreatePageupdate.resources
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.ProductPromotionAssociationFix.resources
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.Product_vmPromotion_vmFix.resources
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.Product_vmCreatePageupdate.resources
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\csi.exe
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\csi.rsp
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.AppContext.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Collections.Immutable.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Console.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\System.Reflection.Metadata.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.exe
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.exe.config
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\vbc.rsp
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\VBCSCompiler.exe.config
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.dll.config
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Assignment 8.pdb
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\AutoMapper.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Owin.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\PagedList.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\PagedList.Mvc.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\WebGrease.dll
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\AutoMapper.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\PagedList.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\PagedList.Mvc.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Github\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml

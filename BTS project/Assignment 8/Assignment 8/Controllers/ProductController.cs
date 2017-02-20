@@ -4,16 +4,64 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.IO;
+using Assignment_8.Models;
+using PagedList;
+
 namespace Assignment_8.Controllers
 {
     public class ProductController : Controller
     {
+
+        private ApplicationDbContext ds = new ApplicationDbContext();
         private Manager manage = new Manager();
         // GET: Product
         public ActionResult Index()
         {
             return View(manage.ProductGetAllIEnumerable());
         }
+
+        // Get the product list for the customer side
+        public ActionResult Customer_Product_Index(string sortOrder, string searchString, string currentFilter, int? page)
+        {
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.PriceSortParam = sortOrder == "Price" ? "price_desc" : "Price";
+
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+            ViewBag.CurrentFilter = searchString;
+            // var a = ds.Product.OrderBy(p => p.productName).ToList();
+            var a = from prod in ds.Products
+                    select prod;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                a = a.Where(prod => prod.ProductName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    a = a.OrderByDescending(prod => prod.ProductName);
+                    break;
+                case "Price":
+                    a = a.OrderBy(prod => prod.ProductPrice);
+                    break;
+                default:
+                    a = a.OrderBy(prod => prod.ProductName);
+                    break;
+
+            }
+
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+            return View(a.ToPagedList(pageNumber, pageSize));
+        }
+
 
         public ActionResult Details(int? id)
         {
