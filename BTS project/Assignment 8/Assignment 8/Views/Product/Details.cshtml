@@ -1,69 +1,68 @@
 ﻿@model Assignment_8.Controllers.Product_vm
 
-    <img src="~/Content/Image/@Html.DisplayFor(model => model.productImage)" style="height:300px;width:500px" />
+    <img src="~/Content/Image/@Html.DisplayFor(model => model.ProductImage)" style="height:300px;width:500px" />
+<link href="~/Content/custom.css" rel="stylesheet" type="text/css" />
 <div class="row">
     <div class="col-lg-12">
+        <h4>Product Description</h4>
+        <hr />
+        <div class="panel panel-default panel-body">
+            @Html.Raw(Model.ProductDescription)
+        </div>
         <h4>Product Details</h4>
         <hr />
         <table class="table">
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.productName)
+                    @Html.DisplayNameFor(model => model.ProductName)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.productPrice)
+                    @Html.DisplayNameFor(model => model.ProductPrice)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.productDescription)
+                    @Html.DisplayNameFor(model => model.Quantity)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.quantity)
+                    @Html.DisplayNameFor(model => model.ProductWeight)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.productLength)
+                    @Html.DisplayNameFor(model => model.ProductLength)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.productWeight)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.productBreath)
+                    @Html.DisplayNameFor(model => model.ProductWidth)
                 </th>
 
                 <th>
-                    @Html.DisplayNameFor(model => model.productHeight)
+                    @Html.DisplayNameFor(model => model.ProductHeight)
                 </th>
             </tr>
             <tr>
                 <td>
-                    @Html.DisplayFor(model => model.productName)
+                    @Html.DisplayFor(model => model.ProductName)
                 </td>
                 <td>
-                    @Html.DisplayFor(model => model.productPrice)
+                    @Html.DisplayFor(model => model.ProductPrice)
                 </td>
                 <td>
-                    @Html.DisplayFor(model => model.productDescription)
+                    @Html.DisplayFor(model => model.Quantity)
                 </td>
                 <td>
-                    @Html.DisplayFor(model => model.quantity)
+                    @Html.DisplayFor(model => model.ProductWeight)
                 </td>
                 <td>
-                    @Html.DisplayFor(model => model.productLength)
+                    @Html.DisplayFor(model => model.ProductLength)
                 </td>
                 <td>
-                    @Html.DisplayFor(model => model.productWeight)
-
+                    @Html.DisplayFor(model => model.ProductWidth)
                 </td>
                 <td>
-                    @Html.DisplayFor(model => model.productBreath)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => model.productHeight)
+                    @Html.DisplayFor(model => model.ProductHeight)
                 </td>
             </tr>
         </table>
     </div>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.productId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-primary" })
 </p>

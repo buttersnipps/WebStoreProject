@@ -279,13 +279,14 @@ namespace Assignment_8.Controllers
             {
                 var cit = new City
                 {
-                    CityName = model.CityName
+                    //CityName = model.CityName
                 };
 
                 var country = new Country
                 {
-                    city = cit,
-                    CountryName = model.CountryName
+                    ///FIX THISS
+                    //city = cit,
+                    //CountryName = model.CountryName
                 };
 
                 var addr = new Address

@@ -1,0 +1,71 @@
+.navbar-default2{
+    background-color : #f94c4c;
+    border-color:#ffffff;
+   
+}
+.navbar-default2 .navbar-mybrand{
+color:#f0f6f9;
+}
+
+.btn-primary {
+	background-color: #f94c4c;
+	border-color: #f0f6f9;
+	color: #ffffff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.open .dropdown-toggle.btn-primary{
+    color:#ffffff;
+    background-color:#e01e1e;
+    border-color:#e01e1e;
+
+}
+
+.navbar-center
+{
+    position: relative;
+    padding-left:80px;
+    margin-top:10px;
+    width: 50%;
+    text-align: center;
+}
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }

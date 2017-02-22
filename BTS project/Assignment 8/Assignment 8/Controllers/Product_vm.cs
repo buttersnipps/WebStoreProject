@@ -4,61 +4,53 @@ using System.Linq;
 using System.Web;
 
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace Assignment_8.Controllers
 {
-    public class Category_vm
-    {
-        [Key]
-        public int Id { get; set; }
-
-        public string Name { get; set; }
-    }
-    public class Promotion_vm
-    {
-        [Key]
-        public int promotionId { get; set; }
-
-        public float promotionPrice { get; set; }
-        public DateTime BeginDate { get; set; }
-        public DateTime EndDate { get; set; }
-
-    }
-
     public class Product_vm
     {
+        public Product_vm()
+        {
+            Promotions = new List<Promotion_vm>();
+        }
         [Key]
-        public int productId { get; set; }
+        public int ProductId { get; set; }
 
         [Display(Name = "Name")]
-        public string productName { get; set; }
+        public string ProductName { get; set; }
 
         [Display(Name = "Price")]
-        public double productPrice { get; set; }
+        public double ProductPrice { get; set; }
 
         [DataType(DataType.MultilineText)]
         [Display(Name = "Description")]
-        public string productDescription { get; set; }
-
-        [Display(Name = "Sale")]
-        public Promotion_vm productPromo { get; set; }
+        public string ProductDescription { get; set; }
 
         [Display(Name = "Quantity")]
-        public int quantity { get; set; }
+        public int Quantity { get; set; }
+
+        [Display(Name = "Automatic Quantity Reload")]
+        public int ReloadValue { get; set; }
 
         [Display(Name = "Image")]
-        public string productImage { get; set; }
+        public string ProductImage { get; set; }
 
         [Display(Name = "Weight (lb)")]
-        public double productWeight { get; set; }
+        public double ProductWeight { get; set; }
 
         [Display(Name = "L")]
-        public double productLength { get; set; }
+        public double ProductLength { get; set; }
 
         [Display(Name = "W")]
-        public double productBreath { get; set; }
+        public double ProductWidth { get; set; }
 
         [Display(Name = "H")]
-        public double productHeight { get; set; }
+        public double ProductHeight { get; set; }
+
+        //Association
+        public int PromotionId { get; set; }
+        public Promotion_vm Promotion { get; set; }
+        public List<Promotion_vm> Promotions { get; set; }
     }
 }
