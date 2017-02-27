@@ -1073,12 +1073,6 @@ D:\Github\LogIn\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\
 D:\Github\LogIn\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.role_changes.resources
 D:\Github\LogIn\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
 C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.category_vmupdate.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.promotionAddupdate.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.promotion_vmupdate3.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.promotion_vmupdate4.resources
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
@@ -1265,3 +1259,10 @@ C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.Mvc.xml
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
 C:\Users\Sajjad\Desktop\GitHub\NewFolder\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.Mvc.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PagedList.Mvc.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.promotionDeleteForm.resources

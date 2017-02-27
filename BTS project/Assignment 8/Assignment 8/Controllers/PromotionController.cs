@@ -28,6 +28,10 @@ namespace Assignment_8.Controllers
             form.Products = manager.ProductsWithoutPromotions();
             form.BeginDate = DateTime.Today;
             form.EndDate = DateTime.Today;
+            form.ProductsEnumerable = manager.ProductsWithPromotions();
+            ViewBag.ProductName = "Product Name";
+            ViewBag.PromotionName = "Promotion Name";
+            ViewBag.Discount = "Discount";
             return View(form);
         }
 
@@ -44,6 +48,12 @@ namespace Assignment_8.Controllers
             {
                 var form = new PromotionAddForm();
                 form.Products = manager.ProductsWithoutPromotions();
+                form.BeginDate = DateTime.Today;
+                form.EndDate = DateTime.Today;
+                form.ProductsEnumerable = manager.ProductsWithPromotions();
+                ViewBag.ProductName = "Product Name";
+                ViewBag.PromotionName = "Promotion Name";
+                ViewBag.Discount = "Discount Price";
                 return View(form);
             }
         }
@@ -73,22 +83,33 @@ namespace Assignment_8.Controllers
         // GET: Promotion/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var form = AutoMapper.Mapper.Map<PromotionDeleteForm>(manager.PromotionGetOne(id));
+            form.ProductsEnumerable = manager.ProductWithPromotion();
+            ViewBag.ProductName = "Product Name";
+            ViewBag.PromotionName = "Promotion Name";
+            ViewBag.Discount = "Discount Price";
+
+            return View(form);
         }
 
         // POST: Promotion/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, Promotion_vm item)
         {
+            bool pass;
             try
             {
-                // TODO: Add delete logic here
-
+                pass = manager.PromotionDelete(id);
                 return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                var form = AutoMapper.Mapper.Map<PromotionDeleteForm>(manager.PromotionGetOne(id));
+                form.ProductsEnumerable = manager.ProductWithPromotion(id);
+                ViewBag.ProductName = "Product Name";
+                ViewBag.PromotionName = "Promotion Name";
+                ViewBag.Discount = "Discount Price";
+                return View(form);
             }
         }
     }

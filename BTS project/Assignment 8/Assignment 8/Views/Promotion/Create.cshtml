@@ -9,7 +9,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>PromotionAdd</h4>
+        <h3>Promotion Creation</h3>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -51,6 +51,40 @@
             </div>
         </div>
 
+        <h4>Products On Sale</h4>
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.Raw(ViewBag.ProductName)
+                </th>
+                
+                <th>
+                    @Html.Raw(ViewBag.PromotionName)
+                </th>
+                
+                <th>
+                    @Html.Raw(ViewBag.Discount)
+                </th>
+            </tr>
+
+            @foreach(var item in Model.ProductsEnumerable)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Promotion.PromotionName)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PromoPrice)
+                    </td>
+                </tr>
+            }
+        </table>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />

@@ -199,9 +199,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702202259393_initial.cs" />
-    <Compile Include="Migrations\201702202259393_initial.Designer.cs">
-      <DependentUpon>201702202259393_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201702230142032_initial.cs" />
+    <Compile Include="Migrations\201702230142032_initial.Designer.cs">
+      <DependentUpon>201702230142032_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702272002295_promotionDeleteForm.cs" />
+    <Compile Include="Migrations\201702272002295_promotionDeleteForm.Designer.cs">
+      <DependentUpon>201702272002295_promotionDeleteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -314,6 +318,7 @@
     <Content Include="Views\Promotion\Index.cshtml" />
     <Content Include="Views\Promotion\Create.cshtml" />
     <Content Include="Views\Product\Customer_Product_Index.cshtml" />
+    <Content Include="Views\Promotion\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -324,8 +329,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702202259393_initial.resx">
-      <DependentUpon>201702202259393_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702230142032_initial.resx">
+      <DependentUpon>201702230142032_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702272002295_promotionDeleteForm.resx">
+      <DependentUpon>201702272002295_promotionDeleteForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

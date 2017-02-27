@@ -54,6 +54,7 @@ namespace Assignment_8.Migrations
                         ProductWidth = c.Double(nullable: false),
                         ProductHeight = c.Double(nullable: false),
                         PromotionId = c.Int(nullable: false),
+                        PromoPrice = c.Double(nullable: false),
                         Condition_ConditionId = c.Int(),
                         Manufacture_ManufactureId = c.Int(),
                     })
@@ -124,6 +125,7 @@ namespace Assignment_8.Migrations
                         ProductWidth = c.Double(nullable: false),
                         ProductHeight = c.Double(nullable: false),
                         PromotionId = c.Int(nullable: false),
+                        PromoPrice = c.Double(nullable: false),
                         Promotion_PromotionId = c.Int(),
                     })
                 .PrimaryKey(t => t.ProductId)

@@ -95,12 +95,19 @@ namespace Assignment_8.Controllers
         //Manage Product
         public IEnumerable<Product_vm> ProductGetAllIEnumerable()
         {
-            return Mapper.Map<IEnumerable<Product_vm>>(ds.Products.Include("Promotion"));
+            var products = ds.Products.Include("Promotion");
+
+            foreach(var item in products)
+            {
+                item.PromoPrice = Math.Round(item.PromoPrice, 2);
+            }
+
+            return Mapper.Map<IEnumerable<Product_vm>>(products);
         }
 
         public Product_vm ProductGetById(int id)
         {
-            var o = ds.Products.Find(id);
+            var o = ds.Products.Include("Promotion").SingleOrDefault(temp => temp.ProductId == id);
 
             // Return the result, or null if not found
             return (o == null) ? null : Mapper.Map<Product_vm>(o);
@@ -108,6 +115,8 @@ namespace Assignment_8.Controllers
 
         public Product_vm ProductAdd(Product_vm newItem)
         {
+            var calculator = Mapper.Map<Promotion_vm>(ds.Promotions.Find(newItem.PromotionId));
+            newItem.PromoPrice = newItem.ProductPrice - (newItem.ProductPrice * calculator.PercentageOff);
             var addedItem = ds.Products.Add(Mapper.Map<Product>(newItem));
             ds.SaveChanges();
 
@@ -117,7 +126,7 @@ namespace Assignment_8.Controllers
 
         public Product_vm ProductEdit(Product_vm newItem )
         {
-            var o = ds.Products.Find(newItem.ProductId);
+            var o = ds.Products.Include("Promotion").SingleOrDefault(temp => temp.ProductId == newItem.ProductId);
 
             if(o == null)
             {
@@ -165,23 +174,6 @@ namespace Assignment_8.Controllers
             return (all == null) ? null : Mapper.Map<IEnumerable<Promotion_vm>>(all);
         }
 
-        public Promotion_vm PromotionAdd(Promotion_vm newItem)
-        {
-            newItem.PercentageOff = newItem.PercentageOff / 100;
-            if (newItem.ProductIds != null)
-            {
-                foreach (var item in newItem.ProductIds)
-                {
-                    var product = ds.Products.Single(temp => temp.ProductId == item);
-                    product.PromotionId = newItem.PromotionId;
-                }
-            }
-            ds.Promotions.Add(Mapper.Map<Promotion>(newItem));
-            ds.SaveChanges();
-            return (newItem == null) ? null : Mapper.Map<Promotion_vm>(newItem);
-        }
-
-
         public Promotion_vm PromotionGetOne(int id)
         {
             var promo = ds.Promotions.Find(id);
@@ -189,12 +181,25 @@ namespace Assignment_8.Controllers
             return (promo == null) ? null : Mapper.Map<Promotion_vm>(promo);
         }
 
+        /*Find Promotion For one Product*/
         public IEnumerable<Product_vm> ProductWithPromotion(int id)
         {
             var promo = ds.Promotions.Find(id);
             var product = ds.Products.AsEnumerable().Where(tmp => tmp.Promotion == promo);
 
             return (product == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(product);
+        }
+
+        /*Find All Products With Promotions*/
+        public IEnumerable<Product_vm> ProductsWithPromotions()
+        {
+            var products = ds.Products.Where(temp => temp.Promotion.PromotionName != "None");
+
+            foreach (var item in products)
+            {
+                item.Promotion = ds.Promotions.SingleOrDefault(temp => temp.PromotionId == item.PromotionId);
+            }
+            return (products == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(products);
         }
 
         public List<Product_vm> ProductsWithoutPromotions()
@@ -204,12 +209,55 @@ namespace Assignment_8.Controllers
             return (products == null) ? null : Mapper.Map<List<Product_vm>>(products);
         }
 
-        /*public IEnumerable<Product_vm> ProductsWithPromotion()
+        public Promotion_vm PromotionAdd(Promotion_vm newItem)
         {
-            var allPromo = ds.Product.Where(p => p.productPromo != null);
+            //Make Percentageoff a decimal
+            newItem.PercentageOff = newItem.PercentageOff / 100;
 
-            return (allPromo == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(allPromo);
-        }*/
+            //If productIds is null skip this step or else
+            //Find the product with a ProductId same with ProductIds
+            //and make its PromotionId the same as newItem
+            if (newItem.ProductIds != null)
+            {
+                foreach (var item in newItem.ProductIds)
+                {
+                    var product = ds.Products.Single(temp => temp.ProductId == item);
+                    product.PromotionId = newItem.PromotionId;
+                    product.PromoPrice = product.ProductPrice - (product.ProductPrice * newItem.PercentageOff);
+                }
+            }
+
+            //Add promotion save changes and return
+            ds.Promotions.Add(Mapper.Map<Promotion>(newItem));
+            ds.SaveChanges();
+
+            return (newItem == null) ? null : Mapper.Map<Promotion_vm>(newItem);
+        }
+
+        public bool PromotionDelete(int id)
+        {
+            //Find Products that will be affected by the deletion of this 
+            //Promotion
+            var productsFix = ds.Products.Where(temp => temp.PromotionId == id);
+
+            //Get the default Promotion to set on the products that will be affected
+            var none = ds.Promotions.SingleOrDefault(temp => temp.PromotionName == "None");
+
+            //Find the Promotion To be deleted and delete it
+            var tmp = ds.Promotions.Find(id);
+            ds.Promotions.Remove(tmp);
+
+            //Go through each product and set its promotionId to the default promotion
+            foreach (var item in productsFix)
+            {
+                item.PromotionId = none.PromotionId;
+            }
+
+            ds.SaveChanges();
+
+            return true;
+        }
+
         //Track
         /* public IEnumerable<TrackBase> TrackGetAll()
         {

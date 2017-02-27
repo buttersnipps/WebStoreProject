@@ -23,6 +23,7 @@ namespace Assignment_8.Models
         //Associations
         public int PromotionId { get; set; }
         public Promotion Promotion { get; set; }
+        public double PromoPrice { get; set; }
         public ICollection<Category> Categorys { get; set; }
         public Manufacture Manufacture { get; set; }
         public Condition Condition { get; set; }

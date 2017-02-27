@@ -75,5 +75,7 @@ namespace Assignment_8.Models
         public System.Data.Entity.DbSet<Assignment_8.Controllers.Promotion_vm> Promotion_vm { get; set; }
 
         public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionAddForm> PromotionAdds { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionDeleteForm> PromotionDeleteForms { get; set; }
     }
 }
