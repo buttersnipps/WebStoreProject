@@ -104,4 +104,67 @@ namespace Assignment_8.Controllers
         public List<Product_vm> Products { get; set; }
         public IEnumerable<Product_vm> ProductsEnumerable { get; set; }
     }
+
+    public class PromotionEditForm
+    {
+        public PromotionEditForm()
+        {
+            Products = new List<Product_vm>();
+            BeginDate = new DateTime();
+            EndDate = new DateTime();
+        }
+
+        [Key]
+        public int PromotionId { get; set; }
+
+        [Display(Name = "Percentage Off")]
+        public double PercentageOff { get; set; }
+
+        [Display(Name = "Sale")]
+        public string PromotionName { get; set; }
+
+        [Display(Name = "Start Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime BeginDate { get; set; }
+
+        [Display(Name = "End Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime EndDate { get; set; }
+
+        //Association
+        public List<Product_vm> Products { get; set; }
+        public IEnumerable<Product_vm> ProductsEnumerable { get; set; }
+
+    }
+
+    public class PromotionDetailsPage
+    {
+        public PromotionDetailsPage()
+        {
+            Products = new List<Product_vm>();
+            BeginDate = new DateTime();
+            EndDate = new DateTime();
+        }
+
+        [Key]
+        public int PromotionId { get; set; }
+
+        [Display(Name = "Percentage Off")]
+        public double PercentageOff { get; set; }
+
+        [Display(Name = "Sale")]
+        public string PromotionName { get; set; }
+
+        [Display(Name = "Start Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime BeginDate { get; set; }
+
+        [Display(Name = "End Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime EndDate { get; set; }
+
+        //Association
+        public List<Product_vm> Products { get; set; }
+
+    }
 }

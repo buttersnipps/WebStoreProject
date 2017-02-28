@@ -167,6 +167,7 @@ namespace Assignment_8.Controllers
 
             return (all == null) ? null : Mapper.Map<List<Promotion_vm>>(all);
         }
+
         public IEnumerable<Promotion_vm> PromotionGetAll()
         {
             var all = ds.Promotions;
@@ -181,11 +182,17 @@ namespace Assignment_8.Controllers
             return (promo == null) ? null : Mapper.Map<Promotion_vm>(promo);
         }
 
+        public bool CheckNoneExist()
+        {
+            var a = ds.Promotions.SingleOrDefault(tmp => tmp.PromotionName == "None");
+
+            return (a == null) ? false : true;
+        }
         /*Find Promotion For one Product*/
         public IEnumerable<Product_vm> ProductWithPromotion(int id)
         {
             var promo = ds.Promotions.Find(id);
-            var product = ds.Products.AsEnumerable().Where(tmp => tmp.Promotion == promo);
+            var product = ds.Products.AsEnumerable().Where(tmp => tmp.PromotionId == id);
 
             return (product == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(product);
         }
@@ -256,6 +263,33 @@ namespace Assignment_8.Controllers
             ds.SaveChanges();
 
             return true;
+        }
+
+        public Promotion_vm PromotionEdit(Promotion_vm EditItem, int[] ProductIds)
+        {
+            //Find Promotion In Database and update values
+            var item = ds.Promotions.Find(EditItem.PromotionId);
+            ds.Entry(item).CurrentValues.SetValues(EditItem);
+
+            //Set all the PromotionIds to none.PromotionId
+            var removePromo = ds.Products.Where(x => x.PromotionId == item.PromotionId);
+            var none = ds.Promotions.SingleOrDefault(t => t.PromotionName == "None");
+            foreach (var itemToRemovePromo in removePromo)
+            {
+                itemToRemovePromo.PromotionId = none.PromotionId;
+            }
+
+            //Find Product to add to Promotion and 
+            //Update PromotionId on it
+            foreach (var items in ProductIds)
+            {
+                var products = ds.Products.Find(items);
+                products.PromotionId = EditItem.PromotionId;
+            }
+
+            ds.SaveChanges();
+
+            return Mapper.Map<Promotion_vm>(item);
         }
 
         //Track
