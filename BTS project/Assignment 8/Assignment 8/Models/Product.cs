@@ -24,8 +24,10 @@ namespace Assignment_8.Models
         public int PromotionId { get; set; }
         public Promotion Promotion { get; set; }
         public double PromoPrice { get; set; }
-        public ICollection<Category> Categorys { get; set; }
+        public virtual ICollection<CategoryToProducts> CategoryToProducts { get; set; }
         public Manufacture Manufacture { get; set; }
         public Condition Condition { get; set; }
+        public string OrderName { get; set; }
+        public virtual Orders Order { get; set; }
     }
 }

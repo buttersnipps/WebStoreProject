@@ -199,34 +199,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702230142032_initial.cs" />
-    <Compile Include="Migrations\201702230142032_initial.Designer.cs">
-      <DependentUpon>201702230142032_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702272002295_promotionDeleteForm.cs" />
-    <Compile Include="Migrations\201702272002295_promotionDeleteForm.Designer.cs">
-      <DependentUpon>201702272002295_promotionDeleteForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702281638390_PromotionEditForm.cs" />
-    <Compile Include="Migrations\201702281638390_PromotionEditForm.Designer.cs">
-      <DependentUpon>201702281638390_PromotionEditForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702281728188_PromotionEditForm-update.cs" />
-    <Compile Include="Migrations\201702281728188_PromotionEditForm-update.Designer.cs">
-      <DependentUpon>201702281728188_PromotionEditForm-update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702281746524_update.cs" />
-    <Compile Include="Migrations\201702281746524_update.Designer.cs">
-      <DependentUpon>201702281746524_update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702281858231_PromotionDetailsPage.cs" />
-    <Compile Include="Migrations\201702281858231_PromotionDetailsPage.Designer.cs">
-      <DependentUpon>201702281858231_PromotionDetailsPage.cs</DependentUpon>
+    <Compile Include="Migrations\201703010255469_cat.cs" />
+    <Compile Include="Migrations\201703010255469_cat.Designer.cs">
+      <DependentUpon>201703010255469_cat.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CategorysViewModel.cs" />
+    <Compile Include="Models\CategoryToProducts.cs" />
+    <Compile Include="Models\CheckBoxViewModel.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\Condition.cs" />
     <Compile Include="Models\Country.cs" />
@@ -337,6 +320,11 @@
     <Content Include="Views\Promotion\Delete.cshtml" />
     <Content Include="Views\Promotion\Edit.cshtml" />
     <Content Include="Views\Promotion\Details.cshtml" />
+    <Content Include="Views\Category\Create.cshtml" />
+    <Content Include="Views\Category\Delete.cshtml" />
+    <Content Include="Views\Category\Details.cshtml" />
+    <Content Include="Views\Category\Edit.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -347,23 +335,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702230142032_initial.resx">
-      <DependentUpon>201702230142032_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702272002295_promotionDeleteForm.resx">
-      <DependentUpon>201702272002295_promotionDeleteForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702281638390_PromotionEditForm.resx">
-      <DependentUpon>201702281638390_PromotionEditForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702281728188_PromotionEditForm-update.resx">
-      <DependentUpon>201702281728188_PromotionEditForm-update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702281746524_update.resx">
-      <DependentUpon>201702281746524_update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702281858231_PromotionDetailsPage.resx">
-      <DependentUpon>201702281858231_PromotionDetailsPage.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703010255469_cat.resx">
+      <DependentUpon>201703010255469_cat.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

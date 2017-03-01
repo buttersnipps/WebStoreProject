@@ -8,13 +8,10 @@ namespace Assignment_8.Models
 {
     public class Category
     {
-        public Category()
-        {
-            Products = new List<Product>();
-        }
-        public int CategoryId { get; set; }
+        public int Id { get; set; }
+
         public string Name { get; set; }
-        [ForeignKey("ProductId")]
-        public virtual ICollection<Product> Products { get; set; }
+
+        public virtual ICollection<CategoryToProducts> CategoryToProducts { get; set; }
     }
 }
