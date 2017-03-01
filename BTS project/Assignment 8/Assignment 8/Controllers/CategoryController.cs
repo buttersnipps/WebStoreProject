@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Assignment_8.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -8,6 +10,8 @@ namespace Assignment_8.Controllers
 {
     public class CategoryController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
+
         Manager manage = new Manager();
         // GET: Category
         public ActionResult Index()
@@ -16,9 +20,43 @@ namespace Assignment_8.Controllers
         }
 
         // GET: Category/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(int? id)
         {
-            return View(manage.CategoryGetById(id));
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Category category = db.Categorys.Find(id);
+            if (category == null)
+            {
+                return HttpNotFound();
+            }
+
+            var results = from b in db.Products
+                          select new
+                          {
+                              b.ProductId,
+                              b.ProductName,
+                              Checked = ((from ab in db.CategoryToProducts
+                                          where (ab.CategoryID == id) & (ab.ProductID == b.ProductId)
+                                          select ab).Count() > 0)
+                          };
+
+            var MyViewModel = new CategorysViewModel();
+
+            MyViewModel.CategoryID = id.Value;
+            MyViewModel.Name = category.Name;
+
+            var MyCheckBoxList = new List<CheckBoxViewModel>();
+
+            foreach (var item in results)
+            {
+                MyCheckBoxList.Add(new CheckBoxViewModel { Id = item.ProductId, Name = item.ProductName, Checked = item.Checked });
+            }
+
+            MyViewModel.Products = MyCheckBoxList;
+
+            return View(MyViewModel);
         }
 
         // GET: Category/Create
@@ -45,25 +83,76 @@ namespace Assignment_8.Controllers
         }
 
         // GET: Category/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
-            return View(manage.CategoryGetById(id));
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Category category = db.Categorys.Find(id);
+            if (category == null)
+            {
+                return HttpNotFound();
+            }
+
+            var results = from b in db.Products
+                          select new
+                          {
+                              b.ProductId,
+                              b.ProductName,
+                              Checked = ((from ab in db.CategoryToProducts
+                                          where (ab.CategoryID == id) & (ab.ProductID == b.ProductId)
+                                          select ab).Count() > 0)
+                          };
+
+            var MyViewModel = new CategorysViewModel();
+
+            MyViewModel.CategoryID = id.Value;
+            MyViewModel.Name = category.Name;
+
+            var MyCheckBoxList = new List<CheckBoxViewModel>();
+
+            foreach (var item in results)
+            {
+                MyCheckBoxList.Add(new CheckBoxViewModel { Id = item.ProductId, Name = item.ProductName, Checked = item.Checked });
+            }
+
+            MyViewModel.Products = MyCheckBoxList;
+
+            return View(MyViewModel);
         }
 
         // POST: Category/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, Category_vm collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(CategorysViewModel Category)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
-                manage.CategoryUpdate(id, collection);
+                var MyCategory = db.Categorys.Find(Category.CategoryID);
+
+                MyCategory.Name = Category.Name;
+
+                foreach (var item in db.CategoryToProducts)
+                {
+                    if (item.CategoryID == Category.CategoryID)
+                    {
+                        db.Entry(item).State = System.Data.Entity.EntityState.Deleted;
+                    }
+                }
+
+                foreach (var item in Category.Products)
+                {
+                    if (item.Checked)
+                    {
+                        db.CategoryToProducts.Add(new CategoryToProducts() { CategoryID = Category.CategoryID, ProductID = item.Id });
+                    }
+
+                }
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(Category);
         }
 
         // GET: Category/Delete/5

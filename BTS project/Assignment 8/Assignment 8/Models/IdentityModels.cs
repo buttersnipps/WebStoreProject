@@ -66,8 +66,6 @@ namespace Assignment_8.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<Assignment_8.Controllers.Category_vm> Category_vm { get; set; }
-
         public System.Data.Entity.DbSet<Assignment_8.Controllers.Product_vm> Product_vm { get; set; }
 
         public System.Data.Entity.DbSet<Assignment_8.Controllers.ApplicationUserBase> ApplicationUserBases { get; set; }
@@ -81,5 +79,8 @@ namespace Assignment_8.Models
         public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionEditForm> PromotionEditForms { get; set; }
 
         public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionDetailsPage> PromotionDetailsPages { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Models.CategoryToProducts> CategoryToProducts { get; set; }
+
     }
 }
