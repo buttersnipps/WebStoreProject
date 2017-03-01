@@ -27,7 +27,6 @@ namespace Assignment_8.Models
         public virtual ICollection<CategoryToProducts> CategoryToProducts { get; set; }
         public Manufacture Manufacture { get; set; }
         public Condition Condition { get; set; }
-        public string OrderName { get; set; }
-        public virtual Orders Order { get; set; }
+        public virtual ICollection<Orders> OrderToProducts { get; set; }
     }
 }

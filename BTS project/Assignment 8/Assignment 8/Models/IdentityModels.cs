@@ -42,6 +42,7 @@ namespace Assignment_8.Models
         public DbSet<Product> Products { get; set; }
 
         public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<Orders> Order { get; set; }
 
 
 
@@ -81,6 +82,7 @@ namespace Assignment_8.Models
         public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionDetailsPage> PromotionDetailsPages { get; set; }
 
         public System.Data.Entity.DbSet<Assignment_8.Models.CategoryToProducts> CategoryToProducts { get; set; }
+        public System.Data.Entity.DbSet<Assignment_8.Models.OrderToProducts> OrdersToProduct { get; set; }
 
     }
 }

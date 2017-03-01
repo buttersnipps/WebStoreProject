@@ -184,6 +184,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AccountManagerController.cs" />
     <Compile Include="Controllers\Account_vm.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\Category_vm.cs" />
     <Compile Include="Controllers\CustomAuthorizeAttributes.cs" />
@@ -192,6 +193,7 @@
     <Compile Include="Controllers\LoadDataController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\Manager.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\Product_vm.cs" />
     <Compile Include="Controllers\PromotionController.cs" />
@@ -199,9 +201,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703010255469_cat.cs" />
-    <Compile Include="Migrations\201703010255469_cat.Designer.cs">
-      <DependentUpon>201703010255469_cat.cs</DependentUpon>
+    <Compile Include="Migrations\201703010403131_temp.cs" />
+    <Compile Include="Migrations\201703010403131_temp.Designer.cs">
+      <DependentUpon>201703010403131_temp.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -220,6 +222,8 @@
     <Compile Include="Models\Manufacture.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Orders.cs" />
+    <Compile Include="Models\OrdersViewModel.cs" />
+    <Compile Include="Models\OrderToProducts.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Promotion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -325,6 +329,11 @@
     <Content Include="Views\Category\Details.cshtml" />
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Orders\Index.cshtml" />
+    <Content Include="Views\Orders\Create.cshtml" />
+    <Content Include="Views\Orders\Edit.cshtml" />
+    <Content Include="Views\Orders\Delete.cshtml" />
+    <Content Include="Views\Orders\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -335,8 +344,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703010255469_cat.resx">
-      <DependentUpon>201703010255469_cat.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703010403131_temp.resx">
+      <DependentUpon>201703010403131_temp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

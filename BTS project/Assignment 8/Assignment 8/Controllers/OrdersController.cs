@@ -17,7 +17,7 @@ namespace Assignment_8.Controllers
         // GET: Orders
         public ActionResult Index()
         {
-            return View(db.Orders.ToList());
+            return View(db.Order.ToList());
         }
 
         // GET: Orders/Details/5
@@ -27,12 +27,37 @@ namespace Assignment_8.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Orders orders = db.Orders.Find(id);
-            if (orders == null)
+            Orders order = db.Order.Find(id);
+            if (order== null)
             {
                 return HttpNotFound();
             }
-            return View(orders);
+
+            var results = from b in db.Products
+                          select new
+                          {
+                              b.ProductId,
+                              b.ProductName,
+                              Checked = ((from ab in db.OrdersToProduct
+                                          where (ab.OrderID== id) & (ab.ProductID == b.ProductId)
+                                          select ab).Count() > 0)
+                          };
+
+            var MyViewModel = new OrdersViewModel();
+
+            MyViewModel.OrderID = id.Value;
+            MyViewModel.Name = order.Name;
+
+            var MyCheckBoxList = new List<CheckBoxViewModel>();
+
+            foreach (var item in results)
+            {
+                MyCheckBoxList.Add(new CheckBoxViewModel { Id = item.ProductId, Name = item.ProductName, Checked = item.Checked });
+            }
+
+            MyViewModel.Products = MyCheckBoxList;
+
+            return View(MyViewModel);
         }
 
         // GET: Orders/Create
@@ -46,11 +71,11 @@ namespace Assignment_8.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "orderId")] Orders orders)
+        public ActionResult Create([Bind(Include = "ID,Name")] Orders orders)
         {
             if (ModelState.IsValid)
             {
-                db.Orders.Add(orders);
+                db.Order.Add(orders);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,12 +90,37 @@ namespace Assignment_8.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Orders orders = db.Orders.Find(id);
-            if (orders == null)
+            Orders order = db.Order.Find(id);
+            if (order == null)
             {
                 return HttpNotFound();
             }
-            return View(orders);
+
+            var results = from b in db.Products
+                          select new
+                          {
+                              b.ProductId,
+                              b.ProductName,
+                              Checked = ((from ab in db.OrdersToProduct
+                                          where (ab.OrderID == id) & (ab.ProductID == b.ProductId)
+                                          select ab).Count() > 0)
+                          };
+
+            var MyViewModel = new OrdersViewModel();
+
+            MyViewModel.OrderID = id.Value;
+            MyViewModel.Name = order.Name;
+
+            var MyCheckBoxList = new List<CheckBoxViewModel>();
+
+            foreach (var item in results)
+            {
+                MyCheckBoxList.Add(new CheckBoxViewModel { Id = item.ProductId, Name = item.ProductName, Checked = item.Checked });
+            }
+
+            MyViewModel.Products = MyCheckBoxList;
+
+            return View(MyViewModel);
         }
 
         // POST: Orders/Edit/5
@@ -78,15 +128,34 @@ namespace Assignment_8.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "orderId")] Orders orders)
+        public ActionResult Edit(OrdersViewModel Order)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(orders).State = EntityState.Modified;
+                var MyOrder = db.Order.Find(Order.OrderID);
+
+                MyOrder.Name = Order.Name;
+
+                foreach (var item in db.OrdersToProduct)
+                {
+                    if (item.OrderID == Order.OrderID)
+                    {
+                        db.Entry(item).State = System.Data.Entity.EntityState.Deleted;
+                    }
+                }
+
+                foreach (var item in Order.Products)
+                {
+                    if (item.Checked)
+                    {
+                        db.OrdersToProduct.Add(new OrderToProducts() { OrderID = Order.OrderID, ProductID = item.Id });
+                    }
+
+                }
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(orders);
+            return View(Order);
         }
 
         // GET: Orders/Delete/5
@@ -96,7 +165,7 @@ namespace Assignment_8.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Orders orders = db.Orders.Find(id);
+            Orders orders = db.Order.Find(id);
             if (orders == null)
             {
                 return HttpNotFound();
@@ -109,8 +178,8 @@ namespace Assignment_8.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Orders orders = db.Orders.Find(id);
-            db.Orders.Remove(orders);
+            Orders orders = db.Order.Find(id);
+            db.Order.Remove(orders);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
