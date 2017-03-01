@@ -5,22 +5,35 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            Order Name :
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
-
+        
         <dd>
             @foreach (var item in Model.Products)
             {
                 if (item.Checked)
                 {
-                    <div>@item.Name</div>
+
+                    <div>Product Name : @item.Name</div>
+                    <div>Product Description : @item.Desc</div>
+                    <div>Product Price : @item.Price</div>
+                    <div>Product Length : @item.Length</div>
+                    <div>Product Height : @item.Height</div>
+                    <div>Product Width : @item.Width</div>
+                    <div>Product Weight : @item.Weight</div>
+                    <div>Product Quantity : @item.Quantity</div>
+
+                    <br />
+
                 }
             }
         </dd>
+        
+      
     </dl>
 </div>
 <p>

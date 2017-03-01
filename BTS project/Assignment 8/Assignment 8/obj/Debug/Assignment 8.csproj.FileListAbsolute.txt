@@ -1454,3 +1454,6 @@ C:\Users\Potato\Documents\GitHub\workingmulti\WebStoreProject\BTS project\Assign
 C:\Users\Potato\Documents\GitHub\workingmulti\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Potato\Documents\GitHub\workingmulti\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.temp.resources
 C:\Users\Potato\Documents\GitHub\workingmulti\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Potato\Documents\GitHub\workingmulti\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.temp1.resources
+C:\Users\Potato\Documents\GitHub\workingmulti\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.et.resources
+C:\Users\Potato\Documents\GitHub\workingmulti\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.ter.resources

@@ -38,8 +38,16 @@ namespace Assignment_8.Controllers
                           {
                               b.ProductId,
                               b.ProductName,
+                              b.ProductDescription,
+                              b.ProductPrice,
+                              b.Quantity,
+                              b.ProductLength,
+                              b.ProductWeight,
+                              b.ProductWidth,
+                              b.ProductHeight,
+
                               Checked = ((from ab in db.OrdersToProduct
-                                          where (ab.OrderID== id) & (ab.ProductID == b.ProductId)
+                                          where (ab.OrderID == id) & (ab.ProductID == b.ProductId)
                                           select ab).Count() > 0)
                           };
 
@@ -48,11 +56,24 @@ namespace Assignment_8.Controllers
             MyViewModel.OrderID = id.Value;
             MyViewModel.Name = order.Name;
 
-            var MyCheckBoxList = new List<CheckBoxViewModel>();
+            var MyCheckBoxList = new List<OrderCheckBoxViewModel>();
 
             foreach (var item in results)
             {
-                MyCheckBoxList.Add(new CheckBoxViewModel { Id = item.ProductId, Name = item.ProductName, Checked = item.Checked });
+
+                MyCheckBoxList.Add(new OrderCheckBoxViewModel
+                {
+                    Id = item.ProductId,
+                    Name = item.ProductName,
+                    Desc = item.ProductDescription,
+                    Price = item.ProductPrice,
+                    Quantity = item.Quantity,
+                    Height = item.ProductHeight,
+                    Length = item.ProductLength,
+                    Width = item.ProductWidth,
+                    Weight = item.ProductWeight,
+                    Checked = item.Checked
+                });
             }
 
             MyViewModel.Products = MyCheckBoxList;
@@ -101,6 +122,14 @@ namespace Assignment_8.Controllers
                           {
                               b.ProductId,
                               b.ProductName,
+                              b.ProductDescription,
+                              b.ProductPrice,
+                              b.Quantity,
+                              b.ProductLength,
+                              b.ProductWeight,
+                              b.ProductWidth,
+                              b.ProductHeight,
+
                               Checked = ((from ab in db.OrdersToProduct
                                           where (ab.OrderID == id) & (ab.ProductID == b.ProductId)
                                           select ab).Count() > 0)
@@ -110,12 +139,16 @@ namespace Assignment_8.Controllers
 
             MyViewModel.OrderID = id.Value;
             MyViewModel.Name = order.Name;
+            
 
-            var MyCheckBoxList = new List<CheckBoxViewModel>();
+            var MyCheckBoxList = new List<OrderCheckBoxViewModel>();
 
             foreach (var item in results)
             {
-                MyCheckBoxList.Add(new CheckBoxViewModel { Id = item.ProductId, Name = item.ProductName, Checked = item.Checked });
+                
+                MyCheckBoxList.Add(new OrderCheckBoxViewModel { Id = item.ProductId, Name = item.ProductName,
+                    Desc = item.ProductDescription, Price = item.ProductPrice, Quantity = item.Quantity, Height = item.ProductHeight,
+                    Length = item.ProductLength, Width = item.ProductWidth,Weight = item.ProductWeight, Checked = item.Checked });
             }
 
             MyViewModel.Products = MyCheckBoxList;

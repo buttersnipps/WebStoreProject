@@ -205,6 +205,18 @@
     <Compile Include="Migrations\201703010403131_temp.Designer.cs">
       <DependentUpon>201703010403131_temp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703010618404_temp1.cs" />
+    <Compile Include="Migrations\201703010618404_temp1.Designer.cs">
+      <DependentUpon>201703010618404_temp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703010619108_et.cs" />
+    <Compile Include="Migrations\201703010619108_et.Designer.cs">
+      <DependentUpon>201703010619108_et.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703010627300_ter.cs" />
+    <Compile Include="Migrations\201703010627300_ter.Designer.cs">
+      <DependentUpon>201703010627300_ter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -221,6 +233,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Manufacture.cs" />
     <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\OrderCheckBoxViewModel.cs" />
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\OrdersViewModel.cs" />
     <Compile Include="Models\OrderToProducts.cs" />
@@ -346,6 +359,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703010403131_temp.resx">
       <DependentUpon>201703010403131_temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703010618404_temp1.resx">
+      <DependentUpon>201703010618404_temp1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703010619108_et.resx">
+      <DependentUpon>201703010619108_et.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703010627300_ter.resx">
+      <DependentUpon>201703010627300_ter.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
