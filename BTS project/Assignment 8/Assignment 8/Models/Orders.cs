@@ -9,9 +9,10 @@ namespace Assignment_8.Models
     public class Orders
     {
         [Key]
-        public int orderId { get; set; }
+        public int ID { get; set; }
 
         Product currentOrder { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
 
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assignment_8.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,11 +10,11 @@ namespace Assignment_8.Controllers
 
     public class Category_vm
     {
-       
         [Key]
-        public int CategoryId { get; set; }
+        public int Id { get; set; }
 
         public string Name { get; set; }
-        public IEnumerable<Product_vm> Products { get; set; }
+        public List<CheckBoxViewModel> Products { get; set; }
+
     }
 }

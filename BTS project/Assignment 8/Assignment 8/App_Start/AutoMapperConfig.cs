@@ -33,6 +33,9 @@ namespace Assignment_8
             Mapper.CreateMap<Controllers.Promotion_vm, Models.Promotion>();
             Mapper.CreateMap<Models.Promotion, Controllers.Promotion_vm>();
             Mapper.CreateMap<Controllers.PromotionAddForm, Controllers.Promotion_vm>();
+            Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionDeleteForm>();
+            Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionEditForm>();
+            Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionDetailsPage>();
 
             //Account Mappers
             Mapper.CreateMap<Models.ApplicationUser, Controllers.ApplicationUserBase>();

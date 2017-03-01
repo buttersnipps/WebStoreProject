@@ -10,6 +10,5 @@ namespace Assignment_8.Models
         public int CategoryID { get; set; }
         public string Name { get; set; }
         public List<CheckBoxViewModel> Products { get; set; }
-
     }
 }

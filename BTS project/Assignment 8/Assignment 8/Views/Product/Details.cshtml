@@ -20,6 +20,9 @@
                     @Html.DisplayNameFor(model => model.ProductPrice)
                 </th>
                 <th>
+                    @Html.DisplayNameFor(model => model.PromoPrice)
+                </th>
+                <th>
                     @Html.DisplayNameFor(model => model.Quantity)
                 </th>
                 <th>
@@ -40,9 +43,19 @@
                 <td>
                     @Html.DisplayFor(model => model.ProductName)
                 </td>
-                <td>
-                    @Html.DisplayFor(model => model.ProductPrice)
-                </td>
+                @if (Model.PromoPrice != Model.ProductPrice){
+                    <td>
+                        <strike>@Html.DisplayFor(model => model.ProductPrice)</strike>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.PromoPrice)
+                    </td>
+                } else{
+                    <td>
+                        <strike>@Html.DisplayFor(model => model.ProductPrice)</strike>
+                    </td>
+                    <td></td>
+                }
                 <td>
                     @Html.DisplayFor(model => model.Quantity)
                 </td>

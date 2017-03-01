@@ -51,6 +51,8 @@ namespace Assignment_8.Controllers
         //Association
         public int PromotionId { get; set; }
         public Promotion_vm Promotion { get; set; }
+        [Display(Name ="Promotion Price")]
+        public double PromoPrice { get; set; }
         public List<Promotion_vm> Promotions { get; set; }
     }
 }

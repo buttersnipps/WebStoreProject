@@ -184,7 +184,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AccountManagerController.cs" />
     <Compile Include="Controllers\Account_vm.cs" />
-    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\Category_vm.cs" />
     <Compile Include="Controllers\CustomAuthorizeAttributes.cs" />
     <Compile Include="Controllers\ErrorsController.cs" />
@@ -199,21 +199,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702220231106_wetoin.cs" />
-    <Compile Include="Migrations\201702220231106_wetoin.Designer.cs">
-      <DependentUpon>201702220231106_wetoin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702220233154_wetoin1.cs" />
-    <Compile Include="Migrations\201702220233154_wetoin1.Designer.cs">
-      <DependentUpon>201702220233154_wetoin1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702220235334_vm.cs" />
-    <Compile Include="Migrations\201702220235334_vm.Designer.cs">
-      <DependentUpon>201702220235334_vm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702220238077_cat.cs" />
-    <Compile Include="Migrations\201702220238077_cat.Designer.cs">
-      <DependentUpon>201702220238077_cat.cs</DependentUpon>
+    <Compile Include="Migrations\201703010255469_cat.cs" />
+    <Compile Include="Migrations\201703010255469_cat.Designer.cs">
+      <DependentUpon>201703010255469_cat.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -329,11 +317,14 @@
     <Content Include="Views\Promotion\Index.cshtml" />
     <Content Include="Views\Promotion\Create.cshtml" />
     <Content Include="Views\Product\Customer_Product_Index.cshtml" />
-    <Content Include="Views\Categories\Create.cshtml" />
-    <Content Include="Views\Categories\Delete.cshtml" />
-    <Content Include="Views\Categories\Details.cshtml" />
-    <Content Include="Views\Categories\Edit.cshtml" />
-    <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Promotion\Delete.cshtml" />
+    <Content Include="Views\Promotion\Edit.cshtml" />
+    <Content Include="Views\Promotion\Details.cshtml" />
+    <Content Include="Views\Category\Create.cshtml" />
+    <Content Include="Views\Category\Delete.cshtml" />
+    <Content Include="Views\Category\Details.cshtml" />
+    <Content Include="Views\Category\Edit.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -344,17 +335,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702220231106_wetoin.resx">
-      <DependentUpon>201702220231106_wetoin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702220233154_wetoin1.resx">
-      <DependentUpon>201702220233154_wetoin1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702220235334_vm.resx">
-      <DependentUpon>201702220235334_vm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702220238077_cat.resx">
-      <DependentUpon>201702220238077_cat.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703010255469_cat.resx">
+      <DependentUpon>201703010255469_cat.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
