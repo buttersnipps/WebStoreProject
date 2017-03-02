@@ -134,6 +134,7 @@ namespace Assignment_8.Controllers
         //Association
         public List<Product_vm> Products { get; set; }
         public IEnumerable<Product_vm> ProductsEnumerable { get; set; }
+        public int ProductIdToEdit { get; set; }
 
     }
 

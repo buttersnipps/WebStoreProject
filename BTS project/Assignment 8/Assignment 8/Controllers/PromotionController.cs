@@ -87,6 +87,8 @@ namespace Assignment_8.Controllers
             if (form.PromotionName != "None"){
                 form.Products = manager.ProductGetAllIEnumerable().ToList();
                 form.ProductsEnumerable = manager.ProductWithPromotion(id);
+                //form.ProductsEnumerable = new List<Product_vm>();
+                
                 return View(form);
             }else{
                 return RedirectToAction("Index");

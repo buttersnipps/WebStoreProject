@@ -199,9 +199,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703010255469_cat.cs" />
-    <Compile Include="Migrations\201703010255469_cat.Designer.cs">
-      <DependentUpon>201703010255469_cat.cs</DependentUpon>
+    <Compile Include="Migrations\201703021834169_initial.cs" />
+    <Compile Include="Migrations\201703021834169_initial.Designer.cs">
+      <DependentUpon>201703021834169_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703021846208_PromotionEditForm-update.cs" />
+    <Compile Include="Migrations\201703021846208_PromotionEditForm-update.Designer.cs">
+      <DependentUpon>201703021846208_PromotionEditForm-update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703021852470_changed type.cs" />
+    <Compile Include="Migrations\201703021852470_changed type.Designer.cs">
+      <DependentUpon>201703021852470_changed type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703021855395_changed type to int.cs" />
+    <Compile Include="Migrations\201703021855395_changed type to int.Designer.cs">
+      <DependentUpon>201703021855395_changed type to int.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703021856532_changed name .cs" />
+    <Compile Include="Migrations\201703021856532_changed name .Designer.cs">
+      <DependentUpon>201703021856532_changed name .cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -335,8 +351,20 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703010255469_cat.resx">
-      <DependentUpon>201703010255469_cat.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703021834169_initial.resx">
+      <DependentUpon>201703021834169_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703021846208_PromotionEditForm-update.resx">
+      <DependentUpon>201703021846208_PromotionEditForm-update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703021852470_changed type.resx">
+      <DependentUpon>201703021852470_changed type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703021855395_changed type to int.resx">
+      <DependentUpon>201703021855395_changed type to int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703021856532_changed name .resx">
+      <DependentUpon>201703021856532_changed name .cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -258,6 +258,7 @@ namespace Assignment_8.Controllers
             foreach (var item in productsFix)
             {
                 item.PromotionId = none.PromotionId;
+                item.PromoPrice = item.ProductPrice;
             }
 
             ds.SaveChanges();
@@ -277,14 +278,16 @@ namespace Assignment_8.Controllers
             foreach (var itemToRemovePromo in removePromo)
             {
                 itemToRemovePromo.PromotionId = none.PromotionId;
+                itemToRemovePromo.PromoPrice = itemToRemovePromo.ProductPrice;
             }
 
             //Find Product to add to Promotion and 
-            //Update PromotionId on it
+            //Update PromotionId and PromoPrice
             foreach (var items in ProductIds)
             {
                 var products = ds.Products.Find(items);
                 products.PromotionId = EditItem.PromotionId;
+                products.PromoPrice = products.ProductPrice - (products.ProductPrice * EditItem.PercentageOff);
             }
 
             ds.SaveChanges();
