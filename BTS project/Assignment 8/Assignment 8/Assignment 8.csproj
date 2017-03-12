@@ -196,6 +196,7 @@
     <Compile Include="Controllers\Product_vm.cs" />
     <Compile Include="Controllers\PromotionController.cs" />
     <Compile Include="Controllers\Promotion_vm.cs" />
+    <Compile Include="Controllers\SalesReport_vm.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -219,6 +220,18 @@
     <Compile Include="Migrations\201703021856532_changed name .Designer.cs">
       <DependentUpon>201703021856532_changed name .cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703111918584_SalesReport.cs" />
+    <Compile Include="Migrations\201703111918584_SalesReport.Designer.cs">
+      <DependentUpon>201703111918584_SalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703111920176_SalesReportUpdate.cs" />
+    <Compile Include="Migrations\201703111920176_SalesReportUpdate.Designer.cs">
+      <DependentUpon>201703111920176_SalesReportUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703111924003_dbset-update.cs" />
+    <Compile Include="Migrations\201703111924003_dbset-update.Designer.cs">
+      <DependentUpon>201703111924003_dbset-update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -238,6 +251,7 @@
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Promotion.cs" />
+    <Compile Include="Models\SalesReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -370,6 +384,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703021856532_changed name .resx">
       <DependentUpon>201703021856532_changed name .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703111918584_SalesReport.resx">
+      <DependentUpon>201703111918584_SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703111920176_SalesReportUpdate.resx">
+      <DependentUpon>201703111920176_SalesReportUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703111924003_dbset-update.resx">
+      <DependentUpon>201703111924003_dbset-update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

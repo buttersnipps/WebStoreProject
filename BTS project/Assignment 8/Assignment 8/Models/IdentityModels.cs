@@ -38,10 +38,10 @@ namespace Assignment_8.Models
         // Add DbSet<TEntity> properties here
         public DbSet<RoleClaim> Role { get; set; }
         public DbSet<Category>Categorys { get; set; }
-
         public DbSet<Product> Products { get; set; }
-
         public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<SalesReport> SalesReports { get; set; }
+        public DbSet<Orders> Orders { get; set; }
 
 
 

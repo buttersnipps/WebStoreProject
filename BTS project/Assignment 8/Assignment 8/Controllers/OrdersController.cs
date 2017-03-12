@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.Mvc;
 using Assignment_8.Models;
 
+
+
 namespace Assignment_8.Controllers
 {
     public class OrdersController : Controller
@@ -17,6 +19,7 @@ namespace Assignment_8.Controllers
         // GET: Orders
         public ActionResult Index()
         {
+            
             return View(db.Orders.ToList());
         }
 
