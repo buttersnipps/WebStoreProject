@@ -57,14 +57,41 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Buy Nortel Phones</p>
-        </footer>
-    </div>
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <div id="wrapper">
+        <!--Sidebar-->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>Account</li>
+                <li>Setting</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+        <!--main content-->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
+
+                        <div class="container body-content">
+                            @RenderBody()
+                            <hr />
+                            <footer>
+                                <p>&copy; @DateTime.Now.Year - Buy Nortel Phones</p>
+                            </footer>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menuDisplayed");
+    });
+        </script>
+                    @Scripts.Render("~/bundles/bootstrap")
+                    @RenderSection("scripts", required: false)
 </body>
 </html>

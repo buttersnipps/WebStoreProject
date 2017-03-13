@@ -1,5 +1,10 @@
 ﻿@model Assignment_8.Controllers.Product_vm
 
+@{ 
+    ViewBag.Title = "Details";
+}
+
+
     <img src="~/Content/Image/@Html.DisplayFor(model => model.ProductImage)" style="height:300px;width:500px" />
 <link href="~/Content/custom.css" rel="stylesheet" type="text/css" />
 <div class="row">
@@ -71,11 +76,16 @@
                 <td>
                     @Html.DisplayFor(model => model.ProductHeight)
                 </td>
+
+                <td class="button"> 
+                    @Html.ActionLink("Add to cart", "AddToCart","ShoppingCart",new { id = Model.ProductId },"")
+                </td>
+
             </tr>
         </table>
     </div>
 </div>
-<p>
+    
     @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }, new { @class = "btn btn-primary" }) |
     @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-primary" })
 </p>
