@@ -38,7 +38,11 @@ namespace Assignment_8
             Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionDetailsPage>();
 
             //SalesReports Mappers
-            Mapper.CreateMap<Models.SalesReport, Controllers.SalesReport>();
+            Mapper.CreateMap<Models.SalesReport, Controllers.SalesReportBase>();
+            Mapper.CreateMap<Models.SalesReport, Controllers.SalesReport_vm>();
+            Mapper.CreateMap<Controllers.SalesReport_vm, Models.SalesReport>();
+            Mapper.CreateMap<Controllers.SalesReportAdd, Controllers.SalesReport_vm>();
+            Mapper.CreateMap<Models.SalesReport, Controllers.SalesReportDetails>();
 
             //Account Mappers
             Mapper.CreateMap<Models.ApplicationUser, Controllers.ApplicationUserBase>();

@@ -196,6 +196,7 @@
     <Compile Include="Controllers\Product_vm.cs" />
     <Compile Include="Controllers\PromotionController.cs" />
     <Compile Include="Controllers\Promotion_vm.cs" />
+    <Compile Include="Controllers\SalesReportController.cs" />
     <Compile Include="Controllers\SalesReport_vm.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -231,6 +232,30 @@
     <Compile Include="Migrations\201703111924003_dbset-update.cs" />
     <Compile Include="Migrations\201703111924003_dbset-update.Designer.cs">
       <DependentUpon>201703111924003_dbset-update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703132211438_SalesReportUpdate1.cs" />
+    <Compile Include="Migrations\201703132211438_SalesReportUpdate1.Designer.cs">
+      <DependentUpon>201703132211438_SalesReportUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703132214291_PercentageChangeSalesReport.cs" />
+    <Compile Include="Migrations\201703132214291_PercentageChangeSalesReport.Designer.cs">
+      <DependentUpon>201703132214291_PercentageChangeSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703132250116_update-migrations.cs" />
+    <Compile Include="Migrations\201703132250116_update-migrations.Designer.cs">
+      <DependentUpon>201703132250116_update-migrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703132316429_dropTotal.cs" />
+    <Compile Include="Migrations\201703132316429_dropTotal.Designer.cs">
+      <DependentUpon>201703132316429_dropTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703132317147_AddFloatTotal.cs" />
+    <Compile Include="Migrations\201703132317147_AddFloatTotal.Designer.cs">
+      <DependentUpon>201703132317147_AddFloatTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703132323135_SalesReportDetails-Initial.cs" />
+    <Compile Include="Migrations\201703132323135_SalesReportDetails-Initial.Designer.cs">
+      <DependentUpon>201703132323135_SalesReportDetails-Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -360,6 +385,9 @@
     <Content Include="Views\Orders\Details.cshtml" />
     <Content Include="Views\Orders\Edit.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
+    <Content Include="Views\SalesReport\Index.cshtml" />
+    <Content Include="Views\SalesReport\Create.cshtml" />
+    <Content Include="Views\SalesReport\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -393,6 +421,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703111924003_dbset-update.resx">
       <DependentUpon>201703111924003_dbset-update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703132211438_SalesReportUpdate1.resx">
+      <DependentUpon>201703132211438_SalesReportUpdate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703132214291_PercentageChangeSalesReport.resx">
+      <DependentUpon>201703132214291_PercentageChangeSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703132250116_update-migrations.resx">
+      <DependentUpon>201703132250116_update-migrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703132316429_dropTotal.resx">
+      <DependentUpon>201703132316429_dropTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703132317147_AddFloatTotal.resx">
+      <DependentUpon>201703132317147_AddFloatTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703132323135_SalesReportDetails-Initial.resx">
+      <DependentUpon>201703132323135_SalesReportDetails-Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

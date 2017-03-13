@@ -12,7 +12,7 @@ namespace Assignment_8.Models
         public int SalesReportId { get; set; }
         public string SalesReportName { get; set; }
         public DateTime Month { get; set; }
-        public ICollection<int> OrderId { get; set; }
-        public IEnumerable<Orders> Orders { get; set; }
+        public float Total { get; set; }
+        public float PercentageChange { get; set; }
     }
 }

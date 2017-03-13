@@ -82,5 +82,10 @@ namespace Assignment_8.Models
 
         public System.Data.Entity.DbSet<Assignment_8.Models.CategoryToProducts> CategoryToProducts { get; set; }
 
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.SalesReportAdd> SalesReportAdds { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.SalesReport_vm> SalesReport_vm { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.SalesReportDetails> SalesReportDetails { get; set; }
     }
 }

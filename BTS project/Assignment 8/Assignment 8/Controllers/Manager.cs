@@ -298,6 +298,55 @@ namespace Assignment_8.Controllers
         /***************************************************************************************************/
         //Manage SalesReports
         
+        public IEnumerable<SalesReport_vm> SalesReportGetAll()
+        {
+            var all = ds.SalesReports;
+
+            return (all == null) ? null : Mapper.Map<IEnumerable<SalesReport_vm>>(all);
+        }
+
+        public SalesReportDetails SalesReportGetOne(int id)
+        {
+            var item = ds.SalesReports.Find(id);
+
+            return (item == null) ? null : Mapper.Map<SalesReportDetails>(item);
+        }
+
+        public SalesReport_vm SalesReportAdd(SalesReport_vm Item)
+        {
+            var count = ds.SalesReports.Count();
+            
+
+            if(count > 0)
+            {
+                var last = ds.SalesReports.OrderByDescending(id => id.SalesReportId).First();
+
+                float revenueChange = Item.Total - last.Total;
+
+                float difference = Math.Abs(revenueChange / last.Total);
+
+                if(revenueChange < 0)
+                {
+                    difference *= -1;
+                }
+
+                difference *= 100;
+
+                Item.PercentageChange = difference;
+            }
+            else
+            {
+                Item.PercentageChange = 0;
+            }
+            ds.SalesReports.Add(Mapper.Map<SalesReport>(Item));
+            ds.SaveChanges();
+
+            return Item;
+        }
+
+
+
+
 
         public bool RemoveDatab()
         {
