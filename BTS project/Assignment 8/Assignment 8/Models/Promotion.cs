@@ -10,7 +10,7 @@ namespace Assignment_8.Models
     {
         public int PromotionId { get; set; }
         public string PromotionName { get; set; }
-        public double PercentageOff { get; set; }
+        public decimal PercentageOff { get; set; }
         public DateTime BeginDate { get; set; }
         public DateTime EndDate { get; set; }
         public ICollection<Product> Products { get; set; }
