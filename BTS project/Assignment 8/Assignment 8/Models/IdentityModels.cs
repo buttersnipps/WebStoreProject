@@ -38,10 +38,14 @@ namespace Assignment_8.Models
         // Add DbSet<TEntity> properties here
         public DbSet<RoleClaim> Role { get; set; }
         public DbSet<Category>Categorys { get; set; }
+
         public DbSet<Product> Products { get; set; }
+
         public DbSet<Promotion> Promotions { get; set; }
-        public DbSet<SalesReport> SalesReports { get; set; }
-        public DbSet<Orders> Orders { get; set; }
+
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
 
 
 
@@ -82,10 +86,6 @@ namespace Assignment_8.Models
 
         public System.Data.Entity.DbSet<Assignment_8.Models.CategoryToProducts> CategoryToProducts { get; set; }
 
-        public System.Data.Entity.DbSet<Assignment_8.Controllers.SalesReportAdd> SalesReportAdds { get; set; }
-
-        public System.Data.Entity.DbSet<Assignment_8.Controllers.SalesReport_vm> SalesReport_vm { get; set; }
-
-        public System.Data.Entity.DbSet<Assignment_8.Controllers.SalesReportDetails> SalesReportDetails { get; set; }
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.ShoppingCartViewModel> ShoppingCartViewModels { get; set; }
     }
 }

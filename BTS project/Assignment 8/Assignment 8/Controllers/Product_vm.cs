@@ -21,7 +21,7 @@ namespace Assignment_8.Controllers
         public string ProductName { get; set; }
 
         [Display(Name = "Price")]
-        public double ProductPrice { get; set; }
+        public decimal ProductPrice { get; set; }
 
         [DataType(DataType.MultilineText)]
         [Display(Name = "Description")]
@@ -52,7 +52,7 @@ namespace Assignment_8.Controllers
         public int PromotionId { get; set; }
         public Promotion_vm Promotion { get; set; }
         [Display(Name ="Promotion Price")]
-        public double PromoPrice { get; set; }
+        public decimal PromoPrice { get; set; }
         public List<Promotion_vm> Promotions { get; set; }
     }
 }
