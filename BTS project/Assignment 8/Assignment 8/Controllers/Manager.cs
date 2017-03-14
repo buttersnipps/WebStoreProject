@@ -30,7 +30,7 @@ namespace Assignment_8.Controllers
             get
             {
                 // Null coalescing operator
-                
+
                 return _userManager ?? HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
             }
             private set
@@ -56,7 +56,8 @@ namespace Assignment_8.Controllers
         }
         /***************************************************************************************************/
         //Manage Category
-        public IEnumerable<Category_vm> CategoryGetAll(){
+        public IEnumerable<Category_vm> CategoryGetAll()
+        {
             var r = ds.Categorys;
             return Mapper.Map<IEnumerable<Category_vm>>(r);
         }
@@ -97,7 +98,7 @@ namespace Assignment_8.Controllers
         {
             var products = ds.Products.Include("Promotion");
 
-            foreach(var item in products)
+            foreach (var item in products)
             {
                 item.PromoPrice = Math.Round(item.PromoPrice, 2);
             }
@@ -124,11 +125,11 @@ namespace Assignment_8.Controllers
             return (addedItem == null) ? null : Mapper.Map<Product_vm>(addedItem);
         }
 
-        public Product_vm ProductEdit(Product_vm newItem )
+        public Product_vm ProductEdit(Product_vm newItem)
         {
             var o = ds.Products.Include("Promotion").SingleOrDefault(temp => temp.ProductId == newItem.ProductId);
 
-            if(o == null)
+            if (o == null)
             {
                 return null;
             }
@@ -297,7 +298,7 @@ namespace Assignment_8.Controllers
 
         /***************************************************************************************************/
         //Manage SalesReports
-        
+
         public IEnumerable<SalesReport_vm> SalesReportGetAll()
         {
             var all = ds.SalesReports;
@@ -315,9 +316,9 @@ namespace Assignment_8.Controllers
         public SalesReport_vm SalesReportAdd(SalesReport_vm Item)
         {
             var count = ds.SalesReports.Count();
-            
 
-            if(count > 0)
+
+            if (count > 0)
             {
                 var last = ds.SalesReports.OrderByDescending(id => id.SalesReportId).First();
 
@@ -325,7 +326,7 @@ namespace Assignment_8.Controllers
 
                 float difference = Math.Abs(revenueChange / last.Total);
 
-                if(revenueChange < 0)
+                if (revenueChange < 0)
                 {
                     difference *= -1;
                 }
@@ -360,16 +361,16 @@ namespace Assignment_8.Controllers
             }
         }
 
-       public List<string> RoleClaimGetAllStrings()
+        public List<string> RoleClaimGetAllStrings()
         {
             List<string> temp = new List<string>();
 
-            foreach(var item in ds.Role.OrderBy(n => n.Id))
+            foreach (var item in ds.Role.OrderBy(n => n.Id))
             {
                 temp.Add(item.Name);
             }
 
-            return temp; 
+            return temp;
         }
 
         public bool addRole()
@@ -394,7 +395,7 @@ namespace Assignment_8.Controllers
                 ds.Role.Add(new RoleClaim
                 {
                     Name = "Customer"
-                });        
+                });
                 ds.SaveChanges();
                 return true;
             }

@@ -198,68 +198,24 @@
     <Compile Include="Controllers\Promotion_vm.cs" />
     <Compile Include="Controllers\SalesReportController.cs" />
     <Compile Include="Controllers\SalesReport_vm.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Controllers\ShoppingCartRemoveViewModel.cs" />
+    <Compile Include="Controllers\ShoppingCartViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703021834169_initial.cs" />
-    <Compile Include="Migrations\201703021834169_initial.Designer.cs">
-      <DependentUpon>201703021834169_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201703132331122_new.cs" />
+    <Compile Include="Migrations\201703132331122_new.Designer.cs">
+      <DependentUpon>201703132331122_new.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703021846208_PromotionEditForm-update.cs" />
-    <Compile Include="Migrations\201703021846208_PromotionEditForm-update.Designer.cs">
-      <DependentUpon>201703021846208_PromotionEditForm-update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703021852470_changed type.cs" />
-    <Compile Include="Migrations\201703021852470_changed type.Designer.cs">
-      <DependentUpon>201703021852470_changed type.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703021855395_changed type to int.cs" />
-    <Compile Include="Migrations\201703021855395_changed type to int.Designer.cs">
-      <DependentUpon>201703021855395_changed type to int.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703021856532_changed name .cs" />
-    <Compile Include="Migrations\201703021856532_changed name .Designer.cs">
-      <DependentUpon>201703021856532_changed name .cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703111918584_SalesReport.cs" />
-    <Compile Include="Migrations\201703111918584_SalesReport.Designer.cs">
-      <DependentUpon>201703111918584_SalesReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703111920176_SalesReportUpdate.cs" />
-    <Compile Include="Migrations\201703111920176_SalesReportUpdate.Designer.cs">
-      <DependentUpon>201703111920176_SalesReportUpdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703111924003_dbset-update.cs" />
-    <Compile Include="Migrations\201703111924003_dbset-update.Designer.cs">
-      <DependentUpon>201703111924003_dbset-update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703132211438_SalesReportUpdate1.cs" />
-    <Compile Include="Migrations\201703132211438_SalesReportUpdate1.Designer.cs">
-      <DependentUpon>201703132211438_SalesReportUpdate1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703132214291_PercentageChangeSalesReport.cs" />
-    <Compile Include="Migrations\201703132214291_PercentageChangeSalesReport.Designer.cs">
-      <DependentUpon>201703132214291_PercentageChangeSalesReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703132250116_update-migrations.cs" />
-    <Compile Include="Migrations\201703132250116_update-migrations.Designer.cs">
-      <DependentUpon>201703132250116_update-migrations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703132316429_dropTotal.cs" />
-    <Compile Include="Migrations\201703132316429_dropTotal.Designer.cs">
-      <DependentUpon>201703132316429_dropTotal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703132317147_AddFloatTotal.cs" />
-    <Compile Include="Migrations\201703132317147_AddFloatTotal.Designer.cs">
-      <DependentUpon>201703132317147_AddFloatTotal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703132323135_SalesReportDetails-Initial.cs" />
-    <Compile Include="Migrations\201703132323135_SalesReportDetails-Initial.Designer.cs">
-      <DependentUpon>201703132323135_SalesReportDetails-Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201703140124040_cart.cs" />
+    <Compile Include="Migrations\201703140124040_cart.Designer.cs">
+      <DependentUpon>201703140124040_cart.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CategorysViewModel.cs" />
     <Compile Include="Models\CategoryToProducts.cs" />
@@ -273,10 +229,12 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Manufacture.cs" />
     <Compile Include="Models\Model.cs" />
-    <Compile Include="Models\Orders.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Promotion.cs" />
     <Compile Include="Models\SalesReport.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -380,14 +338,10 @@
     <Content Include="Views\Category\Details.cshtml" />
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
-    <Content Include="Views\Orders\Create.cshtml" />
-    <Content Include="Views\Orders\Delete.cshtml" />
-    <Content Include="Views\Orders\Details.cshtml" />
-    <Content Include="Views\Orders\Edit.cshtml" />
-    <Content Include="Views\Orders\Index.cshtml" />
-    <Content Include="Views\SalesReport\Index.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.cshtml" />
     <Content Include="Views\SalesReport\Create.cshtml" />
     <Content Include="Views\SalesReport\Details.cshtml" />
+    <Content Include="Views\SalesReport\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -398,47 +352,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703021834169_initial.resx">
-      <DependentUpon>201703021834169_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703132331122_new.resx">
+      <DependentUpon>201703132331122_new.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703021846208_PromotionEditForm-update.resx">
-      <DependentUpon>201703021846208_PromotionEditForm-update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703021852470_changed type.resx">
-      <DependentUpon>201703021852470_changed type.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703021855395_changed type to int.resx">
-      <DependentUpon>201703021855395_changed type to int.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703021856532_changed name .resx">
-      <DependentUpon>201703021856532_changed name .cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703111918584_SalesReport.resx">
-      <DependentUpon>201703111918584_SalesReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703111920176_SalesReportUpdate.resx">
-      <DependentUpon>201703111920176_SalesReportUpdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703111924003_dbset-update.resx">
-      <DependentUpon>201703111924003_dbset-update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703132211438_SalesReportUpdate1.resx">
-      <DependentUpon>201703132211438_SalesReportUpdate1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703132214291_PercentageChangeSalesReport.resx">
-      <DependentUpon>201703132214291_PercentageChangeSalesReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703132250116_update-migrations.resx">
-      <DependentUpon>201703132250116_update-migrations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703132316429_dropTotal.resx">
-      <DependentUpon>201703132316429_dropTotal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703132317147_AddFloatTotal.resx">
-      <DependentUpon>201703132317147_AddFloatTotal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703132323135_SalesReportDetails-Initial.resx">
-      <DependentUpon>201703132323135_SalesReportDetails-Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703140124040_cart.resx">
+      <DependentUpon>201703140124040_cart.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
