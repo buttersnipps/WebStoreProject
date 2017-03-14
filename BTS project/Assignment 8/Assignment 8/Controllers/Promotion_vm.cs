@@ -23,7 +23,7 @@ namespace Assignment_8.Controllers
         public int PromotionId { get; set; }
 
         [Display(Name = "Percentage Off")]
-        public decimal PercentageOff { get; set; }
+        public double PercentageOff { get; set; }
 
         [Display(Name = "Sale")]
         public string PromotionName { get; set; }
@@ -54,7 +54,7 @@ namespace Assignment_8.Controllers
         public int PromotionId { get; set; }
 
         [Display(Name = "Percentage Off")]
-        public decimal PercentageOff { get; set; }
+        public double PercentageOff { get; set; }
 
         [Display(Name = "Sale")]
         public string PromotionName { get; set; }
@@ -86,7 +86,7 @@ namespace Assignment_8.Controllers
         public int PromotionId { get; set; }
 
         [Display(Name = "Percentage Off")]
-        public decimal PercentageOff { get; set; }
+        public double PercentageOff { get; set; }
 
         [Display(Name = "Sale")]
         public string PromotionName { get; set; }
@@ -118,7 +118,7 @@ namespace Assignment_8.Controllers
         public int PromotionId { get; set; }
 
         [Display(Name = "Percentage Off")]
-        public decimal PercentageOff { get; set; }
+        public double PercentageOff { get; set; }
 
         [Display(Name = "Sale")]
         public string PromotionName { get; set; }
@@ -151,7 +151,7 @@ namespace Assignment_8.Controllers
         public int PromotionId { get; set; }
 
         [Display(Name = "Percentage Off")]
-        public decimal PercentageOff { get; set; }
+        public double PercentageOff { get; set; }
 
         [Display(Name = "Sale")]
         public string PromotionName { get; set; }

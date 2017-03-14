@@ -4,85 +4,71 @@
 <link href="~/Content/custom.css" rel="stylesheet" type="text/css" />
 <link href="~/Content/lightbox.css" rel="stylesheet" type="text/css" />
 <script src="~/Scripts/lightbox.js"></script>
-
-
 <div id="myCarousel" class="carousel slide">
-   <ol class="carousel-indicators">
-   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-   <li data-target="#myCarousel" data-slide-to="1"></li>
-   <li data-target="#myCarousel" data-slide-to="2"></li>
-   </ol>
-   <div class="carousel-inner">
-   <div class="item active">
-   <img src="~/Content/Image/htc.jpg" alt="htc" class="img-responsive" />
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" ></li>
+        <li data-target="#myCarousel" data-slide-to="2" ></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+        <img src="~/Content/Image/htc.jpg" alt="htc" class="img-responsive" />
+        </div>
+        <div class="item">
+            <img src="~/Content/Image/pixel.png" alt="google" class="img-responsive" />
+        </div>
+        <div class="item">
+            <img src="~/Content/Image/samsung.jpg" alt="samsung" class="img-responsive" />
+        </div>
     </div>
-                            <div class="item">
-                                <img src="~/Content/Image/pixel.png" alt="google" class="img-responsive" />
-                            </div>
-                            <div class="item">
-                                <img src="~/Content/Image/samsung.jpg" alt="samsung" class="img-responsive" />
-                            </div>
-                        </div>
-                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <th>
-                            </th>
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</div>
 
-                            <th>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Name<span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("A-Z", "Customer_Product_Index", new { sortOrder = "name_ascend", currentFilter = ViewBag.CurrentFilter })</li>
-                                        <li>@Html.ActionLink("Z-A", "Customer_Product_Index", new { sortOrder = "name_desc", currentFilter = ViewBag.CurrentFilter })</li>
-                                    </ul>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Price<span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("Low-High", "Customer_Product_Index", new { sortOrder = "Price", currentFilter = ViewBag.CurrentFilter })</li>
-                                        <li>@Html.ActionLink("High-Low", "Customer_Product_Index", new { sortOrder = "price_desc", currentFilter = ViewBag.CurrentFilter })</li>
-                                    </ul>
-                                </div>
-                            </th>
+<table class="table">
+    <tr>
+        <th>
 
-                            <th></th>
-                        </tr>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>
-                                    <a href="~/Content/Image/@Html.DisplayFor(modelItem => item.ProductImage)" data-lightbox="product">
-                                        <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.ProductImage)" style="height:200px;width:200px" />
-                                    </a>
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.ProductName)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.ProductPrice)
-                                </td>
-                                <td>
-                                    @Html.ActionLink("Buy", "Details", new { id = item.ProductId }, new { @class = "btn btn-primary" })
-                                </td>
-                            </tr>
-                        }
-                    </table>
-
+        </th>
      
+        <th>
+            @Html.ActionLink("Product Name", "Customer_Product_Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter}, new { @class = "btn btn-primary" })
+        </th>
+        <th>
+            @Html.ActionLink("Product Price", "Customer_Product_Index", new { sortOrder = ViewBag.PriceSortParam, currentFilter = ViewBag.CurrentFilter}, new { @class = "btn btn-primary" })
+        </th>
+       
+        <th></th>
+    </tr>
 
+@foreach (var item in Model) {
+    <tr>
+        <td>
 
+            <a href="~/Content/Image/@Html.DisplayFor(modelItem => item.ProductImage)" data-lightbox="product">
+                <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.ProductImage)" style="height:200px;width:200px" />
+            </a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductPrice)
+        </td>
 
-   
- <br />
- Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
- @Html.PagedListPager(Model, page => Url.Action("Customer_Product_Index",
- new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+        <td>
+            @Html.ActionLink("Buy", "Details", new { id = item.ProductId},new { @class = "btn btn-primary" })
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Customer_Product_Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

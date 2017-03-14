@@ -37,7 +37,6 @@ namespace Assignment_8
             Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionEditForm>();
             Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionDetailsPage>();
 
-<<<<<<< HEAD
             //SalesReports Mappers
             Mapper.CreateMap<Models.SalesReport, Controllers.SalesReportBase>();
             Mapper.CreateMap<Models.SalesReport, Controllers.SalesReport_vm>();
@@ -45,8 +44,6 @@ namespace Assignment_8
             Mapper.CreateMap<Controllers.SalesReportAdd, Controllers.SalesReport_vm>();
             Mapper.CreateMap<Models.SalesReport, Controllers.SalesReportDetails>();
 
-=======
->>>>>>> origin/Version_2.0
             //Account Mappers
             Mapper.CreateMap<Models.ApplicationUser, Controllers.ApplicationUserBase>();
             Mapper.CreateMap<Controllers.UserAccount, Controllers.ApplicationUserDetail>();
