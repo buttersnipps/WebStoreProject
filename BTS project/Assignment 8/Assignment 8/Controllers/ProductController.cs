@@ -24,7 +24,7 @@ namespace Assignment_8.Controllers
         public ActionResult Customer_Product_Index(string sortOrder, string searchString, string currentFilter, int? page)
         {
             ViewBag.CurrentSort = sortOrder;
-            ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.NameSortParam = sortOrder =="Name"? "name_desc" : "name_ascend";
             ViewBag.PriceSortParam = sortOrder == "Price" ? "price_desc" : "Price";
 
             if (searchString != null)
@@ -51,10 +51,15 @@ namespace Assignment_8.Controllers
                 case "Price":
                     a = a.OrderBy(prod => prod.ProductPrice);
                     break;
+                case "price_desc":
+                    a = a.OrderByDescending(prod => prod.ProductPrice);
+                    break;
+                case "name_ascend":
+                    a = a.OrderBy(prod => prod.ProductName);
+                    break;
                 default:
                     a = a.OrderBy(prod => prod.ProductName);
                     break;
-
             }
 
             int pageSize = 3;
