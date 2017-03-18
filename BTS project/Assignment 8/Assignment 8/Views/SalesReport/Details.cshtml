@@ -10,20 +10,33 @@
             </td>
         </tr>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
             <td>
-                <center><h1>Month: @Html.DisplayFor(model => model.Month)</h1></center>
-                <center><h1>Revenue: @Html.DisplayFor(model => model.Total)</h1></center>
+                @Html.DisplayFor(model => model.Month)
             </td>
         </tr>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.Total)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PercentageChange)
+            </th>
             <td>
                 @if (Model.PercentageChange > 0)
                 {
-                    <center><h1 style="color:green">&#8593;@Html.DisplayFor(model => model.PercentageChange)</h1></center>
+                    <p style="color:green">&#8593;@Html.DisplayFor(model => model.PercentageChange)</p>
                 }
                 else
                 {
-                    <center><h1 style="color:red">&darr;@Html.DisplayFor(model => model.PercentageChange)</h1></center>
+                    <p style="color:red">&darr;@Html.DisplayFor(model => model.PercentageChange)</p>
                 }
         </td>
         </tr>
