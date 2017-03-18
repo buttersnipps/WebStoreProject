@@ -29,8 +29,20 @@ namespace Assignment_8
             Mapper.CreateMap<Models.Product, Controllers.Product_vm>();
             Mapper.CreateMap<Controllers.Product_vm, Models.Product>();
 
+            //Promotion Mappers
             Mapper.CreateMap<Controllers.Promotion_vm, Models.Promotion>();
             Mapper.CreateMap<Models.Promotion, Controllers.Promotion_vm>();
+            Mapper.CreateMap<Controllers.PromotionAddForm, Controllers.Promotion_vm>();
+            Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionDeleteForm>();
+            Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionEditForm>();
+            Mapper.CreateMap<Controllers.Promotion_vm, Controllers.PromotionDetailsPage>();
+
+            //SalesReports Mappers
+            Mapper.CreateMap<Models.SalesReport, Controllers.SalesReportBase>();
+            Mapper.CreateMap<Models.SalesReport, Controllers.SalesReport_vm>();
+            Mapper.CreateMap<Controllers.SalesReport_vm, Models.SalesReport>();
+            Mapper.CreateMap<Controllers.SalesReportAdd, Controllers.SalesReport_vm>();
+            Mapper.CreateMap<Models.SalesReport, Controllers.SalesReportDetails>();
 
             //Account Mappers
             Mapper.CreateMap<Models.ApplicationUser, Controllers.ApplicationUserBase>();
