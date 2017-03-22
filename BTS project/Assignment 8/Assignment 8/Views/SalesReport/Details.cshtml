@@ -1,0 +1,48 @@
+﻿@model Assignment_8.Controllers.SalesReportDetails
+
+<div>
+    <h4>SalesReportDetails</h4>
+    <hr />
+    <table class="table-condensed">
+        <tr>
+            <td>
+                <center><h1>@Html.DisplayFor(model => model.SalesReportName)</h1></center>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Month)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.Month)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.Total)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PercentageChange)
+            </th>
+            <td>
+                @if (Model.PercentageChange > 0)
+                {
+                    <p style="color:green">&#8593;@Html.DisplayFor(model => model.PercentageChange)</p>
+                }
+                else
+                {
+                    <p style="color:red">&darr;@Html.DisplayFor(model => model.PercentageChange)</p>
+                }
+        </td>
+        </tr>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SalesReportId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
