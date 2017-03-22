@@ -235,12 +235,32 @@ namespace Assignment_8.Controllers
 
             itemList.items.Add(new Item()
             {
-                name = "Item Name",
+                name = "Basic Bell",
                 currency = "USD",
-                price = "5",
+                price = "250",
                 quantity = "1",
                 sku = "sku"
             });
+
+            itemList.items.Add(new Item()
+            {
+                name = "Nokia Lumia",
+                currency = "USD",
+                price = "350",
+                quantity = "1",
+                sku = "sku"
+            });
+
+            itemList.items.Add(new Item()
+            {
+                name = "Apple Iphone",
+                currency = "USD",
+                price = "530",
+                quantity = "1",
+                sku = "sku"
+            });
+
+
 
             var payer = new Payer() { payment_method = "paypal" };
 
@@ -256,14 +276,14 @@ namespace Assignment_8.Controllers
             {
                 tax = "1",
                 shipping = "1",
-                subtotal = "5"
+                subtotal = "1130"
             };
 
             // similar as we did for credit card, do here and create amount object
             var amount = new Amount()
             {
                 currency = "USD",
-                total = "7", // Total must be equal to sum of shipping, tax and subtotal.
+                total = "1132", // Total must be equal to sum of shipping, tax and subtotal.
                 details = details
             };
 

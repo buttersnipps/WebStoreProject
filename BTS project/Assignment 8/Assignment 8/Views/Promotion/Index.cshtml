@@ -1,7 +1,10 @@
 ﻿@model IEnumerable<Assignment_8.Controllers.Promotion_vm>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+
+
 </p>
 <table class="table">
     <tr>
@@ -35,9 +38,11 @@
             @Html.DisplayFor(modelItem => item.EndDate)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PromotionId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PromotionId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PromotionId })
+            
+            @Html.ActionLink("Edit", "Edit", new { id = item.PromotionId }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Details", "Details", new { id = item.PromotionId }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.PromotionId }, new { @class = "btn btn-primary" })
+
         </td>
     </tr>
 }

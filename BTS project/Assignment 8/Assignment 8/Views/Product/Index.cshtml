@@ -1,7 +1,13 @@
 ﻿@model IEnumerable<Assignment_8.Controllers.Product_vm>
 
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 <br />
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create",null, new { @class = "btn btn-primary" })
+
+
 <hr/>
 <table class="table">
     <tr>
@@ -55,9 +61,11 @@
             <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.ProductImage)" style="height:100px;width:200px" />
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
+
+            @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Details", "Details", new { id = item.ProductId }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.ProductId }, new { @class = "btn btn-primary" })
+
         </td>
     </tr>
 }

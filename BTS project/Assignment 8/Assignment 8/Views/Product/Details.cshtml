@@ -78,14 +78,15 @@
                 </td>
 
                 <td class="button"> 
-                    @Html.ActionLink("Add to cart", "AddToCart","ShoppingCart",new { id = Model.ProductId },"")
+                    @Html.ActionLink("Add to cart", "AddToCart","ShoppingCart",new { id = Model.ProductId }, new { @class = "btn btn-primary" })
                 </td>
 
             </tr>
         </table>
     </div>
 </div>
-    
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }, new { @class = "btn btn-primary" }) |
-    @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-primary" })
+   
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }, new { @class = "btn btn-primary" }) 
+    @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-primary" }) 
+
 </p>
