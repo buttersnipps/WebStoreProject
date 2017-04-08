@@ -241,17 +241,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703132331122_new.cs" />
-    <Compile Include="Migrations\201703132331122_new.Designer.cs">
-      <DependentUpon>201703132331122_new.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703140124040_cart.cs" />
-    <Compile Include="Migrations\201703140124040_cart.Designer.cs">
-      <DependentUpon>201703140124040_cart.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703181940505_temp.cs" />
-    <Compile Include="Migrations\201703181940505_temp.Designer.cs">
-      <DependentUpon>201703181940505_temp.cs</DependentUpon>
+    <Compile Include="Migrations\201704081728030_initial.cs" />
+    <Compile Include="Migrations\201704081728030_initial.Designer.cs">
+      <DependentUpon>201704081728030_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -285,10 +277,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CSS\StyleSheet1.css" />
     <Content Include="Content\Image\htc.jpg" />
     <Content Include="Content\Image\logo2.png" />
     <Content Include="Content\Image\pixel.png" />
     <Content Include="Content\Image\samsung.jpg" />
+    <Content Include="Content\JQuery\JavaScript.js" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -384,7 +378,6 @@
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\ShoppingCart\Index.cshtml" />
-    <Content Include="Views\SalesReport\Create.cshtml" />
     <Content Include="Views\SalesReport\Details.cshtml" />
     <Content Include="Views\SalesReport\Index.cshtml" />
   </ItemGroup>
@@ -398,14 +391,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703132331122_new.resx">
-      <DependentUpon>201703132331122_new.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703140124040_cart.resx">
-      <DependentUpon>201703140124040_cart.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703181940505_temp.resx">
-      <DependentUpon>201703181940505_temp.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704081728030_initial.resx">
+      <DependentUpon>201704081728030_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

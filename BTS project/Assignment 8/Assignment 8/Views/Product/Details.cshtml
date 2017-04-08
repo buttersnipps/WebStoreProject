@@ -4,87 +4,101 @@
     ViewBag.Title = "Details";
 }
 
+<head>
+    <link href="~/Content/custom.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/CSS/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <script src="~/Content/JQuery/JavaScript.js"></script>
+</head>
 
-    <img src="~/Content/Image/@Html.DisplayFor(model => model.ProductImage)" style="height:300px;width:500px" />
-<link href="~/Content/custom.css" rel="stylesheet" type="text/css" />
-<div class="row">
-    <div class="col-lg-12">
-        <h4>Product Description</h4>
-        <hr />
-        <div class="panel panel-default panel-body">
-            @Html.Raw(Model.ProductDescription)
+<img src="~/Content/Image/@Html.DisplayFor(model => model.ProductImage)" style="height:300px;width:500px" />
+
+<!--Product Name-->
+<h1>@Html.DisplayFor(model => model.ProductName)</h1>
+
+<!--Product Price and promotion price-->
+@if(Model.PromoPrice != Model.ProductPrice)
+{
+    <strike><h1>$@Html.DisplayFor(model => model.ProductPrice)</h1></strike>
+    <h1 style="color:red;">$@Html.DisplayFor(model => model.PromoPrice)</h1>
+}else
+{
+    <h1>$@Html.DisplayFor(model => model.ProductPrice)</h1>
+}
+
+<!--Tabs-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Description</a></li>
+        <li><a href="#tab2">Specs</a></li>
+    </ul>
+
+
+    <div class="tab-content">
+
+        <div id="tab1" class="tab active">
+           <div class="panel panel-default panel-body">
+                @Html.Raw(Model.ProductDescription)
+           </div>
         </div>
-        <h4>Product Details</h4>
-        <hr />
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.ProductName)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ProductPrice)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.PromoPrice)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Quantity)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ProductWeight)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ProductLength)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ProductWidth)
-                </th>
 
-                <th>
-                    @Html.DisplayNameFor(model => model.ProductHeight)
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    @Html.DisplayFor(model => model.ProductName)
-                </td>
-                @if (Model.PromoPrice != Model.ProductPrice){
-                    <td>
-                        <strike>@Html.DisplayFor(model => model.ProductPrice)</strike>
-                    </td>
-                    <td>
-                        @Html.DisplayFor(model => model.PromoPrice)
-                    </td>
-                } else{
-                    <td>
-                        @Html.DisplayFor(model => model.ProductPrice)
-                    </td>
-                    <td></td>
-                }
-                <td>
-                    @Html.DisplayFor(model => model.Quantity)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => model.ProductWeight)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => model.ProductLength)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => model.ProductWidth)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => model.ProductHeight)
-                </td>
+        <div id="tab2" class="tab">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Quantity)
+                    </th>
 
-                <td class="button"> 
-                    @Html.ActionLink("Add to cart", "AddToCart","ShoppingCart",new { id = Model.ProductId }, new { @class = "btn btn-primary" })
-                </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Quantity)
+                    </td>
+                </tr>
 
-            </tr>
-        </table>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProductWeight)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.ProductWeight)
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProductLength)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.ProductLength)
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProductWidth)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.ProductWidth)
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProductHeight)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.ProductHeight)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 </div>
+
+<div class="button"> 
+    @Html.ActionLink("Add to cart", "AddToCart","ShoppingCart",new { id = Model.ProductId }, new { @class = "btn btn-primary" })
+</div>
+
+
    
     @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }, new { @class = "btn btn-primary" }) 
     @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-primary" }) 

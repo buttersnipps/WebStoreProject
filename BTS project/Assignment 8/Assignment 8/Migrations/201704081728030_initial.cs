@@ -3,7 +3,7 @@ namespace Assignment_8.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _new : DbMigration
+    public partial class initial : DbMigration
     {
         public override void Up()
         {
@@ -293,6 +293,18 @@ namespace Assignment_8.Migrations
                 .Index(t => t.RoleId);
             
             CreateTable(
+                "dbo.SalesReports",
+                c => new
+                    {
+                        SalesReportId = c.Int(nullable: false, identity: true),
+                        SalesReportName = c.String(),
+                        Month = c.DateTime(nullable: false),
+                        Total = c.Single(nullable: false),
+                        PercentageChange = c.Single(nullable: false),
+                    })
+                .PrimaryKey(t => t.SalesReportId);
+            
+            CreateTable(
                 "dbo.ShoppingCartViewModels",
                 c => new
                     {
@@ -462,6 +474,7 @@ namespace Assignment_8.Migrations
             DropTable("dbo.Addresses");
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.ShoppingCartViewModels");
+            DropTable("dbo.SalesReports");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.RoleClaims");

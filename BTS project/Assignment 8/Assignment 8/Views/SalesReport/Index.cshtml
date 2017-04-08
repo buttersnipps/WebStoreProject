@@ -29,9 +29,7 @@
             @Html.DisplayFor(modelItem => item.Total)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.SalesReportId }, new { @class = "btn btn-primary" })
             @Html.ActionLink("Details", "Details", new { id = item.SalesReportId }, new { @class = "btn btn-primary" })
-            @Html.ActionLink("Delete", "Delete", new { id = item.SalesReportId }, new { @class = "btn btn-primary" })
         </td>
     </tr>
 }

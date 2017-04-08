@@ -1355,12 +1355,6 @@ C:\Users\Potato\Documents\GitHub\Order\WebStoreProject\BTS project\Assignment 8\
 C:\Users\Potato\Documents\GitHub\Order\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Potato\Documents\GitHub\Order\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.cat.resources
 C:\Users\Potato\Documents\GitHub\Order\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.PromotionEditFormupdate.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.changedtype.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.changedtypetoint.resources
-C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.changedname.resources
 C:\Users\Soutrik Barua\Downloads\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe
 C:\Users\Soutrik Barua\Downloads\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.exe.config
 C:\Users\Soutrik Barua\Downloads\WebStoreProject-Version_2.0\WebStoreProject-Version_2.0\BTS project\Assignment 8\Assignment 8\bin\roslyn\csc.rsp
@@ -1959,3 +1953,21 @@ C:\Users\Potato\Documents\GitHub\Bootstrap\WebStoreProject\BTS project\Assignmen
 C:\Users\Potato\Documents\GitHub\Bootstrap\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
 C:\Users\Potato\Documents\GitHub\Bootstrap\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.dll
 C:\Users\Potato\Documents\GitHub\Bootstrap\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.pdb
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\log4net.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.Web.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PayPal.dll
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\log4net.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.Web.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\bin\PayPal.xml
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
+C:\Users\Sajjad\Desktop\GitHub\WebStoreProject\BTS project\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache

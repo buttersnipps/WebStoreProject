@@ -313,6 +313,66 @@ namespace Assignment_8.Controllers
             return (item == null) ? null : Mapper.Map<SalesReportDetails>(item);
         }
 
+        public bool addSalesReport(float revenue_)
+        {
+            var makeDate = DateTime.Now;
+            var month = makeDate.Month;
+            bool add = false;
+            var year = makeDate.Year;
+            String date;
+            date = month.ToString();
+            date += " ";
+            date += year.ToString();
+            
+            //Do checking if item exists
+            var item = ds.SalesReports.Where(p => p.SalesReportName == date).SingleOrDefault();
+
+            if(item == null)
+            {
+                item = new SalesReport();
+                item.SalesReportName = date;
+                item.Month = DateTime.Now;
+                item.Total += revenue_;
+                add = true;
+            }else
+            {
+                item.Total += revenue_;
+            }
+
+            //Get total amount of Sales reports to see if percentage calculation is needed
+            var count = ds.SalesReports.Count();
+
+
+            if (count > 0)
+            {
+                var last = ds.SalesReports.OrderByDescending(id => id.SalesReportId).First();
+
+                float revenueChange = item.Total - last.Total;
+
+                float difference = Math.Abs(revenueChange / last.Total);
+
+                if (revenueChange < 0)
+                {
+                    difference *= -1;
+                }
+
+                difference *= 100;
+
+                item.PercentageChange = difference;
+            }
+            else
+            {
+                item.PercentageChange = 0;
+            }
+
+            if (add)
+            {
+                ds.SalesReports.Add(item);
+            }
+            ds.SaveChanges();
+
+            return true;
+        }
         public SalesReport_vm SalesReportAdd(SalesReport_vm Item)
         {
             var count = ds.SalesReports.Count();
