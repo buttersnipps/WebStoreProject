@@ -30,7 +30,7 @@ namespace Assignment_8.Controllers
             get
             {
                 // Null coalescing operator
-                
+
                 return _userManager ?? HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
             }
             private set
@@ -54,20 +54,22 @@ namespace Assignment_8.Controllers
             // We want to retain control over fetching related objects
             ds.Configuration.LazyLoadingEnabled = false;
         }
+        /***************************************************************************************************/
         //Manage Category
-       public IEnumerable<Category_vm> CategoryGetAll(){
-            var r = ds.Categories;
+        public IEnumerable<Category_vm> CategoryGetAll()
+        {
+            var r = ds.Categorys;
             return Mapper.Map<IEnumerable<Category_vm>>(r);
         }
         public Category_vm CategoryAdd(Category_vm newItem)
         {
-            var c = ds.Categories.Add(Mapper.Map<Category>(newItem));
+            var c = ds.Categorys.Add(Mapper.Map<Category>(newItem));
             ds.SaveChanges();
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
         public Category_vm CategoryUpdate(int Id, Category_vm updateItem)
         {
-            var c = ds.Categories.Find(Id);
+            var c = ds.Categorys.Find(Id);
             c.Name = updateItem.Name;
             ds.SaveChanges();
 
@@ -75,30 +77,38 @@ namespace Assignment_8.Controllers
         }
         public Category_vm CategoryGetById(int Id)
         {
-            var c = ds.Categories.Find(Id);
+            var c = ds.Categorys.Find(Id);
 
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
         public Category_vm CategoryDelete(int Id)
         {
-            var c = ds.Categories.Find(Id);
+            var c = ds.Categorys.Find(Id);
             if (c != null)
             {
-                ds.Categories.Remove(c);
+                ds.Categorys.Remove(c);
                 ds.SaveChanges();
             }
             return (c == null) ? null : Mapper.Map<Category_vm>(c);
         }
 
+        /***************************************************************************************************/
         //Manage Product
-        public IEnumerable<Product_vm> ProductGetAll()
+        public IEnumerable<Product_vm> ProductGetAllIEnumerable()
         {
-            return Mapper.Map<IEnumerable<Product_vm>>(ds.Product);
+            var products = ds.Products.Include("Promotion");
+
+            foreach (var item in products)
+            {
+                item.PromoPrice = Math.Round(item.PromoPrice, 2);
+            }
+
+            return Mapper.Map<IEnumerable<Product_vm>>(products);
         }
 
         public Product_vm ProductGetById(int id)
         {
-            var o = ds.Product.Find(id);
+            var o = ds.Products.Include("Promotion").SingleOrDefault(temp => temp.ProductId == id);
 
             // Return the result, or null if not found
             return (o == null) ? null : Mapper.Map<Product_vm>(o);
@@ -106,24 +116,39 @@ namespace Assignment_8.Controllers
 
         public Product_vm ProductAdd(Product_vm newItem)
         {
-            var addedItem = ds.Product.Add(Mapper.Map<Product>(newItem));
+            var calculator = Mapper.Map<Promotion_vm>(ds.Promotions.Find(newItem.PromotionId));
+            newItem.PromoPrice = newItem.ProductPrice - (newItem.ProductPrice * calculator.PercentageOff);
+            var addedItem = ds.Products.Add(Mapper.Map<Product>(newItem));
             ds.SaveChanges();
 
             // If successful, return the added item, mapped to a view model object
             return (addedItem == null) ? null : Mapper.Map<Product_vm>(addedItem);
         }
 
-        public Product_vm ProductEdit(Product_vm newItem )
+        public Product_vm ProductEdit(Product_vm newItem)
         {
-            var o = ds.Product.Find(newItem.productId);
+            var o = ds.Products.Include("Promotion").SingleOrDefault(temp => temp.ProductId == newItem.ProductId);
 
-            if(o == null)
+            if (o == null)
             {
                 return null;
             }
             else
             {
-                ds.Entry(o).CurrentValues.SetValues(newItem);
+                if(newItem.ProductImage != null)
+                {
+                    o.ProductImage = newItem.ProductImage;
+                }
+
+                o.Quantity = newItem.Quantity;
+                o.ProductWidth = newItem.ProductWidth;
+                o.ProductWeight = newItem.ProductWeight;
+                o.ProductPrice = newItem.ProductPrice;
+                o.ProductName = newItem.ProductName;
+                o.ProductLength = newItem.ProductLength;
+                o.ProductHeight = newItem.ProductHeight;
+                o.ProductDescription = newItem.ProductDescription;
+
                 ds.SaveChanges();
 
                 return Mapper.Map<Product_vm>(o);
@@ -132,7 +157,7 @@ namespace Assignment_8.Controllers
 
         public bool ProductDelete(int id)
         {
-            var itemToDelete = ds.Product.Find(id);
+            var itemToDelete = ds.Products.Find(id);
 
             if (itemToDelete == null)
             {
@@ -141,132 +166,280 @@ namespace Assignment_8.Controllers
             else
             {
                 // Remove the object
-                ds.Product.Remove(itemToDelete);
+                ds.Products.Remove(itemToDelete);
                 ds.SaveChanges();
 
                 return true;
             }
 
         }
-        //Track
-        /* public IEnumerable<TrackBase> TrackGetAll()
+        /***************************************************************************************************/
+        //Manage Promotions
+        public List<Promotion_vm> PromotionGetAllList()
         {
-            return Mapper.Map<IEnumerable<TrackBase>>(ds.Tracks);
-        }
-        public TrackBase TrackGetById(int id)
-        {
-            var o = ds.Tracks.Find(id);
+            var all = ds.Promotions;
 
-            return (o == null) ? null : Mapper.Map<TrackBase>(o);
-        }
-        public TrackBase TrackAdd(TrackAdd newItem, int Id)
-        {
-            var a = ds.Genres.Find(Id);
-            newItem.Genre = a.Name;
-            var o = ds.Tracks.Add(Mapper.Map<Track>(newItem));
-            byte[] Audios = new byte[newItem.AudioUpload.ContentLength];
-            newItem.AudioUpload.InputStream.Read(Audios, 0, newItem.AudioUpload.ContentLength);
-            o.Audio = Audios;
-            o.AudioType = newItem.AudioUpload.ContentType;
-            ds.SaveChanges();
-            
-            return Mapper.Map<TrackBase>(o);
-        }
-        //Artist
-        public IEnumerable<ArtistBase> ArtistGetAll()
-        {
-            return Mapper.Map<IEnumerable<ArtistBase>>(ds.Artists);
-        }
-        public ArtistBase ArtistGetById(int id)
-        {
-            var o = ds.Artists.Find(id);
-
-            return (o == null) ? null : Mapper.Map<ArtistBase>(o);
-        }
-        public ArtistBase ArtistAdd(ArtistAdd newItem, int Id)
-        {
-            var a = ds.Genres.Find(Id);
-            newItem.Genre = a.Name;
-            var o = ds.Artists.Add(Mapper.Map<Artist>(newItem));
-            ds.SaveChanges();
-            return (o == null) ? null : Mapper.Map<ArtistBase>(o);
-        }
-        //Album
-        public IEnumerable<AlbumBase> AlbumGetAll()
-        {
-            return Mapper.Map<IEnumerable<AlbumBase>>(ds.Albums);
+            return (all == null) ? null : Mapper.Map<List<Promotion_vm>>(all);
         }
 
-        public AlbumBase AlbumGetById(int id)
+        public IEnumerable<Promotion_vm> PromotionGetAll()
         {
-            var o = ds.Albums.Find(id);
+            var all = ds.Promotions;
 
-            return (o == null) ? null : Mapper.Map<AlbumBase>(o);
+            return (all == null) ? null : Mapper.Map<IEnumerable<Promotion_vm>>(all);
         }
 
-        public AlbumEditForm AlbumGetByIdEditForm(int id)
+        public Promotion_vm PromotionGetOne(int id)
         {
-            var o = ds.Albums.Find(id);
+            var promo = ds.Promotions.Find(id);
 
-            return (o == null) ? null : Mapper.Map<AlbumEditForm>(o);
+            return (promo == null) ? null : Mapper.Map<Promotion_vm>(promo);
         }
 
-        public IEnumerable<TrackBase> SelectedTracks(int id)
+        public bool CheckNoneExist()
         {
-            var o = ds.Albums.Find(id);
-            
-            return Mapper.Map<IEnumerable<TrackBase>>(o.Tracks);
+            var a = ds.Promotions.SingleOrDefault(tmp => tmp.PromotionName == "None");
+
+            return (a == null) ? false : true;
+        }
+        public bool CheckIfNameDoesNotExist(Promotion_vm item)
+        {
+            var all = ds.Promotions.SingleOrDefault(temp => temp.PromotionName == item.PromotionName);
+
+            return (all == null) ? true : false; 
+        }
+        /*Find Promotion For one Product*/
+        public IEnumerable<Product_vm> ProductWithPromotion(int id)
+        {
+            var promo = ds.Promotions.Find(id);
+            var product = ds.Products.AsEnumerable().Where(tmp => tmp.PromotionId == id);
+
+            return (product == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(product);
         }
 
-        public AlbumBase AlbumEdit(AlbumEdit editItem)
+        /*Find All Products With Promotions*/
+        public IEnumerable<Product_vm> ProductsWithPromotions()
         {
-            var o = ds.Albums.Find(editItem.Id);
-            //var t = ds.Tracks.Find(editItem.Trac)
-            //ds.Albums.
-            o.Name = editItem.Name;
-            o.Genre = editItem.Genre;
+            var products = ds.Products.Where(temp => temp.Promotion.PromotionName != "None");
 
-            foreach(var item in o.Artists)
+            foreach (var item in products)
             {
-                o.Artists.Remove(item);
+                item.Promotion = ds.Promotions.SingleOrDefault(temp => temp.PromotionId == item.PromotionId);
             }
-            
+            return (products == null) ? null : Mapper.Map<IEnumerable<Product_vm>>(products);
+        }
 
-            foreach(var item in o.Artists)
+        public List<Product_vm> ProductsWithoutPromotions()
+        {
+            var products = ds.Products.Where(temp => temp.Promotion.PromotionName == "None");
+
+            return (products == null) ? null : Mapper.Map<List<Product_vm>>(products);
+        }
+
+        public Promotion_vm PromotionAdd(Promotion_vm newItem)
+        {
+            //Make Percentageoff a decimal
+            newItem.PercentageOff = newItem.PercentageOff / 100;
+
+            //If productIds is null skip this step or else
+            //Find the product with a ProductId same with ProductIds
+            //and make its PromotionId the same as newItem
+            if (newItem.ProductIds != null)
             {
-               
-                o.Artists.Add(Mapper.Map<Artist>(item));
+                foreach (var item in newItem.ProductIds)
+                {
+                    var product = ds.Products.Single(temp => temp.ProductId == item);
+                    product.PromotionId = newItem.PromotionId;
+                    product.PromoPrice = product.ProductPrice - (product.ProductPrice * newItem.PercentageOff);
+                }
             }
 
-            o.Coordinator = editItem.Coordinator;
-            o.Description = editItem.Description;
-            o.ReleaseDate = editItem.ReleaseDate;
-
-            o.Tracks.Clear();
-
-            foreach (var item in editItem.TrackId)
-            {
-                var a = ds.Tracks.Find(item);
-                o.Tracks.Add(Mapper.Map<Track>(a));
-
-                //ds.SaveChanges();
-            }
-
-            o.UrlAlbum = editItem.UrlAlbum;
-
+            //Add promotion save changes and return
+            ds.Promotions.Add(Mapper.Map<Promotion>(newItem));
             ds.SaveChanges();
-            return Mapper.Map<AlbumBase>(editItem);
+
+            return (newItem == null) ? null : Mapper.Map<Promotion_vm>(newItem);
         }
 
-        public AlbumBase AlbumAdd(AlbumAdd newItem, int Id)
+        public bool PromotionDelete(int id)
         {
-            var a = ds.Genres.Find(Id);
-            newItem.Genre = a.Name;
-            var o = ds.Albums.Add(Mapper.Map < Album > (newItem));
+            //Find Products that will be affected by the deletion of this 
+            //Promotion
+            var productsFix = ds.Products.Where(temp => temp.PromotionId == id);
+
+            //Get the default Promotion to set on the products that will be affected
+            var none = ds.Promotions.SingleOrDefault(temp => temp.PromotionName == "None");
+
+            //Find the Promotion To be deleted and delete it
+            var tmp = ds.Promotions.Find(id);
+            ds.Promotions.Remove(tmp);
+
+            //Go through each product and set its promotionId to the default promotion
+            foreach (var item in productsFix)
+            {
+                item.PromotionId = none.PromotionId;
+                item.PromoPrice = item.ProductPrice;
+            }
+
             ds.SaveChanges();
 
-            return Mapper.Map<AlbumBase>(o);
-        }*/
+            return true;
+        }
+
+        public Promotion_vm PromotionEdit(Promotion_vm EditItem, int[] ProductIds)
+        {
+            //Find Promotion In Database and update values
+            var item = ds.Promotions.Find(EditItem.PromotionId);
+            ds.Entry(item).CurrentValues.SetValues(EditItem);
+
+            //Set all the PromotionIds to none.PromotionId
+            var removePromo = ds.Products.Where(x => x.PromotionId == item.PromotionId);
+            var none = ds.Promotions.SingleOrDefault(t => t.PromotionName == "None");
+            foreach (var itemToRemovePromo in removePromo)
+            {
+                itemToRemovePromo.PromotionId = none.PromotionId;
+                itemToRemovePromo.PromoPrice = itemToRemovePromo.ProductPrice;
+            }
+
+            //Find Product to add to Promotion and 
+            //Update PromotionId and PromoPrice
+            foreach (var items in ProductIds)
+            {
+                var products = ds.Products.Find(items);
+                products.PromotionId = EditItem.PromotionId;
+                products.PromoPrice = products.ProductPrice - (products.ProductPrice * EditItem.PercentageOff);
+            }
+
+            ds.SaveChanges();
+
+            return Mapper.Map<Promotion_vm>(item);
+        }
+
+        /***************************************************************************************************/
+        //Manage SalesReports
+
+        public IEnumerable<SalesReport_vm> SalesReportGetAll()
+        {
+            var all = ds.SalesReports;
+
+            return (all == null) ? null : Mapper.Map<IEnumerable<SalesReport_vm>>(all);
+        }
+
+        public SalesReportDetails SalesReportGetOne(int id)
+        {
+            var item = ds.SalesReports.Find(id);
+
+            return (item == null) ? null : Mapper.Map<SalesReportDetails>(item);
+        }
+
+        public bool addSalesReport(float revenue_)
+        {
+            var makeDate = DateTime.Now;
+            var month = makeDate.Month;
+            bool add = false;
+            var year = makeDate.Year;
+            String date;
+            date = month.ToString();
+            date += " ";
+            date += year.ToString();
+            
+            //Do checking if item exists
+            var item = ds.SalesReports.Where(p => p.SalesReportName == date).SingleOrDefault();
+
+            if(item == null)
+            {
+                item = new SalesReport();
+                item.SalesReportName = date;
+                item.Month = DateTime.Now;
+                item.Total += revenue_;
+                add = true;
+            }else
+            {
+                item.Total += revenue_;
+            }
+
+            //Get total amount of Sales reports to see if percentage calculation is needed
+            var count = ds.SalesReports.Count();
+
+
+            if (count > 0)
+            {
+                var last = ds.SalesReports.OrderByDescending(id => id.SalesReportId).First();
+
+                float revenueChange = item.Total - last.Total;
+
+                float difference = Math.Abs(revenueChange / last.Total);
+
+                if (revenueChange < 0)
+                {
+                    difference *= -1;
+                }
+
+                difference *= 100;
+
+                item.PercentageChange = difference;
+            }
+            else
+            {
+                item.PercentageChange = 0;
+            }
+
+            if (add)
+            {
+                ds.SalesReports.Add(item);
+            }
+            ds.SaveChanges();
+
+            return true;
+        }
+        public SalesReport_vm SalesReportAdd(SalesReport_vm Item)
+        {
+            bool doThis = false;
+            var count = 0;
+            var check = SalesReportGetAll();
+            if(check.Count() != 0)
+            {
+                doThis = true;
+            }
+
+
+            if (doThis)
+            {
+                count = ds.SalesReports.Count();
+            }
+
+
+            if (count > 0)
+            {
+                var last = ds.SalesReports.OrderByDescending(id => id.SalesReportId).First();
+
+                float revenueChange = Item.Total - last.Total;
+
+                float difference = Math.Abs(revenueChange / last.Total);
+
+                if (revenueChange < 0)
+                {
+                    difference *= -1;
+                }
+
+                difference *= 100;
+
+                Item.PercentageChange = difference;
+            }
+            else
+            {
+                Item.PercentageChange = 0;
+            }
+            ds.SalesReports.Add(Mapper.Map<SalesReport>(Item));
+            ds.SaveChanges();
+
+            return Item;
+        }
+
+
+
+
+
         public bool RemoveDatab()
         {
             try
@@ -279,29 +452,16 @@ namespace Assignment_8.Controllers
             }
         }
 
-        // Add methods below
-        // Controllers will call these methods
-        // Ensure that the methods accept and deliver ONLY view model objects and collections
-        // The collection return type is almost always IEnumerable<T>
-
-        // Suggested naming convention: Entity + task/action
-        // For example:
-        // ProductGetAll()
-        // ProductGetById()
-        // ProductAdd()
-        // ProductEdit()
-        // ProductDelete()
-
-       public List<string> RoleClaimGetAllStrings()
+        public List<string> RoleClaimGetAllStrings()
         {
             List<string> temp = new List<string>();
 
-            foreach(var item in ds.Role.OrderBy(n => n.Id))
+            foreach (var item in ds.Role.OrderBy(n => n.Id))
             {
                 temp.Add(item.Name);
             }
 
-            return temp; 
+            return temp;
         }
 
         public bool addRole()
@@ -326,301 +486,12 @@ namespace Assignment_8.Controllers
                 ds.Role.Add(new RoleClaim
                 {
                     Name = "Customer"
-                });        
+                });
                 ds.SaveChanges();
                 return true;
             }
             return false;
         }
-
-        // Add some programmatically-generated objects to the data store
-        // Can write one method, or many methods - your decision
-        // The important idea is that you check for existing data first
-        // Call this method from a controller action/method
-
-       /* public bool LoadData()
-        {
-            // User name
-            var user = HttpContext.Current.User.Identity.Name;
-
-            // Monitor the progress
-            bool done = false;
-
-            // ############################################################
-            // Genre
-
-            if (ds.Genres.Count() == 0)
-            {
-                // Add genres
-
-                ds.Genres.Add(new Genre { Name = "Alternative" });
-                ds.Genres.Add(new Genre { Name = "Classical" });
-                ds.Genres.Add(new Genre { Name = "Country" });
-                ds.Genres.Add(new Genre { Name = "Easy Listening" });
-                ds.Genres.Add(new Genre { Name = "Hip-Hop/Rap" });
-                ds.Genres.Add(new Genre { Name = "Jazz" });
-                ds.Genres.Add(new Genre { Name = "Pop" });
-                ds.Genres.Add(new Genre { Name = "R&B" });
-                ds.Genres.Add(new Genre { Name = "Rock" });
-                ds.Genres.Add(new Genre { Name = "Soundtrack" });
-
-                ds.SaveChanges();
-                done = true;
-            }
-
-            // ############################################################
-            // Artist
-
-            if (ds.Artists.Count() == 0)
-            {
-                // Add artists
-
-                ds.Artists.Add(new Artist
-                {
-                    Name = "The Beatles",
-                    BirthOrStartDate = new DateTime(1962, 8, 15),
-                    Executive = user,
-                    Genre = "Pop",
-                    UrlArtist = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg"
-                });
-
-                ds.Artists.Add(new Artist
-                {
-                    Name = "Adele",
-                    BirthName = "Adele Adkins",
-                    BirthOrStartDate = new DateTime(1988, 5, 5),
-                    Executive = user,
-                    Genre = "Pop",
-                    UrlArtist = "http://www.billboard.com/files/styles/article_main_image/public/media/Adele-2015-close-up-XL_Columbia-billboard-650.jpg"
-                });
-
-                ds.Artists.Add(new Artist
-                {
-                    Name = "Bryan Adams",
-                    BirthOrStartDate = new DateTime(1959, 11, 5),
-                    Executive = user,
-                    Genre = "Rock",
-                    UrlArtist = "https://upload.wikimedia.org/wikipedia/commons/7/7e/Bryan_Adams_Hamburg_MG_0631_flickr.jpg"
-                });
-
-                ds.SaveChanges();
-                done = true;
-            }
-
-            // ############################################################
-            // Album
-
-            if (ds.Albums.Count() == 0)
-            {
-                // Add albums
-
-                // For Bryan Adams
-                var bryan = ds.Artists.SingleOrDefault(a => a.Name == "Bryan Adams");
-
-                ds.Albums.Add(new Album
-                {
-                    Artists = new List<Artist> { bryan },
-                    Name = "Reckless",
-                    ReleaseDate = new DateTime(1984, 11, 5),
-                    Coordinator = user,
-                    Genre = "Rock",
-                    UrlAlbum = "https://upload.wikimedia.org/wikipedia/en/5/56/Bryan_Adams_-_Reckless.jpg"
-                });
-
-                ds.Albums.Add(new Album
-                {
-                    Artists = new List<Artist> { bryan },
-                    Name = "So Far So Good",
-                    ReleaseDate = new DateTime(1993, 11, 2),
-                    Coordinator = user,
-                    Genre = "Rock",
-                    UrlAlbum = "https://upload.wikimedia.org/wikipedia/pt/a/ab/So_Far_so_Good_capa.jpg"
-                });
-
-                ds.SaveChanges();
-                done = true;
-            }
-
-            // ############################################################
-            // Track
-
-            if (ds.Tracks.Count() == 0)
-            {
-                // Add tracks
-
-                // For Reckless
-                var reck = ds.Albums.SingleOrDefault(a => a.Name == "Reckless");
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { reck },
-                    Name = "Run To You",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { reck },
-                    Name = "Heaven",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { reck },
-                    Name = "Somebody",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { reck },
-                    Name = "Summer of '69",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { reck },
-                    Name = "Kids Wanna Rock",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                // For Reckless
-                var so = ds.Albums.SingleOrDefault(a => a.Name == "So Far So Good");
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { so },
-                    Name = "Straight from the Heart",
-                    Composers = "Bryan Adams, Eric Kagna",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { so },
-                    Name = "It's Only Love",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { so },
-                    Name = "This Time",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { so },
-                    Name = "(Everything I Do) I Do It for You",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.Tracks.Add(new Track
-                {
-                    Albums = new List<Album> { so },
-                    Name = "Heat of the Night",
-                    Composers = "Bryan Adams, Jim Vallance",
-                    Clerk = user,
-                    Genre = "Rock"
-                });
-
-                ds.SaveChanges();
-
-                done = true;
-            }
-
-            if (ds.Role.Count() == 0)
-            {
-                ds.Role.Add(new RoleClaim
-                {
-                    Name = "Executive"
-                });
-
-                ds.Role.Add(new RoleClaim
-                {
-                    Name = "Coordinator"
-                });
-
-                ds.Role.Add(new RoleClaim
-                {
-                    Name = "Clerk"
-                });
-
-                ds.Role.Add(new RoleClaim
-                {
-                    Name = "Staff"
-                });
-
-                ds.Role.Add(new RoleClaim
-                {
-                    Name = "Sales Rep"
-                });
-
-                ds.Role.Add(new RoleClaim
-                {
-                    Name = "Secretary"
-                });
-
-                ds.SaveChanges();
-                done = true;
-            }
-            return done;
-        }
-        public bool RemoveData()
-        {
-            try
-            {
-                foreach (var e in ds.Tracks)
-                {
-                    ds.Entry(e).State = System.Data.Entity.EntityState.Deleted;
-                }
-                ds.SaveChanges();
-
-                foreach (var e in ds.Albums)
-                {
-                    ds.Entry(e).State = System.Data.Entity.EntityState.Deleted;
-                }
-                ds.SaveChanges();
-
-                foreach (var e in ds.Artists)
-                {
-                    ds.Entry(e).State = System.Data.Entity.EntityState.Deleted;
-                }
-                ds.SaveChanges();
-
-                foreach (var e in ds.Genres)
-                {
-                    ds.Entry(e).State = System.Data.Entity.EntityState.Deleted;
-                }
-                ds.SaveChanges();
-
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }*/
 
         public bool RemoveDatabase()
         {

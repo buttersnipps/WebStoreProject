@@ -37,11 +37,16 @@ namespace Assignment_8.Models
 
         // Add DbSet<TEntity> properties here
         public DbSet<RoleClaim> Role { get; set; }
-        public DbSet<Category>Categories { get; set; }
+        public DbSet<Category>Categorys { get; set; }
 
-        public DbSet<Product> Product { get; set; }
+        public DbSet<Product> Products { get; set; }
 
-        public DbSet<Promotion> Promotion { get; set; }
+        public DbSet<Promotion> Promotions { get; set; }
+
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<SalesReport> SalesReports { get; set; }
 
 
 
@@ -66,10 +71,25 @@ namespace Assignment_8.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<Assignment_8.Controllers.Category_vm> Category_vm { get; set; }
-
         public System.Data.Entity.DbSet<Assignment_8.Controllers.Product_vm> Product_vm { get; set; }
 
         public System.Data.Entity.DbSet<Assignment_8.Controllers.ApplicationUserBase> ApplicationUserBases { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.Promotion_vm> Promotion_vm { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionAddForm> PromotionAdds { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionDeleteForm> PromotionDeleteForms { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionEditForm> PromotionEditForms { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.PromotionDetailsPage> PromotionDetailsPages { get; set; }
+
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.ShoppingCartViewModel> ShoppingCartViewModels { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.SalesReport_vm> SalesReport_vm { get; set; }
+
+        public System.Data.Entity.DbSet<Assignment_8.Controllers.SalesReportAdd> SalesReportAdds { get; set; }
     }
 }

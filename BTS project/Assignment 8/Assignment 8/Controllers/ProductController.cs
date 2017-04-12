@@ -4,16 +4,69 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.IO;
+using Assignment_8.Models;
+using PagedList;
+
 namespace Assignment_8.Controllers
 {
     public class ProductController : Controller
     {
+
+        private ApplicationDbContext ds = new ApplicationDbContext();
         private Manager manage = new Manager();
         // GET: Product
         public ActionResult Index()
         {
-            return View(manage.ProductGetAll());
+            return View(manage.ProductGetAllIEnumerable());
         }
+
+        // Get the product list for the customer side
+        public ActionResult Customer_Product_Index(string sortOrder, string searchString, string currentFilter, int? page)
+        {
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParam = sortOrder =="Name"? "name_desc" : "name_ascend";
+            ViewBag.PriceSortParam = sortOrder == "Price" ? "price_desc" : "Price";
+
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+            ViewBag.CurrentFilter = searchString;
+            // var a = ds.Product.OrderBy(p => p.productName).ToList();
+            var a = from prod in ds.Products
+                    select prod;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                a = a.Where(prod => prod.ProductName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    a = a.OrderByDescending(prod => prod.ProductName);
+                    break;
+                case "Price":
+                    a = a.OrderBy(prod => prod.ProductPrice);
+                    break;
+                case "price_desc":
+                    a = a.OrderByDescending(prod => prod.ProductPrice);
+                    break;
+                case "name_ascend":
+                    a = a.OrderBy(prod => prod.ProductName);
+                    break;
+                default:
+                    a = a.OrderBy(prod => prod.ProductName);
+                    break;
+            }
+
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+            return View(a.ToPagedList(pageNumber, pageSize));
+        }
+
 
         public ActionResult Details(int? id)
         {
@@ -30,23 +83,44 @@ namespace Assignment_8.Controllers
                 return View(o);
             }
         }
+
+        public ActionResult DetailsBackEnd(int ? id)
+        {
+            // Attempt to get the matching object
+            var o = manage.ProductGetById(id.GetValueOrDefault());
+
+            if (o == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                // Pass the object to the view
+                return View(o);
+            }
+        }
+
         // GET: Product/Create
         public ActionResult Create()
         {
-            // At your option, create and send an object to the view
-            return View();
+            ViewBag.CategoryId = new SelectList(ds.Categorys, "Id", "Name");
+            var productForm = new Product_vm();
+            productForm.Promotions = manage.PromotionGetAllList();
+            return View(productForm);
         }
 
         // POST : Product Create 
 
-         [HttpPost]
+         [HttpPost ValidateInput(false)]
         public ActionResult Create(Product_vm newItem, HttpPostedFileBase file)
         {
             if (!ModelState.IsValid)
             {
+                newItem.Promotions = manage.PromotionGetAllList();
                 return View(newItem);
             }
 
+            ViewBag.CategoryId = new SelectList(ds.Categorys, "Id", "Name", newItem.CategoryId);
             var path = "";
             if(file != null)
             {
@@ -60,26 +134,34 @@ namespace Assignment_8.Controllers
                     {
                         path = Path.Combine(Server.MapPath("~/Content/Image"), file.FileName);
                         file.SaveAs(path);
-                        newItem.productImage = file.FileName;
+                        newItem.ProductImage = file.FileName;
                     }
                 }
+            }else
+            {
+                var productForm = new Product_vm();
+                productForm.Promotions = manage.PromotionGetAllList();
+                return View(productForm);
             }
+
             var addedItem = manage.ProductAdd(newItem);
             if (addedItem == null)
             {
+                newItem.Promotions = manage.PromotionGetAllList();
                 return View(newItem);
             }
             else
             {
-                return RedirectToAction("details", new { id = addedItem.productId });
+                return RedirectToAction("detailsBackEnd", new { id = addedItem.ProductId });
             }
         }
 
         public ActionResult Edit(int id)
         {
             var editForm = manage.ProductGetById(id);
+            ViewBag.CategoryId = new SelectList(ds.Categorys, "Id", "Name", editForm.CategoryId);
 
-            if(editForm == null)
+            if (editForm == null)
             {
                 return HttpNotFound();
             }
@@ -89,11 +171,12 @@ namespace Assignment_8.Controllers
             }
         }
 
-         [HttpPost]
+         [HttpPost ValidateInput(false)]
         public ActionResult Edit(int id, Product_vm newItem, HttpPostedFileBase file)
         {
             var path = "";
-            var product = manage.ProductGetById(newItem.productId);
+            var product = manage.ProductGetById(newItem.ProductId);
+            ViewBag.CategoryId = new SelectList(ds.Categorys, "Id", "Name", newItem.CategoryId);
             string fullPath = "";
             if (file != null)
             {
@@ -105,14 +188,14 @@ namespace Assignment_8.Controllers
                         Path.GetExtension(file.FileName).ToLower() == ".gif" ||
                         Path.GetExtension(file.FileName).ToLower() == ".jpeg")
                     {
-                        fullPath = Request.MapPath("~/Content/Image/" + product.productImage);
+                        fullPath = Request.MapPath("~/Content/Image/" + product.ProductImage);
                         if (System.IO.File.Exists(fullPath))
                         {
                             System.IO.File.Delete(fullPath);
                         }
                         path = Path.Combine(Server.MapPath("~/Content/Image"), file.FileName);
                         file.SaveAs(path);
-                        newItem.productImage = file.FileName;
+                        newItem.ProductImage = file.FileName;
                     }
                 }
             }
@@ -120,10 +203,10 @@ namespace Assignment_8.Controllers
             if (!ModelState.IsValid)
             {
                
-                return RedirectToAction("edit", new { id = newItem.productId });
+                return RedirectToAction("edit", new { id = newItem.ProductId });
             }
 
-            if (id != newItem.productId)
+            if (id != newItem.ProductId)
             {
            
                 return RedirectToAction("index");
@@ -135,12 +218,12 @@ namespace Assignment_8.Controllers
             if (editedItem == null)
             {
               
-                return RedirectToAction("edit", new { id = newItem.productId });
+                return RedirectToAction("edit", new { id = newItem.ProductId });
             }
             else
             {
                
-                return RedirectToAction("details", new { id = newItem.productId });
+                return RedirectToAction("detailsBackEnd", new { id = newItem.ProductId });
             }
         }
 

@@ -1,0 +1,68 @@
+﻿@model Assignment_8.Models.Category
+
+@{
+    ViewBag.Title = Model.Name;
+}
+
+
+
+<br />
+<br />
+
+<div class="row">
+    <div class="col-xs-12 col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+            @if (Model.Name == "Home Phone")
+            {
+                <li class="active">
+                    <a href="~/CategoryFront/Index/1">Home Phones</a>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a href="~/CategoryFront/Index/1">Home Phones</a>
+                </li>
+            }
+            @if (Model.Name == "Second Category")
+            {
+                <li class="active">
+                    <a href="~/CategoryFront/Index/2">Cell Phones</a>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a href="~/CategoryFront/Index/2">Cell Phones</a>
+                </li>
+            }
+        </ul>
+
+            <div class="row">
+                @foreach (var product in Model.Products)
+            {
+                    <div class="col-sm-12">
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="~/Content/Image/@(product.ProductName).jpg"style="height:120px">
+
+                                
+                            
+                            <div class="caption text-center">
+                                <p>
+                                    <b>Name:</b> <span>@product.ProductName</span>
+                                </p>
+                                <p>
+                                    <b>Price:</b> <span>@product.ProductPrice USD</span>
+                                </p>
+                                <p class="text-center">
+
+                                    @Html.ActionLink("Buy", "../Product/Details", new { id = product.ProductId }, new { @class = "btn btn-primary" })
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+        </div>
+    </div>
+</div>

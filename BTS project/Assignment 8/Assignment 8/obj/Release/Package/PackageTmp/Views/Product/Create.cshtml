@@ -1,0 +1,110 @@
+﻿@model Assignment_8.Controllers.Product_vm
+
+<!--CDN Connections-->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/chosen/1.1.0/chosen.css" />
+<script src="//cdn.jsdelivr.net/chosen/1.1.0/chosen.jquery.js"></script>
+<script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+
+@using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype="multipart/form-data"}))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4><strong>New Product</strong></h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductPrice, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.Promotions, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PromotionId", Model.Promotions.Select(x => new SelectListItem { Text = x.PromotionName, Value = x.PromotionId.ToString()}), new { @class="form-control chosen-select"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductImage, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="file" id="file"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2"})
+            <div class="col-md-1">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control"}})
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class ="text-danger"})
+            </div>
+        </div>
+
+       <h4><strong>Product Description</strong></h4>
+        <hr />
+        <div class="form-group">
+                <div class="col-lg-9">
+                    @Html.EditorFor(model => model.ProductDescription, new { @class = "control-label col-lg-9"})
+                    @Html.ValidationMessageFor(model => model.ProductDescription, "", new { @class = "text-danger" })
+                </div>
+        </div>
+        <script>CKEDITOR.replace('ProductDescription');</script>
+
+        <h4><strong>Shipping Information</strong></h4>
+        <hr />
+        
+        @Html.LabelFor(model => model.ProductWeight, htmlAttributes: new { @class = "control-label col-lg-2" })
+        <div class="col-lg-1">
+            @Html.EditorFor(model => model.ProductWeight, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductWeight, "", new { @class = "text-danger" })
+        </div>
+        
+        @Html.LabelFor(model => model.ProductLength, htmlAttributes: new { @class = "control-label col-lg-1" })
+        <div class="col-lg-1">
+            @Html.EditorFor(model => model.ProductLength, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductLength, "", new { @class = "text-danger" })
+        </div>
+        
+        @Html.LabelFor(model => model.ProductWidth, htmlAttributes: new { @class = "control-label col-lg-1" })
+        <div class="col-lg-1">
+            @Html.EditorFor(model => model.ProductWidth, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductWidth, "", new { @class = "text-danger" })
+        </div>
+
+        @Html.LabelFor(model => model.ProductHeight, htmlAttributes: new { @class = "control-label col-lg-1" })
+        <div class="col-lg-1">
+            @Html.EditorFor(model => model.ProductHeight, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ProductHeight, "", new { @class = "text-danger" })
+        </div>
+            
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-10">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script>
+            $('.chosen-select').chosen();
+</script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

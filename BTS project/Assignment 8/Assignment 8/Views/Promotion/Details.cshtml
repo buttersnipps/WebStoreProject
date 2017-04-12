@@ -1,0 +1,68 @@
+﻿@model Assignment_8.Controllers.PromotionDetailsPage
+
+<div>
+    <h4>PromotionDetailsPage</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentageOff)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PercentageOff)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PromotionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PromotionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BeginDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeginDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+    </dl>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @ViewBag.ProductName
+        </th>
+        <th>
+            @ViewBag.Discount
+        </th>
+    </tr>
+    @foreach(var item in Model.Products)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.PromoPrice)
+            </td>
+        </tr>
+    }
+</table>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PromotionId }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+</p>

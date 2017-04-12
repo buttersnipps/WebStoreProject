@@ -1,0 +1,100 @@
+﻿@model Assignment_8.Controllers.Product_vm
+
+<div>
+    <h4>Product Details Page</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PromotionId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PromotionId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PromoPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PromoPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductDescription)
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.ProductDescription)
+        </dd>
+        
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

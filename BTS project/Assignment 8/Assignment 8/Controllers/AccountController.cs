@@ -187,7 +187,7 @@ namespace Assignment_8.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    return RedirectToAction("Customer_Product_Index","Product");
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
@@ -279,13 +279,14 @@ namespace Assignment_8.Controllers
             {
                 var cit = new City
                 {
-                    CityName = model.CityName
+                    //CityName = model.CityName
                 };
 
                 var country = new Country
                 {
-                    city = cit,
-                    CountryName = model.CountryName
+                    ///FIX THISS
+                    //city = cit,
+                    //CountryName = model.CountryName
                 };
 
                 var addr = new Address
@@ -340,7 +341,7 @@ namespace Assignment_8.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Details", "Account");
+                    return RedirectToAction("Customer_Product_Index", "Product");
 
                     // ############################################################
                 }
@@ -578,7 +579,7 @@ namespace Assignment_8.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Customer_Product_Index", "Product");
         }
 
         //

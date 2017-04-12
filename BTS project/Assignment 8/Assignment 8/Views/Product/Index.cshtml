@@ -1,21 +1,30 @@
 ﻿@model IEnumerable<Assignment_8.Controllers.Product_vm>
 
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 <br />
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create",null, new { @class = "btn btn-primary" })
+
+
 <hr/>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.productName)
+            @Html.DisplayNameFor(model => model.ProductName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.productPrice)
+            @Html.DisplayNameFor(model => model.ProductPrice)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.quantity)
+            @Html.DisplayNameFor(model => model.PromoPrice)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.productImage)
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductImage)
         </th>
         <th></th>
     </tr>
@@ -23,28 +32,43 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.productName)
+            @Html.DisplayFor(modelItem => item.ProductName)
         </td>
+        @if(item.PromotionId != 1){
+            <td>
+                <strike>@Html.DisplayFor(modelItem => item.ProductPrice)</strike>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PromoPrice)
+            </td>
+        } else{
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductPrice)
+            </td>
+            <td></td>
+        }
         <td>
-            @Html.DisplayFor(modelItem => item.productPrice)
-        </td>
-        <td>
-            @if (item.quantity < 9)
+            @if (item.Quantity < 9)
             {
-                <p style="color:red">@Html.DisplayFor(modelItem => item.quantity)</p>
+                <p style="color:red">@Html.DisplayFor(modelItem => item.Quantity)</p>
             }
             else
             {
-                <p style="color:green">@Html.DisplayFor(modelItem => item.quantity)</p>
+                <p style="color:green">@Html.DisplayFor(modelItem => item.Quantity)</p>
             }
         </td>
         <td>
-            <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.productImage)" style="height:100px;width:200px" />
+            <img src="~/Content/Image/@Html.DisplayFor(modelItem => item.ProductImage)" style="height:100px;width:200px" />
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.productId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.productId })
+            @Html.DisplayFor(modelItem => item.Category.Name)
+        </td>
+        <td>
+
+            @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Details", "DetailsBackEnd", new { id = item.ProductId }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.ProductId }, new { @class = "btn btn-primary" })
+
         </td>
     </tr>
 }
